@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: TileSetSet_Slice 12_4
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1940897831, guid: 5012daf4b399e1d4793eba817c6a7e7f, type: 3}
+  m_Sprite: {fileID: -1788044493, guid: dc2406ac669a4174e8f8ed58e4a4eadc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
