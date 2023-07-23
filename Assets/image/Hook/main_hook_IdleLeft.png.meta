@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c86d960e577691c4c869741ef21469d4
+guid: 0e396992346598d42a34e2888bc147bb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,127 +105,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main_hook_RunLeft_0
+      name: main_hook_IdleLeft_0
       rect:
         serializedVersion: 2
         x: 4
         y: 2
         width: 25
-        height: 26
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47a05d6af2fed5f41accaa0f5e36df43
-      internalID: -180008589
+      spriteID: 9e997b00d2ae2484193f1df1183af726
+      internalID: -82825484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_hook_RunLeft_1
+      name: main_hook_IdleLeft_1
       rect:
         serializedVersion: 2
         x: 36
         y: 2
         width: 25
-        height: 26
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5be2fbd503bfc86458fe3384ea82e255
-      internalID: 1620031558
+      spriteID: e99376d2378857d4c832f387c8c590e8
+      internalID: -556496683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_hook_RunLeft_2
+      name: main_hook_IdleLeft_2
       rect:
         serializedVersion: 2
         x: 68
         y: 2
         width: 25
-        height: 26
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c8c320d22ded3b40ac128f253b1d2d3
-      internalID: 1198255256
+      spriteID: 3b1eb2ab4c00b4345bf7ceb818692633
+      internalID: -1839287653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_hook_RunLeft_3
+      name: main_hook_IdleLeft_3
       rect:
         serializedVersion: 2
         x: 100
         y: 2
         width: 25
-        height: 26
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e78e2bb293f15b478bc695e8d596cfb
-      internalID: 1532479814
+      spriteID: 701577105cbcaa847849da22169efc33
+      internalID: 1593036524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_hook_RunLeft_4
+      name: main_hook_IdleLeft_4
       rect:
         serializedVersion: 2
         x: 132
         y: 2
         width: 25
-        height: 26
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0923e82fa9635d4b83ec3cf5c1a0fa4
-      internalID: -1631093207
+      spriteID: 47aae42612003f247889dd60ed2e3fcb
+      internalID: -491374192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_hook_RunLeft_5
+      name: main_hook_IdleLeft_5
       rect:
         serializedVersion: 2
         x: 164
         y: 2
         width: 25
-        height: 26
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b8d5cf58da44624c8070f44163e5fd1
-      internalID: -1905668248
+      spriteID: c3f040425b9c81147a4d84d5b041f02b
+      internalID: -2027293359
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      main_hook_RunLeft_0: -180008589
-      main_hook_RunLeft_1: 1620031558
-      main_hook_RunLeft_2: 1198255256
-      main_hook_RunLeft_3: 1532479814
-      main_hook_RunLeft_4: -1631093207
-      main_hook_RunLeft_5: -1905668248
+      main_hook_IdleLeft_0: -82825484
+      main_hook_IdleLeft_1: -556496683
+      main_hook_IdleLeft_2: -1839287653
+      main_hook_IdleLeft_3: 1593036524
+      main_hook_IdleLeft_4: -491374192
+      main_hook_IdleLeft_5: -2027293359
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

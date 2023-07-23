@@ -25,6 +25,8 @@ public class Home_Hook : MonoBehaviour
         inputVec.x = Input.GetAxisRaw("Horizontal");
         if (inputVec.x != 0)
         {
+            anim.SetBool("isSleep", false);
+            rigid.position = new Vector2(rigid.position.x, -1.8f);
             spriter.flipX = inputVec.x < 0;
             anim.SetBool("isWalk", true);
         }

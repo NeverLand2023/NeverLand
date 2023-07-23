@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Main_Hook : MonoBehaviour
 {
     public Vector2 inputVec;
     public float speed;
@@ -23,37 +23,27 @@ public class Player : MonoBehaviour
     {
         //캐릭터 움직임
         inputVec.x = Input.GetAxisRaw("Horizontal");
-        //inputVec.y = Input.GetAxisRaw("Vertical");
+        inputVec.y = Input.GetAxisRaw("Vertical");
 
         //애니메이션 구현
-/*        if (inputVec.x > 0)         //오른쪽 달리기
+        if (inputVec.x > 0)         //오른쪽 달리기
         {
-            spriter.flipX = false;
             anim.SetBool("isRun", true);
             anim.SetBool("isRunLeft", false);
         }
         else if (inputVec.x < 0)    //왼쪽 달리기
         {
-            spriter.flipX = true;
-            //anim.SetBool("isRun", false);
-            //anim.SetBool("isRunLeft", true);
-        }
-        else                        //Idle
-        {
-            anim.SetBool("isRun", false);
-            anim.SetBool("isRunLeft", false);
-        }*/
-
-        if(inputVec.x != 0)
-        {
-            spriter.flipX = inputVec.x < 0;
             anim.SetBool("isRun", true);
-            anim.SetBool("isRunLeft", false);
+            anim.SetBool("isRunLeft", true);
+        }
+        else if (inputVec.y != 0)   //위아래로 달리기
+        {
+            anim.SetBool("isRun", true);
         }
         else                        //Idle
         {
             anim.SetBool("isRun", false);
-            anim.SetBool("isRunLeft", false);
+            //anim.SetBool("isRunLeft", false);
         }
 
     }
