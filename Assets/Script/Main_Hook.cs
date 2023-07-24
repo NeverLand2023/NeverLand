@@ -51,14 +51,14 @@ public class Main_Hook : MonoBehaviour
     void FixedUpdate()
     {
         //캐릭터 움직임
-        if (rigid.position.x >= 9)
+        if (rigid.position.x >= 50)
         {
-            rigid.position = new Vector2(9, transform.position.y);
+            rigid.position = new Vector2(50, transform.position.y);
 
         }
-        else if (rigid.position.x <= -9)
+        else if (rigid.position.x <= -50)
         {
-            rigid.position = new Vector2(-9, transform.position.y);
+            rigid.position = new Vector2(-50, transform.position.y);
         }
 
         Vector2 nextVec = inputVec.normalized * speed * Time.fixedDeltaTime;
