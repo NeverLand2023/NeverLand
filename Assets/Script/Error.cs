@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Error : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class Error : MonoBehaviour
                 error_screen.SetActive(true);
                 if (timer > 6.0f)
                     error_screen.SetActive(false);
+                SceneManager.LoadScene("Mission1");
             }
         }
         else

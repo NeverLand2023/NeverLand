@@ -38,7 +38,7 @@ public class Home_Hook : MonoBehaviour
         }
 
         //컴퓨터 상호작용
-        if(rigid.position.x > -5.3 && rigid.position.x < -4.5 && Input.GetKeyDown(KeyCode.Space))
+        if(rigid.position.x > -3 && rigid.position.x < -2 && Input.GetKeyDown(KeyCode.Space))
         {
             error_light.SetActive(true);
         }
