@@ -24,9 +24,15 @@ public class Error : MonoBehaviour
             if (timer > 3.0f)
             {
                 error_screen.SetActive(true);
+
+                if (timer > 5.0f)
+                {
+                    SceneManager.LoadScene("Mission1");
+                }
                 if (timer > 6.0f)
+                {
                     error_screen.SetActive(false);
-                SceneManager.LoadScene("Mission1");
+                }
             }
         }
         else
