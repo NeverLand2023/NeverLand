@@ -7,6 +7,8 @@ public class Home_Hook : MonoBehaviour
     public Vector2 inputVec;
     public float speed;
 
+    public GameObject error_light;
+
     Rigidbody2D rigid;
     SpriteRenderer spriter;
     Animator anim;
@@ -26,13 +28,19 @@ public class Home_Hook : MonoBehaviour
         if (inputVec.x != 0)
         {
             anim.SetBool("isSleep", false);
-            rigid.position = new Vector2(rigid.position.x, -1.8f);
+            rigid.position = new Vector2(rigid.position.x, -1.5f);
             spriter.flipX = inputVec.x < 0;
             anim.SetBool("isWalk", true);
         }
         else                        //Idle
         {
             anim.SetBool("isWalk", false);
+        }
+
+        //컴퓨터 상호작용
+        if(rigid.position.x > -5.3 && rigid.position.x < -4.5 && Input.GetKeyDown(KeyCode.Space))
+        {
+            error_light.SetActive(true);
         }
     }
 

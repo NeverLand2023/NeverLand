@@ -6,6 +6,8 @@ public class Main_Hook : MonoBehaviour
 {
     public Vector2 inputVec;
     public float speed;
+    public float maxHealth;
+    public float health;
 
     Rigidbody2D rigid;
     SpriteRenderer spriter;
@@ -25,7 +27,7 @@ public class Main_Hook : MonoBehaviour
         inputVec.x = Input.GetAxisRaw("Horizontal");
         inputVec.y = Input.GetAxisRaw("Vertical");
 
-        //애니메이션 구현
+        //움직임 애니메이션 구현
         if (inputVec.x > 0)         //오른쪽 달리기
         {
             anim.SetBool("isRun", true);
@@ -44,6 +46,12 @@ public class Main_Hook : MonoBehaviour
         {
             anim.SetBool("isRun", false);
             //anim.SetBool("isRunLeft", false);
+        }
+
+        //공격
+        if (Input.GetMouseButtonDown(0))
+        {
+            anim.SetTrigger("Attack");
         }
 
     }
