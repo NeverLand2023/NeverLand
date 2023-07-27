@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Inventory : MonoBehaviour
 {
     public static int invenFilled = 0;
-    public static GameObject[] invenArray = new GameObject[6];
+    public static Tuple<GameObject, GameObject>[] invenArray = new Tuple<GameObject, GameObject>[6];
     public static RectTransform[] transArray = new RectTransform[6];
 
     void Start()
@@ -21,16 +22,34 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        for (int i = 1; i <= 6; i++)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha0 + i))
+            {
+                int index = i - 1;
+
+                if (invenArray[index].Item2 != null)
+                {
+                    GameObject clickInven = Instantiate(invenArray[index].Item2, transform);
+                }                    
+            }
+        }
+    }
+
+    public static void InventorySend(GameObject invenObj, GameObject clickObj)
+    {
+        invenArray[invenFilled] = new Tuple<GameObject, GameObject>(invenObj, clickObj);
+        InventorySetting(true);
     }
 
     public static void InventorySetting(bool add)
     {
         if(add)
         {
-            GameObject newInven = Instantiate(invenArray[invenFilled], transArray[invenFilled].position, transArray[invenFilled].rotation);
+            GameObject newInven = Instantiate(invenArray[invenFilled].Item1, transArray[invenFilled].position, transArray[invenFilled].rotation);
             newInven.transform.SetParent(transArray[invenFilled]);
             invenFilled++;
         }
     }
+
 }

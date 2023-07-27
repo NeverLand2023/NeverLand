@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Box : MonoBehaviour
 {
@@ -9,13 +10,17 @@ public class Box : MonoBehaviour
 
     public GameObject NoteUI;
     public GameObject notePrefab;
+    public GameObject c_notePrefab;
+
+    private bool boxOpened = false;
     private bool extraDone = false;
 
     // Update is called once per frame
     void Update()
     {
-        if(playerEnter && Input.GetKeyDown(KeyCode.Space))
+        if(playerEnter && Input.GetKeyDown(KeyCode.Space) && !boxOpened)
         {
+            boxOpened = true;
             Debug.Log("Box" + boxNum + " Open");
             string BoxName = $"box{boxNum}Open";
             GameObject OpenBox = GameObject.Find(BoxName);
@@ -26,12 +31,6 @@ public class Box : MonoBehaviour
             StartCoroutine(MoveNoteUp(note));
         }
         
-    }
-
-    void InventorySend(GameObject obj)
-    {
-        Inventory.invenArray[Inventory.invenFilled] = obj;
-        Inventory.InventorySetting(true);
     }
 
     private IEnumerator MoveNoteUp(GameObject noteObject)
@@ -48,7 +47,7 @@ public class Box : MonoBehaviour
             yield return null;
         }
         Destroy(noteObject);
-        InventorySend(NoteUI);
+        Inventory.InventorySend(NoteUI, c_notePrefab);
 
         if(boxNum == 3 && !extraDone)
         {
