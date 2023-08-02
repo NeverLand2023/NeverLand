@@ -52,6 +52,10 @@ public class Main_Hook : MonoBehaviour
             spriter.flipX = inputVec.x < 0;
             anim.SetBool("isRun", true);
         }
+        else if(inputVec.y != 0)
+        {
+            anim.SetBool("isRun", true);
+        }
         else
         {
             anim.SetBool("isRun", false);
@@ -69,14 +73,14 @@ public class Main_Hook : MonoBehaviour
     void FixedUpdate()
     {
         //캐릭터 움직임
-        if (rigid.position.x >= 50)
+        if (rigid.position.x >= 100)
         {
-            rigid.position = new Vector2(50, transform.position.y);
+            rigid.position = new Vector2(100, transform.position.y);
 
         }
-        else if (rigid.position.x <= -50)
+        else if (rigid.position.x <= -100)
         {
-            rigid.position = new Vector2(-50, transform.position.y);
+            rigid.position = new Vector2(-100, transform.position.y);
         }
 
         Vector2 nextVec = inputVec.normalized * speed * Time.fixedDeltaTime;
