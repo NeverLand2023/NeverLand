@@ -28,25 +28,6 @@ public class Main_Hook : MonoBehaviour
         inputVec.y = Input.GetAxisRaw("Vertical");
 
         //움직임 애니메이션 구현
-/*        if (inputVec.x > 0)         //오른쪽 달리기
-        {
-            anim.SetBool("isRun", true);
-            anim.SetBool("isRunLeft", false);
-        }
-        else if (inputVec.x < 0)    //왼쪽 달리기
-        {
-            anim.SetBool("isRun", true);
-            anim.SetBool("isRunLeft", true);
-        }
-        else if (inputVec.y != 0)   //위아래로 달리기
-        {
-            anim.SetBool("isRun", true);
-        }
-        else                        //Idle
-        {
-            anim.SetBool("isRun", false);
-            //anim.SetBool("isRunLeft", false);
-        }*/
         if(inputVec.x != 0)
         {
             spriter.flipX = inputVec.x < 0;
