@@ -15,7 +15,6 @@ public class Snake_D : MonoBehaviour
     void Start()
     {
         canShoot = false;
-        //Attack();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

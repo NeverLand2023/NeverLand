@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("player damage");
+            GameManager.DecreaseHP(5f);
 
             Destroy(gameObject);
         }
