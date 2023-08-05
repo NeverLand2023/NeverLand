@@ -7,9 +7,6 @@ public class Fire : MonoBehaviour
 {
 
     private bool playerEnter = false;
-    static int fire = 0;
-    public TMP_Text text;
-
 
     void Start()
     {
@@ -20,9 +17,8 @@ public class Fire : MonoBehaviour
     {
         if (playerEnter && Input.GetKeyDown(KeyCode.Space))
         {
-            fire++;
-            text.text = fire.ToString();
-            Debug.Log(fire);
+            FireCount.fire++;
+            FireCount.fireAdd = true;
             Destroy(gameObject);
         }
     }
