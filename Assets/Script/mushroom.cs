@@ -1,67 +1,76 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System;
-
+using UnityEngine;
 
 public class mushroom : MonoBehaviour
 {
-    public float lightRangeIncrease = 3f;
-    public float lightOnDuration = 30f;
+    public Sprite desiredSprite; // 원하는 이미지를 Inspector 창에서 지정해주세요.
+    public float changeDuration = 30f; // 이미지 변경 지속 시간 (30초로 가정)
 
-    private bool playerNearby = false;
+    private Sprite originalSprite; // 원래 이미지
+    private SpriteRenderer spriteRenderer;
+    private float timeElapsed = 0f; // 이미지 변경 지속 시간 경과 시간
 
-    void Update()
+    public GameObject mushroonLight;
+
+
+    private void Start()
     {
-        if (playerNearby && Input.GetKeyDown(KeyCode.Return))
-        {
-            // 플레이어가 근처에 있고 엔터 키를 누르면 라이트를 켭니다.
-            TurnOnLights();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        originalSprite = spriteRenderer.sprite;
 
-            // 라이트를 켠 후, 지정된 시간이 지나면 라이트를 다시 끕니다.
-            Invoke("TurnOffLights", lightOnDuration);
+
+    }
+
+    private void Update()
+    {
+        // 플레이어 위치에서 일정 거리 내에 있는지 확인
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 2f);
+        bool playerNearby = false;
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.CompareTag("Player"))
+            {
+                playerNearby = true;
+                break;
+            }
+        }
+
+        if (playerNearby && Input.GetKeyDown(KeyCode.Space))
+        {
+            // 이미지 변경 함수 호출
+            ChangeImage();
+
+            // 라이트 
+            //mushroomLight.SetActive(false);
+
+        }
+
+        // 이미지가 변경된 후, 일정 시간이 지나면 원래 이미지로 복원
+        if (spriteRenderer.sprite == desiredSprite)
+        {
+            timeElapsed += Time.deltaTime;
+            if (timeElapsed >= changeDuration)
+            {
+                // 원래 이미지로 복원
+                spriteRenderer.sprite = originalSprite;
+                timeElapsed = 0f;
+
+                //mushroomLight.SetActive(false);
+
+
+            }
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    public void ChangeImage()
     {
-        if (other.CompareTag("Player"))
+        // 이미지를 원하는 이미지로 변경
+        if (desiredSprite != null)
         {
-            // 플레이어와 충돌 시 플레이어 근처에 있다고 표시합니다.
-            playerNearby = true;
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            // 플레이어와 충돌이 끝나면 플레이어 근처에서 벗어난 것으로 표시합니다.
-            playerNearby = false;
-        }
-    }
-
-    private void TurnOnLights()
-    {
-        // 물체 기준으로 주변에 있는 모든 조명 컴포넌트를 찾습니다.
-        Light[] lights = FindObjectsOfType<Light>();
-
-        // 각 조명 컴포넌트의 범위를 증가시킵니다.
-        foreach (Light light in lights)
-        {
-            light.range += lightRangeIncrease;
-        }
-    }
-
-    private void TurnOffLights()
-    {
-        // 물체 기준으로 주변에 있는 모든 조명 컴포넌트를 찾습니다.
-        Light[] lights = FindObjectsOfType<Light>();
-
-        // 각 조명 컴포넌트의 범위를 원래대로 복구시킵니다.
-        foreach (Light light in lights)
-        {
-            light.range -= lightRangeIncrease;
+            spriteRenderer.sprite = desiredSprite;
+            timeElapsed = 0f; // 이미지 변경 시 타이머 초기화
         }
     }
 }
