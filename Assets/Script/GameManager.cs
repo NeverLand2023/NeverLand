@@ -5,13 +5,12 @@ public class GameManager : MonoBehaviour
     // 싱글톤 인스턴스
     private static GameManager instance;
 
-    // 플레이어의 최대 HP
     public static float maxHP = 100;
-
-    // 현재 HP
     private static float currentHP;
 
-    // 싱글톤 인스턴스에 접근하기 위한 프로퍼티
+    public static int savePoint;
+    public static int missionNumber;
+
     public static GameManager Instance
     {
         get
@@ -73,8 +72,8 @@ public class GameManager : MonoBehaviour
         // 체력이 0보다 작거나 같으면 플레이어를 사망 처리
         if (currentHP <= 0)
         {
-            currentHP = 0;
             PlayerDeath();
+            currentHP = 0;
         }
     }
 
@@ -83,5 +82,9 @@ public class GameManager : MonoBehaviour
     {
         // 사망 처리 로직을 작성하면 됩니다. (예: 게임 종료, 리스폰 등)
         // 여기에 사망 처리를 구현하면 됩니다.
+        GameObject mainHookObject = GameObject.Find("Main_Hook");
+        Animator mainHookAnimator = mainHookObject.GetComponent<Animator>();
+        mainHookAnimator.SetBool("isDeath", true);
+
     }
 }

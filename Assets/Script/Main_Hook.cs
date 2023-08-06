@@ -14,11 +14,17 @@ public class Main_Hook : MonoBehaviour
 
     public TilemapCollider2D thorn;
 
+    public Vector2[] savePoints;
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriter = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+
+        int savePointValue = PlayerPrefs.GetInt("SavePointKey", 0);
+        transform.position = savePoints[savePointValue];
+
     }
 
     // Update is called once per frame
