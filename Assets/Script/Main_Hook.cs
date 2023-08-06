@@ -6,8 +6,6 @@ public class Main_Hook : MonoBehaviour
 {
     public Vector2 inputVec;
     public float speed;
-    public float maxHealth;
-    public float health;
 
     Rigidbody2D rigid;
     SpriteRenderer spriter;
@@ -67,5 +65,20 @@ public class Main_Hook : MonoBehaviour
         Vector2 nextVec = inputVec.normalized * speed * Time.fixedDeltaTime;
         rigid.MovePosition(rigid.position + nextVec);
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Monster"))
+        {
+            GameManager.DecreaseHP(10f);
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("main_hook_Attack"))
+        {
+
+        }
     }
 }
