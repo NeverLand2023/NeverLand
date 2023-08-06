@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Main_Hook : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Main_Hook : MonoBehaviour
     Rigidbody2D rigid;
     SpriteRenderer spriter;
     Animator anim;
+
+    public TilemapCollider2D thorn;
 
     void Awake()
     {
@@ -67,11 +70,17 @@ public class Main_Hook : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("Monster"))
+        Debug.Log("가시 닿음");
+        if (collision.gameObject.tag ==("Monster"))
         {
             GameManager.DecreaseHP(10f);
+        }
+        else if (collision.collider == thorn)
+        {
+            GameManager.DecreaseHP(10f);
+            Debug.Log("아야");
         }
     }
     private void OnTriggerStay2D(Collider2D collision)

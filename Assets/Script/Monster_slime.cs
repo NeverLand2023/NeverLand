@@ -134,9 +134,7 @@ public class Monster_slime : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
-        {
-            GameManager.DecreaseHP(10f);
-            Debug.Log("Ãæµ¹");
+        {           
 
             AttackPlayer();
 

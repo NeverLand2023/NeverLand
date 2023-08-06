@@ -5,27 +5,28 @@ using UnityEngine;
 
 public class mushroom : MonoBehaviour
 {
-    public Sprite desiredSprite; // ¿øÇÏ´Â ÀÌ¹ÌÁö¸¦ Inspector Ã¢¿¡¼­ ÁöÁ¤ÇØÁÖ¼¼¿ä.
-    public float changeDuration = 30f; // ÀÌ¹ÌÁö º¯°æ Áö¼Ó ½Ã°£ (30ÃÊ·Î °¡Á¤)
+    public Sprite desiredSprite; // ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ Inspector Ã¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.
+    public float changeDuration = 3f; // ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ (30ï¿½Ê·ï¿½ ï¿½ï¿½ï¿½ï¿½)
 
-    private Sprite originalSprite; // ¿ø·¡ ÀÌ¹ÌÁö
+    private Sprite originalSprite; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½
     private SpriteRenderer spriteRenderer;
-    private float timeElapsed = 0f; // ÀÌ¹ÌÁö º¯°æ Áö¼Ó ½Ã°£ °æ°ú ½Ã°£
+    private float timeElapsed = 0f; // ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
 
-    public GameObject mushroonLight;
+    private UnityEngine.Rendering.Universal.Light2D mushroomLight;
 
 
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalSprite = spriteRenderer.sprite;
-
+        mushroomLight = gameObject.GetComponent < UnityEngine.Rendering.Universal.Light2D > ();
+        mushroomLight.enabled = false;
 
     }
 
     private void Update()
     {
-        // ÇÃ·¹ÀÌ¾î À§Ä¡¿¡¼­ ÀÏÁ¤ °Å¸® ³»¿¡ ÀÖ´ÂÁö È®ÀÎ
+        // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ È®ï¿½ï¿½
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 2f);
         bool playerNearby = false;
         foreach (Collider2D collider in colliders)
@@ -39,25 +40,24 @@ public class mushroom : MonoBehaviour
 
         if (playerNearby && Input.GetKeyDown(KeyCode.Space))
         {
-            // ÀÌ¹ÌÁö º¯°æ ÇÔ¼ö È£Ãâ
+            // ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ È£ï¿½ï¿½
             ChangeImage();
 
-            // ¶óÀÌÆ® 
-            //mushroomLight.SetActive(false);
-
+            mushroomLight.enabled = true;
+            Debug.Log("Light On");
         }
 
-        // ÀÌ¹ÌÁö°¡ º¯°æµÈ ÈÄ, ÀÏÁ¤ ½Ã°£ÀÌ Áö³ª¸é ¿ø·¡ ÀÌ¹ÌÁö·Î º¹¿ø
+        // ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         if (spriteRenderer.sprite == desiredSprite)
         {
             timeElapsed += Time.deltaTime;
             if (timeElapsed >= changeDuration)
             {
-                // ¿ø·¡ ÀÌ¹ÌÁö·Î º¹¿ø
+                // ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 spriteRenderer.sprite = originalSprite;
                 timeElapsed = 0f;
 
-                //mushroomLight.SetActive(false);
+                mushroomLight.enabled = false;
 
 
             }
@@ -66,11 +66,11 @@ public class mushroom : MonoBehaviour
 
     public void ChangeImage()
     {
-        // ÀÌ¹ÌÁö¸¦ ¿øÇÏ´Â ÀÌ¹ÌÁö·Î º¯°æ
+        // ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         if (desiredSprite != null)
         {
             spriteRenderer.sprite = desiredSprite;
-            timeElapsed = 0f; // ÀÌ¹ÌÁö º¯°æ ½Ã Å¸ÀÌ¸Ó ÃÊ±âÈ­
+            timeElapsed = 0f; // ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Å¸ï¿½Ì¸ï¿½ ï¿½Ê±ï¿½È­
         }
     }
 }
