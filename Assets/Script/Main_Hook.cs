@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.SceneManagement;
+
 
 public class Main_Hook : MonoBehaviour
 {
@@ -14,7 +16,7 @@ public class Main_Hook : MonoBehaviour
 
     public TilemapCollider2D thorn;
 
-    public Vector2[] savePoints;
+    public Transform[] savePoints;
 
     void Awake()
     {
@@ -22,11 +24,9 @@ public class Main_Hook : MonoBehaviour
         spriter = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
 
-        int savePointValue = PlayerPrefs.GetInt("SavePointKey", 0);
-        transform.position = savePoints[savePointValue];
-
     }
 
+  
     // Update is called once per frame
     void Update()
     {
@@ -56,6 +56,14 @@ public class Main_Hook : MonoBehaviour
             anim.SetTrigger("Attack");
         }
 
+
+        if (GameManager.ContinueKey)
+        {
+            GameManager.ContinueKey = false;
+            float savePoint_x = PlayerPrefs.GetFloat("SavePoint_x");
+            float savePoint_y = PlayerPrefs.GetFloat("SavePoint_y");
+            transform.position = new Vector2(savePoint_x, savePoint_y);
+        }
     }
 
     void FixedUpdate()
@@ -95,5 +103,16 @@ public class Main_Hook : MonoBehaviour
         {
 
         }
+    }
+
+    public void PlayerDeath()
+    {
+        anim.SetBool("isDeath", true);
+    }
+
+    public void GameOverSceneLoad()
+    {
+        anim.SetBool("isDeath", false);
+        SceneManager.LoadScene("GameOver");
     }
 }

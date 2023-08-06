@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class GameManager : MonoBehaviour
 {
     // 싱글톤 인스턴스
@@ -9,7 +10,7 @@ public class GameManager : MonoBehaviour
     private static float currentHP;
 
     public static int savePoint;
-    public static int missionNumber;
+    public static bool ContinueKey = false;
 
     public static GameManager Instance
     {
@@ -72,19 +73,17 @@ public class GameManager : MonoBehaviour
         // 체력이 0보다 작거나 같으면 플레이어를 사망 처리
         if (currentHP <= 0)
         {
-            PlayerDeath();
+            GameObject mainHookObject = GameObject.Find("Main_Hook");
+            if (mainHookObject != null)
+            {
+                Main_Hook mainHook = mainHookObject.GetComponent<Main_Hook>();
+                if (mainHook != null)
+                {
+                    mainHook.PlayerDeath();
+                }
+            }
             currentHP = 0;
         }
-    }
+    }    
 
-    // 플레이어가 사망한 경우 처리하는 메서드
-    private static void PlayerDeath()
-    {
-        // 사망 처리 로직을 작성하면 됩니다. (예: 게임 종료, 리스폰 등)
-        // 여기에 사망 처리를 구현하면 됩니다.
-        GameObject mainHookObject = GameObject.Find("Main_Hook");
-        Animator mainHookAnimator = mainHookObject.GetComponent<Animator>();
-        mainHookAnimator.SetBool("isDeath", true);
-
-    }
 }
