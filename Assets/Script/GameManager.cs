@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -9,9 +10,11 @@ public class GameManager : MonoBehaviour
     public static float maxHP = 100;
     private static float currentHP;
 
-    public static int savePoint;
     public static bool ContinueKey = false;
 
+    //inventory
+    public static Tuple<GameObject, GameObject, string>[] invenArray = new Tuple<GameObject, GameObject, string>[6];
+    
     public static GameManager Instance
     {
         get

@@ -11,9 +11,9 @@ public class ClickedInventoryItem : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        if (time >= 5f)
+        if (time >= 3f)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

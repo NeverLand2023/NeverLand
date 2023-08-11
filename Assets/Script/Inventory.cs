@@ -6,7 +6,6 @@ using System;
 public class Inventory : MonoBehaviour
 {
     public static int invenFilled = 0;
-    public static Tuple<GameObject, GameObject>[] invenArray = new Tuple<GameObject, GameObject>[6];
     public static RectTransform[] transArray = new RectTransform[6];
 
     void Start()
@@ -28,17 +27,17 @@ public class Inventory : MonoBehaviour
             {
                 int index = i - 1;
 
-                if (invenArray[index].Item2 != null)
+                if (GameManager.invenArray[index].Item2 != null)
                 {
-                    GameObject clickInven = Instantiate(invenArray[index].Item2, transform);
+                    GameObject clickInven = Instantiate(GameManager.invenArray[index].Item2, transform);
                 }                    
             }
         }
     }
 
-    public static void InventorySend(GameObject invenObj, GameObject clickObj)
+    public static void InventorySend(GameObject invenObj, GameObject clickObj, string objName)
     {
-        invenArray[invenFilled] = new Tuple<GameObject, GameObject>(invenObj, clickObj);
+        GameManager.invenArray[invenFilled] = new Tuple<GameObject, GameObject, string>(invenObj, clickObj, objName);
         InventorySetting(true);
     }
 
@@ -46,7 +45,7 @@ public class Inventory : MonoBehaviour
     {
         if(add)
         {
-            GameObject newInven = Instantiate(invenArray[invenFilled].Item1, transArray[invenFilled].position, transArray[invenFilled].rotation);
+            GameObject newInven = Instantiate(GameManager.invenArray[invenFilled].Item1, transArray[invenFilled].position, transArray[invenFilled].rotation);
             newInven.transform.SetParent(transArray[invenFilled]);
             invenFilled++;
         }

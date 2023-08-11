@@ -14,6 +14,8 @@ public class Main_Hook : MonoBehaviour
     SpriteRenderer spriter;
     Animator anim;
 
+    public GameObject bossTree;
+
     public TilemapCollider2D thorn;
 
     public Transform[] savePoints;
@@ -86,7 +88,6 @@ public class Main_Hook : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("가시 닿음");
         if (collision.gameObject.tag ==("Monster"))
         {
             GameManager.DecreaseHP(10f);
@@ -94,7 +95,10 @@ public class Main_Hook : MonoBehaviour
         else if (collision.collider == thorn)
         {
             GameManager.DecreaseHP(10f);
-            Debug.Log("아야");
+        }
+        else if (collision.gameObject.tag == ("BossThorn"))
+        {
+            GameManager.DecreaseHP(30f);
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
@@ -102,6 +106,14 @@ public class Main_Hook : MonoBehaviour
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("main_hook_Attack"))
         {
 
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == ("BossArea"))
+        {
+            bossTree.SetActive(true);
         }
     }
 
@@ -113,6 +125,10 @@ public class Main_Hook : MonoBehaviour
     public void GameOverSceneLoad()
     {
         anim.SetBool("isDeath", false);
+        for (int i = 0; i < GameManager.invenArray.Length; i++)
+        {
+            GameManager.invenArray[i] = null;
+        }
         SceneManager.LoadScene("GameOver");
     }
 }
