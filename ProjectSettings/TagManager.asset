@@ -8,6 +8,7 @@ TagManager:
   - BossThorn
   - BossArea
   - PlayerAttack
+  - BossSlime
   layers:
   - Default
   - TransparentFX

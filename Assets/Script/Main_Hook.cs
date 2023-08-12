@@ -114,6 +114,10 @@ public class Main_Hook : MonoBehaviour
         {
             GameManager.DecreaseHP(30f);
         }
+        else if (collision.gameObject.tag == ("BossSlime"))
+        {
+            GameManager.DecreaseHP(20f);
+        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
