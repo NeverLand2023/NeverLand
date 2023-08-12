@@ -56,6 +56,7 @@ public class Main_Hook : MonoBehaviour
         {
             inputVec.x = 0;
             anim.SetTrigger("Attack");
+            ChangeAttackTag(); 
         }
 
 
@@ -85,6 +86,19 @@ public class Main_Hook : MonoBehaviour
         rigid.MovePosition(rigid.position + nextVec);
 
     }
+
+    void ChangeAttackTag()
+    {
+        gameObject.tag = "PlayerAttack"; // 플레이어 태그를 "PlayerAttack"으로 변경
+        Invoke("ResetTag", anim.GetCurrentAnimatorStateInfo(0).length);
+
+    }
+
+    void ResetTag()
+    {
+        gameObject.tag = "Player"; // 플레이어 태그를 다시 "Player"로 변경
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
