@@ -23,6 +23,7 @@ public class StartAtSavePoint : MonoBehaviour
         //게임매니저 초기화
 
         GameManager.ContinueKey = false;
+        GameManager.EatHealItem();
 
         SceneManager.LoadScene("Mission1");
     }
