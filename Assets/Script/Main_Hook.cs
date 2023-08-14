@@ -67,6 +67,11 @@ public class Main_Hook : MonoBehaviour
             float savePoint_y = PlayerPrefs.GetFloat("SavePoint_y");
             transform.position = new Vector2(savePoint_x, savePoint_y);
         }
+        if (GameManager.RestartKey)
+        {
+            GameManager.RestartKey = false;
+            transform.position = savePoints[0].position;
+        }
     }
 
     void FixedUpdate()

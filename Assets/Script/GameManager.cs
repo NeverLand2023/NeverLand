@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     private static float currentHP;
 
     public static bool ContinueKey = false;
+    public static bool RestartKey = false; 
 
     //inventory
     public static Tuple<GameObject, GameObject, string>[] invenArray = new Tuple<GameObject, GameObject, string>[6];
