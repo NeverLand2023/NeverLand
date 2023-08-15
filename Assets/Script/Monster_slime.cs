@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,7 +39,7 @@ public class Monster_slime : MonoBehaviour
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
- 
+
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -48,7 +49,7 @@ public class Monster_slime : MonoBehaviour
         originalPosition = transform.position;
     }
 
-    
+
 
     void FixedUpdate()
     {
@@ -127,7 +128,7 @@ public class Monster_slime : MonoBehaviour
             rigid.velocity = new Vector2(nextMove, rigid.velocity.y);
         }
         //원좌표에서 좌우 5만큼만 이동
-        
+
 
 
         // 플레이어와 충돌한 후 일정 시간이 지나면 공격 애니메이션 종료
@@ -146,13 +147,13 @@ public class Monster_slime : MonoBehaviour
         anim.SetInteger("walkspeed", nextMove);
         Debug.Log("걷는 애니메이션?");
 
-        
-        
+
+
 
 
 
         //슬라임이 보는 방향
-        if(nextMove != 0)
+        if (nextMove != 0)
         {
             spriteRenderer.flipX = nextMove == -1;
 
@@ -166,12 +167,12 @@ public class Monster_slime : MonoBehaviour
 
     void Update()
     {
-        if (isAttacking && !anim.GetCurrentAnimatorStateInfo(0).IsName("slime_attack"))
+       /* if (isAttacking && !anim.GetCurrentAnimatorStateInfo(0).IsName("slime_attack"))
         {
             // attack 애니메이션이 종료되었을 때 제약을 해제
-            
+
             isAttacking = false; // attack 애니메이션이 종료되었으므로 변수 초기화
-        }
+        }*/
     }
 
 
@@ -179,13 +180,17 @@ public class Monster_slime : MonoBehaviour
     // 플레이어와 충돌했을 때 호출되는 함수
 
     void OnCollisionEnter2D(Collision2D collision)
+
     {
+
+        rigid.constraints = RigidbodyConstraints2D.FreezePositionX;
         if (collision.gameObject.tag == "Player" && !isAttacking)
         {
+
             rigid.constraints = RigidbodyConstraints2D.FreezePositionX;
-            Debug.Log("아야");
+            
             isAttacking = true;
-            nextMove = 0;
+
             if (transform.position.x > player.transform.position.x)
             {
                 spriteRenderer.flipX = true;
@@ -213,11 +218,17 @@ public class Monster_slime : MonoBehaviour
                 anim.SetTrigger("die");
                 Invoke("Die", anim.GetCurrentAnimatorStateInfo(0).length);
             }
-                
+
         }
 
     }
 
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        isAttacking = false;
+        rigid.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+    }
 
 
 
@@ -229,19 +240,34 @@ public class Monster_slime : MonoBehaviour
 
         // 공격 애니메이션 실행
 
-        
+
         Debug.Log("몬스터가 플레이어를 공격");
 
         Invoke("ResetAttackAnimation", anim.GetCurrentAnimatorStateInfo(0).length);
+        StartCoroutine(CheckCollisionWhileAttacking());
+
 
 
 
     }
+
+    IEnumerator CheckCollisionWhileAttacking()
+    {
+        // 공격 애니메이션이 끝날 때까지 대기
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+
+        // 공격 애니메이션이 끝난 후에 플레이어와 충돌 중인지 확인
+        if (isAttacking && player != null)
+        {
+            // 플레이어와 충돌한 상태를 다시 확인하고 필요한 처리를 수행
+            OnCollisionEnter2D(new Collision2D()); // Collision2D에 실제 충돌 정보를 전달해야 함
+        }
+    }
     void ResetAttackAnimation()
     {
 
-        rigid.constraints = RigidbodyConstraints2D.None;
-        rigid.constraints = RigidbodyConstraints2D.FreezePositionY;
+        // x축 고정 해제
+
 
         anim.SetBool("attack", false);
         isAttacking = false; // attack 애니메이션이 종료되었으므로 변수 초기화
