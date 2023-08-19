@@ -30,6 +30,7 @@ public class Lier_trees : MonoBehaviour
                 else
                 {
                     GameObject.Find("Main_Hook").transform.position = new Vector2(10, 129);
+                    SoundManager.instance.playSFX(SoundManager.SFX.°ÅÁş¸»ÀïÀÌ³ª¹«_Æ²·ÈÀ»¶§, false);
                     lier_tree1 = -1;
                     lier_tree4 = -1;
                     count = 0;

@@ -56,7 +56,8 @@ public class Main_Hook : MonoBehaviour
         {
             inputVec.x = 0;
             anim.SetTrigger("Attack");
-            ChangeAttackTag(); 
+            ChangeAttackTag();
+            SoundManager.instance.playSFX(SoundManager.SFX.후크공격, false);
         }
 
 
@@ -154,4 +155,11 @@ public class Main_Hook : MonoBehaviour
         }
         SceneManager.LoadScene("GameOver");
     }
+
+   public void MainHookRunStart()
+    {
+        SoundManager.instance.playSFX(SoundManager.SFX.걷는소리, false);
+
+    }
+
 }
