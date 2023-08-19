@@ -15,14 +15,15 @@ public class Monster_slime : MonoBehaviour
     public float distance;
 
     public int slimeHp = 100;
+    private bool playerEnter = false;
 
 
     // 행동을 결정하는데 사용할 변수 nextMove
     public int nextMove;
     public bool attack = false;
-    //public bool damaged= false;
-
-
+    
+ 
+    
     // 몬스터 원래 좌표
     private Vector2 originalPosition;
 
@@ -49,7 +50,15 @@ public class Monster_slime : MonoBehaviour
         originalPosition = transform.position;
     }
 
+   /* private void Update()
+    {
+        if (distance < 2)
+        {
+            anim.SetBool("attack", true);
+            AttackPlayer();
 
+        }
+    }*/
 
     void FixedUpdate()
     {
@@ -57,7 +66,18 @@ public class Monster_slime : MonoBehaviour
         float distanceFromOriginal = Vector2.Distance(originalPosition, transform.position);
 
         float distance = Vector2.Distance(player.transform.position, transform.position);
-        Debug.Log("거리값");
+
+        if (distance < 2)
+        {
+            anim.SetBool("attack", true);
+            rigid.constraints = RigidbodyConstraints2D.FreezePositionX;
+            if (!isAttacking)
+            {
+                SoundManager.instance.slimeattacksound.Play();
+            }
+            AttackPlayer();
+
+        }
 
         anim.SetInteger("walkspeed", nextMove);
 
@@ -77,7 +97,7 @@ public class Monster_slime : MonoBehaviour
                 if (transform.position.x > player.transform.position.x)
                 {
                     spriteRenderer.flipX = true;
-                    Debug.Log("왼쪽 발견");
+                   
                     nextMove = -2;
 
 
@@ -85,7 +105,7 @@ public class Monster_slime : MonoBehaviour
                 else
                 {
                     spriteRenderer.flipX = false;
-                    Debug.Log("오른쪽 발견");
+                    
                     nextMove = 2;
                 }
             }
@@ -103,14 +123,14 @@ public class Monster_slime : MonoBehaviour
 
                     if (nextMove == -1)
                     {
-                        Debug.Log("오른쪽->왼쪽");
+                        
                         spriteRenderer.flipX = nextMove == -1;
 
 
                     }
                     else
                     {
-                        Debug.Log("왼쪽->오른쪽");
+                        
                         spriteRenderer.flipX = nextMove == -1;
 
                     }
@@ -124,18 +144,10 @@ public class Monster_slime : MonoBehaviour
         {
             nextMove = -nextMove;
             spriteRenderer.flipX = nextMove == -1;
-            Debug.Log("되돌아감");
+            
             rigid.velocity = new Vector2(nextMove, rigid.velocity.y);
         }
-        //원좌표에서 좌우 5만큼만 이동
-
-
-
-        // 플레이어와 충돌한 후 일정 시간이 지나면 공격 애니메이션 종료
-        /*if (Time.time - lastAttackTime >= attackAnimationDuration)
-        {
-            anim.SetBool("attack", false);
-        }*/
+      
     }
 
     public void notFindPlayer()
@@ -145,11 +157,6 @@ public class Monster_slime : MonoBehaviour
 
 
         anim.SetInteger("walkspeed", nextMove);
-        Debug.Log("걷는 애니메이션?");
-
-
-
-
 
 
         //슬라임이 보는 방향
@@ -165,49 +172,78 @@ public class Monster_slime : MonoBehaviour
 
     }
 
-    void Update()
+    private IEnumerator DeathCoroutine()
     {
-       /* if (isAttacking && !anim.GetCurrentAnimatorStateInfo(0).IsName("slime_attack"))
-        {
-            // attack 애니메이션이 종료되었을 때 제약을 해제
-
-            isAttacking = false; // attack 애니메이션이 종료되었으므로 변수 초기화
-        }*/
+        SoundManager.instance.slimediesound.Play();
+        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+        gameObject.SetActive(false);
     }
 
+    void Update()
+    {
+        
+
+        if (playerEnter)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                anim.SetBool("attack", false);
+                
+                slimeHp -= 35;
+                anim.SetTrigger("hurt");
 
 
+            }
+        }
+
+        //슬라임 죽음
+        if (slimeHp <= 0)
+        {
+            anim.SetBool("die", true);
+            StartCoroutine(DeathCoroutine());
+        }
+    }
+
+    void wait()
+    {
+
+    }
     // 플레이어와 충돌했을 때 호출되는 함수
 
     void OnCollisionEnter2D(Collision2D collision)
 
     {
-
-        rigid.constraints = RigidbodyConstraints2D.FreezePositionX;
-        if (collision.gameObject.tag == "Player" && !isAttacking)
+        if (collision.gameObject.tag == ("Player"))
         {
-
-            rigid.constraints = RigidbodyConstraints2D.FreezePositionX;
-            
-            isAttacking = true;
-
-            if (transform.position.x > player.transform.position.x)
-            {
-                spriteRenderer.flipX = true;
-
-            }
-            else
-            {
-                spriteRenderer.flipX = false;
-            }
-            anim.SetBool("attack", true);
-
-
-            AttackPlayer();
-
-
+            playerEnter = true;
         }
-        else if (collision.gameObject.tag == "PlayerAttack" && !isAttacking)
+
+
+        /* rigid.constraints = RigidbodyConstraints2D.FreezePositionX;
+         if (collision.gameObject.tag == "Player" && !isAttacking)
+         {
+
+             rigid.constraints = RigidbodyConstraints2D.FreezePositionX;
+
+             isAttacking = true;
+
+             if (transform.position.x > player.transform.position.x)
+             {
+                 spriteRenderer.flipX = true;
+
+             }
+             else
+             {
+                 spriteRenderer.flipX = false;
+             }
+             anim.SetBool("attack", true);
+
+
+             AttackPlayer();
+
+
+         }*/
+        /*else if (collision.gameObject.tag == "PlayerAttack" && !isAttacking)
         {
             anim.SetTrigger("hurt");
             slimeHp -= 35;
@@ -219,15 +255,20 @@ public class Monster_slime : MonoBehaviour
                 Invoke("Die", anim.GetCurrentAnimatorStateInfo(0).length);
             }
 
-        }
+        }*/
 
     }
 
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        isAttacking = false;
-        rigid.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+        
+        if (collision.gameObject.tag == ("Player"))
+        {
+            playerEnter = false;
+            isAttacking = false;
+            //rigid.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+        }
     }
 
 
@@ -235,16 +276,14 @@ public class Monster_slime : MonoBehaviour
     // 플레이어 공격 함수
     void AttackPlayer()
     {
-        // 플레이어와 충돌한 시간 기록
-        //lastAttackTime = Time.time;
-
-        // 공격 애니메이션 실행
+       
 
 
         Debug.Log("몬스터가 플레이어를 공격");
-
+        
+        
         Invoke("ResetAttackAnimation", anim.GetCurrentAnimatorStateInfo(0).length);
-        StartCoroutine(CheckCollisionWhileAttacking());
+        //StartCoroutine(CheckCollisionWhileAttacking());
 
 
 
@@ -253,8 +292,8 @@ public class Monster_slime : MonoBehaviour
 
     IEnumerator CheckCollisionWhileAttacking()
     {
-        // 공격 애니메이션이 끝날 때까지 대기
-        yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+        //3초 대기
+        yield return new WaitForSeconds(3);
 
         // 공격 애니메이션이 끝난 후에 플레이어와 충돌 중인지 확인
         if (isAttacking && player != null)
@@ -267,9 +306,10 @@ public class Monster_slime : MonoBehaviour
     {
 
         // x축 고정 해제
-
+        rigid.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
 
         anim.SetBool("attack", false);
+
         isAttacking = false; // attack 애니메이션이 종료되었으므로 변수 초기화
     }
 
