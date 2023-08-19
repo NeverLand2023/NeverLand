@@ -19,6 +19,6 @@ public class TitleScene : MonoBehaviour
 
     public void StartBtn()
     {
-        SceneManager.LoadScene("home");
+        SceneManager.LoadScene("news");
     }
 }
