@@ -9,6 +9,7 @@ public class BossTree : MonoBehaviour
 
     public GameObject bossThorn;
     public GameObject playerHook;
+    public GameObject Box3;
     public int numberOfThorns = 10;
     public Vector2 xRange = new Vector2(-21f, 2f);
     public Vector2 yRange = new Vector2(172f, 183f);
@@ -85,6 +86,7 @@ public class BossTree : MonoBehaviour
                 case State.Dead:
                     if (deadDone)
                     {
+                        Box3.SetActive(true);
                         Destroy(gameObject);
                     }
                     break;
