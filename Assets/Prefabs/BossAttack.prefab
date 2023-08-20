@@ -122,7 +122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 7019164904362110267}
-  thorn: {fileID: 1221056242793150767}
 --- !u!61 &7019164904362110262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -160,8 +159,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5b7bf60154b04a545b44dc134eac17cd, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.113
+  m_PlayOnAwake: 1
+  m_Volume: 0.386
   m_Pitch: 1
   Loop: 0
   Mute: 0
