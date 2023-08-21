@@ -12,6 +12,8 @@ public class Snake_U : MonoBehaviour
 
     private bool canShoot;
 
+    public AudioSource attckSound;
+
     void Start()
     {
         canShoot = false;
@@ -45,6 +47,7 @@ public class Snake_U : MonoBehaviour
             Rigidbody2D rb2d = bullet.GetComponent<Rigidbody2D>();
             if (rb2d != null)
             {
+                attckSound.Play();
                 rb2d.AddForce(transform.up * shootForce, ForceMode2D.Impulse);
             }
 

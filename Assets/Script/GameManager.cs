@@ -15,7 +15,9 @@ public class GameManager : MonoBehaviour
 
     //inventory
     public static Tuple<GameObject, GameObject, string>[] invenArray = new Tuple<GameObject, GameObject, string>[6];
-    
+
+    public static AudioSource healSound;
+
     public static GameManager Instance
     {
         get
@@ -47,6 +49,8 @@ public class GameManager : MonoBehaviour
     {
         // 시작 시 플레이어의 HP를 최대 HP로 초기화
         currentHP = maxHP;
+
+        healSound = GetComponent<AudioSource>();
     }
 
     // 현재 HP를 반환하는 메서드
@@ -55,17 +59,9 @@ public class GameManager : MonoBehaviour
         return currentHP;
     }
 
-    /*// 플레이어의 HP를 증가시키는 메서드
-    public void IncreaseHP(int amount)
-    {
-        currentHP += amount;
-
-        // 최대 HP를 넘지 않도록 제한
-        currentHP = Mathf.Clamp(currentHP, 0, maxHP);
-    }*/
-
     public static void EatHealItem()
     {
+        healSound.Play();
         currentHP = maxHP;
     }
 

@@ -20,6 +20,8 @@ public class Main_Hook : MonoBehaviour
 
     public Transform[] savePoints;
 
+    public static bool attackAvailable = true;
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -52,7 +54,7 @@ public class Main_Hook : MonoBehaviour
         }
 
         //АјАн
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && attackAvailable)
         {
             inputVec.x = 0;
             anim.SetTrigger("Attack");
