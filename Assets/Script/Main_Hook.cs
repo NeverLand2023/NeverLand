@@ -22,6 +22,8 @@ public class Main_Hook : MonoBehaviour
 
     public static bool attackAvailable = true;
 
+    public AudioClip Thud;
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -30,7 +32,7 @@ public class Main_Hook : MonoBehaviour
 
     }
 
-  
+
     // Update is called once per frame
     void Update()
     {
@@ -39,12 +41,12 @@ public class Main_Hook : MonoBehaviour
         inputVec.y = Input.GetAxisRaw("Vertical");
 
         //움직임 애니메이션 구현
-        if(inputVec.x != 0)
+        if (inputVec.x != 0)
         {
             spriter.flipX = inputVec.x < 0;
             anim.SetBool("isRun", true);
         }
-        else if(inputVec.y != 0)
+        else if (inputVec.y != 0)
         {
             anim.SetBool("isRun", true);
         }
@@ -110,8 +112,8 @@ public class Main_Hook : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-  
-        if (collision.gameObject.tag ==("Monster"))
+
+        if (collision.gameObject.tag == ("Monster"))
         {
             GameManager.DecreaseHP(10f);
             anim.SetTrigger("Hurt");
@@ -163,10 +165,14 @@ public class Main_Hook : MonoBehaviour
         SceneManager.LoadScene("GameOver");
     }
 
-   public void MainHookRunStart()
+    public void MainHookRunStart()
     {
         SoundManager.instance.playSFX(SoundManager.SFX.걷는소리, false);
 
     }
 
+    void thud()
+    {
+        AudioSource.PlayClipAtPoint(Thud, Camera.main.transform.position);
+    }
 }
