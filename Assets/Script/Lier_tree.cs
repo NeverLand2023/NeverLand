@@ -22,11 +22,12 @@ public class Lier_tree : MonoBehaviour
             spriter.color = new Color32(255, 255, 255, 255);
         }
     }
-    private void OnCollisionStay2D(Collision2D collision)
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if(state == 0)
+            if (state == 0)
             {
                 state = 1;
                 spriter.color = new Color32(100, 100, 100, 255);
@@ -55,6 +56,5 @@ public class Lier_tree : MonoBehaviour
                 GetComponentInParent<Lier_trees>().count--;
             }
         }
-
     }
 }

@@ -30,6 +30,7 @@ public class Inventory : MonoBehaviour
                 if (GameManager.invenArray[index].Item2 != null)
                 {
                     GameObject clickInven = Instantiate(GameManager.invenArray[index].Item2, transform);
+                    SoundManager.instance.playSFX(SoundManager.SFX.종이_펼치기, false);
                 }                    
             }
         }

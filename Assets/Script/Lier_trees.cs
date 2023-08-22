@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Lier_trees : MonoBehaviour
 {
+    public GameObject box1;
     public int lier_tree1 = -1;
     public int lier_tree4 = -1;
     public int count = 0;
@@ -25,7 +26,7 @@ public class Lier_trees : MonoBehaviour
             {
                 if (lier_tree1 == 1 && lier_tree4 == 1)
                 {
-
+                    box1.SetActive(true);
                 }
                 else
                 {

@@ -27,6 +27,7 @@ public class Box : MonoBehaviour
         if(playerEnter && Input.GetKeyDown(KeyCode.Space) && !boxOpened)
         {
             boxOpened = true;
+            SoundManager.instance.playSFX(SoundManager.SFX.보물상자, false);
             Debug.Log("Box" + boxNum + " Open");
             string BoxName = $"box{boxNum}Open";
             GameObject OpenBox = GameObject.Find(BoxName);

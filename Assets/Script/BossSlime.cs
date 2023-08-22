@@ -59,6 +59,7 @@ public class BossSlime : MonoBehaviour
         if(bossHp <= 0)
         {
             anim.SetBool("isDeath", true);
+            SoundManager.instance.bossSlimeDeadSound.Play();
             time2 += Time.deltaTime;
             if(time2 > 2)
             {
@@ -107,4 +108,10 @@ public class BossSlime : MonoBehaviour
             playerEnter = false;
         }
     }
+
+    private void AttackAnimationStart()
+    {
+        SoundManager.instance.bossSlimeAttackSound.Play();
+    }
 }
+

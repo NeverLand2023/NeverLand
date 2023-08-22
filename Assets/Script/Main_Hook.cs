@@ -110,21 +110,26 @@ public class Main_Hook : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+  
         if (collision.gameObject.tag ==("Monster"))
         {
             GameManager.DecreaseHP(10f);
+            anim.SetTrigger("Hurt");
         }
         else if (collision.collider == thorn)
         {
             GameManager.DecreaseHP(10f);
+            anim.SetTrigger("Hurt");
         }
         else if (collision.gameObject.tag == ("BossThorn"))
         {
             GameManager.DecreaseHP(30f);
+            anim.SetTrigger("Hurt");
         }
         else if (collision.gameObject.tag == ("BossSlime"))
         {
             GameManager.DecreaseHP(20f);
+            anim.SetTrigger("Hurt");
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
