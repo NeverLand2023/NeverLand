@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,10 +67,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: news_talk_0
+      name: news_talk_1
       rect:
         serializedVersion: 2
         x: 0
@@ -113,35 +113,14 @@ TextureImporter:
         width: 4000
         height: 2250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cbccba6c72c91144acc90c9f1007adc
-      internalID: -1056842915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: news_talk_1
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 0
-        width: 4000
-        height: 2250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44a9a7cc9a09fa84c9a5a8171cc39de0
-      internalID: 910504096
+      spriteID: fcb47f651ff088540b006f9c7a12898c
+      internalID: 1278682133
       vertices: []
       indices: 
       edges: []
@@ -150,19 +129,19 @@ TextureImporter:
       name: news_talk_2
       rect:
         serializedVersion: 2
-        x: 8000
+        x: 4000
         y: 0
         width: 4000
         height: 2250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87674d17fa20be646b4c9e7969c4184b
-      internalID: -2086094257
+      spriteID: cb57dce9ae2298e449538bafa7969ccf
+      internalID: -433906680
       vertices: []
       indices: 
       edges: []
@@ -171,19 +150,19 @@ TextureImporter:
       name: news_talk_3
       rect:
         serializedVersion: 2
-        x: 12000
+        x: 8000
         y: 0
         width: 4000
         height: 2250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eceaeede4ab36c94c801ee3b55172c2b
-      internalID: -851003205
+      spriteID: c1636b939e2670447aba424820d7a288
+      internalID: -192766036
       vertices: []
       indices: 
       edges: []
@@ -192,19 +171,19 @@ TextureImporter:
       name: news_talk_4
       rect:
         serializedVersion: 2
-        x: 16000
+        x: 12000
         y: 0
         width: 4000
         height: 2250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32af2bffc5d0d87418f5ac9bf6da01b4
-      internalID: 1411813289
+      spriteID: 0977bc039c3a8b142b2bc13ace36a39c
+      internalID: -2080101145
       vertices: []
       indices: 
       edges: []
@@ -213,19 +192,19 @@ TextureImporter:
       name: news_talk_5
       rect:
         serializedVersion: 2
-        x: 20000
+        x: 16000
         y: 0
         width: 4000
         height: 2250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eea388180274e924ca22975ef6db4258
-      internalID: -959749755
+      spriteID: 208a85eb7c861ac439a8a10dcf11aca1
+      internalID: 1585954270
       vertices: []
       indices: 
       edges: []
@@ -234,19 +213,40 @@ TextureImporter:
       name: news_talk_6
       rect:
         serializedVersion: 2
-        x: 24000
+        x: 20000
         y: 0
         width: 4000
         height: 2250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45d9b3f4874ea0c4aab32038bed17a28
-      internalID: 2140163461
+      spriteID: 5666a82841dc9934a994f0570f0a116d
+      internalID: -838724513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: news_talk_7
+      rect:
+        serializedVersion: 2
+        x: 24000
+        y: 0
+        width: 4000
+        height: 2250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bca2dd223fde4469c789b9e5a2ae6d
+      internalID: 45029728
       vertices: []
       indices: 
       edges: []
@@ -262,13 +262,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      news_talk_0: -1056842915
-      news_talk_1: 910504096
-      news_talk_2: -2086094257
-      news_talk_3: -851003205
-      news_talk_4: 1411813289
-      news_talk_5: -959749755
-      news_talk_6: 2140163461
+      news_talk_0: -1184667084
+      news_talk_1: 1278682133
+      news_talk_2: -433906680
+      news_talk_3: -192766036
+      news_talk_4: -2080101145
+      news_talk_5: 1585954270
+      news_talk_6: -838724513
+      news_talk_7: 45029728
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

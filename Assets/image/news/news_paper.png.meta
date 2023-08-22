@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: news_paper_1
+      name: news_paper_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f24792c89ac81374a81f842067bfbab5
-      internalID: 448400862
+      spriteID: 3ce771515b2d8b147bf4f4c6a28cee80
+      internalID: -1393307437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: news_paper_2
+      name: news_paper_1
       rect:
         serializedVersion: 2
         x: 4000
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72b0ff62face9004e8b98b36e7a8cd9b
-      internalID: -784539460
+      spriteID: e00561e2474a03b46b8f74fc2521ffcb
+      internalID: 1771628078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: news_paper_0
+      name: news_paper_2
       rect:
         serializedVersion: 2
         x: 8000
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd2bcec63e8658946b75d0759318547f
-      internalID: 1798441709
+      spriteID: b933f5b6fc4524d4290b9b8626ffa22c
+      internalID: 2005788088
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0835024f35faf164d9f7fc4d2e5995e1
-      internalID: 1090365504
+      spriteID: a1c5939ae709b164da03754d1a1a4a99
+      internalID: -1616549508
       vertices: []
       indices: 
       edges: []
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cc9c3d29b0548b4e8e8ad22cb172b4d
-      internalID: -1619755129
+      spriteID: ae7e76adb708817469de461c31501e6e
+      internalID: -2058941660
       vertices: []
       indices: 
       edges: []
@@ -220,11 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      news_paper_0: 1798441709
-      news_paper_1: 448400862
-      news_paper_2: -784539460
-      news_paper_3: 1090365504
-      news_paper_4: -1619755129
+      news_paper_0: -1393307437
+      news_paper_1: 1771628078
+      news_paper_2: 2005788088
+      news_paper_3: -1616549508
+      news_paper_4: -2058941660
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
