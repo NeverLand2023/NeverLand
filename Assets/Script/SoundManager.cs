@@ -9,6 +9,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource slimediesound;
     public AudioSource bossSlimeAttackSound;
     public AudioSource bossSlimeDeadSound;
+    public AudioSource earthquakesound;
 
     [Header("#BGM")]    //bgm
     public AudioClip[] bgmClip;

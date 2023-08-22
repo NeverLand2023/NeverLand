@@ -30,7 +30,8 @@ public class Camerashake : MonoBehaviour
         {
             StartCoroutine(ShakeCoroutine());
             shakeStartTime = Time.time;
-            Debug.Log("변수 초기화");
+            Debug.Log("소리 재생");
+            SoundManager.instance.earthquakesound.Play();
             earthquake = true;
 
         }
@@ -70,6 +71,7 @@ public class Camerashake : MonoBehaviour
     {
         while(Quaternion.Angle(transform.rotation, m_originRot)>0f)
         {
+            SoundManager.instance.earthquakesound.Stop();
             transform.rotation = Quaternion.RotateTowards(transform.rotation, m_originRot, m_force * Time.deltaTime);
             yield return null;   
         }

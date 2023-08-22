@@ -70,7 +70,7 @@ public class Monster_slime : MonoBehaviour
         if (distance < 2)
         {
             anim.SetBool("attack", true);
-            rigid.constraints = RigidbodyConstraints2D.FreezePositionX;
+            //rigid.constraints = RigidbodyConstraints2D.FreezePositionX;
             if (!isAttacking)
             {
                 SoundManager.instance.slimeattacksound.Play();
@@ -216,6 +216,7 @@ public class Monster_slime : MonoBehaviour
         if (collision.gameObject.tag == ("Player"))
         {
             playerEnter = true;
+            rigid.constraints = RigidbodyConstraints2D.FreezeAll;
         }
 
 
@@ -267,6 +268,7 @@ public class Monster_slime : MonoBehaviour
         {
             playerEnter = false;
             isAttacking = false;
+            rigid.constraints = ~RigidbodyConstraints2D.FreezePositionX;
             //rigid.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
         }
     }
