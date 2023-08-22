@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -11,10 +12,12 @@ public class GameManager : MonoBehaviour
     private static float currentHP;
 
     public static bool ContinueKey = false;
-    public static bool RestartKey = false; 
+    public static bool RestartKey = false;
 
     //inventory
     public static Tuple<GameObject, GameObject, string>[] invenArray = new Tuple<GameObject, GameObject, string>[6];
+    public List<GameObject> invenObjects = new List<GameObject>();
+    public List<GameObject> clickObjects = new List<GameObject>();
 
     public static AudioSource healSound;
 
@@ -43,6 +46,13 @@ public class GameManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
+
+        if (ContinueKey)
+        {
+            Debug.Log("Inven");
+            Inventory.InventoryStart();
+            LoadInventory();
+        }
     }
 
     private void Start()
@@ -51,6 +61,8 @@ public class GameManager : MonoBehaviour
         currentHP = maxHP;
 
         healSound = GetComponent<AudioSource>();
+
+
     }
 
     // 현재 HP를 반환하는 메서드
@@ -84,6 +96,35 @@ public class GameManager : MonoBehaviour
             }
             currentHP = 0;
         }
-    }    
+    }
+
+    public void LoadInventory()
+    {
+        Debug.Log("InvenFilling");
+        Inventory.invenFilled = 0;
+        int invenNumber = PlayerPrefs.GetInt("InvenFilled");
+
+        for (int i = 0; i < invenNumber; i++)
+        {
+            string itemName = PlayerPrefs.GetString("Inventory_" + (i).ToString());
+            if (itemName == "NumberNote0")
+            {
+                Inventory.InventorySend(invenObjects[0], clickObjects[2], "NumberNote0");
+            }
+            else if (itemName == "NumberNote2")
+            {
+                Inventory.InventorySend(invenObjects[0], clickObjects[1], "NumberNote2");
+            }
+            else if (itemName == "NumberNote6")
+            {
+                Inventory.InventorySend(invenObjects[0], clickObjects[0], "NumberNote6");
+            }
+            else if (itemName == "DiaryNote0")
+            {
+                Inventory.InventorySend(invenObjects[1], clickObjects[3], "DiaryNote0");
+            }
+        }
+    }
+
 
 }

@@ -36,10 +36,11 @@ public class SavePoint : MonoBehaviour
             PlayerPrefs.SetFloat("SavePoint_x", transform.position.x);
             PlayerPrefs.SetFloat("SavePoint_y", transform.position.y);
 
-            /*for(int i=0; i<Inventory.invenFilled; i++)
+            for(int i=0; i<Inventory.invenFilled; i++)
             {
-                PlayerPrefs.SetString("Inventory_" + (i+1).ToString(), GameManager.invenArray[i+1].Item3);
-            }*/
+                PlayerPrefs.SetString("Inventory_" + (i).ToString(), GameManager.invenArray[i].Item3);
+            }
+            PlayerPrefs.SetInt("InvenFilled", Inventory.invenFilled);
 
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
             if (spriteRenderer != null)

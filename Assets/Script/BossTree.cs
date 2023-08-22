@@ -125,8 +125,8 @@ public class BossTree : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("50 ±ðÀÓ");
-                bossHp -= 50;
+                Debug.Log("20 ±ðÀÓ");
+                bossHp -= 20;
             }
         }
     }

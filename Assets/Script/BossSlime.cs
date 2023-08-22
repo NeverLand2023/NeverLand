@@ -8,6 +8,7 @@ public class BossSlime : MonoBehaviour
     Animator anim;
 
     public GameObject player;
+    public GameObject BossEntry;
 
     public float distance;
     float time = 0f;
@@ -63,6 +64,7 @@ public class BossSlime : MonoBehaviour
             time2 += Time.deltaTime;
             if(time2 > 2)
             {
+                BossEntry.SetActive(false);
                 gameObject.SetActive(false);
             }
         }

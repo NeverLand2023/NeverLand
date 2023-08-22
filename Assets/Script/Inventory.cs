@@ -10,12 +10,7 @@ public class Inventory : MonoBehaviour
 
     void Start()
     {
-        for(int i=1; i<7; i++)
-        {
-            string invenName = $"Inventory{i}";
-            GameObject inven= GameObject.Find(invenName);
-            transArray[i-1] = inven.GetComponent<RectTransform>();
-        }
+        InventoryStart();
     }
 
     // Update is called once per frame
@@ -35,21 +30,30 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+    public static void InventoryStart()
+    {
+        for (int i = 1; i < 7; i++)
+        {
+            string invenName = $"Inventory{i}";
+            GameObject inven = GameObject.Find(invenName);
+            transArray[i - 1] = inven.GetComponent<RectTransform>();
+        }
+    }
 
     public static void InventorySend(GameObject invenObj, GameObject clickObj, string objName)
     {
         GameManager.invenArray[invenFilled] = new Tuple<GameObject, GameObject, string>(invenObj, clickObj, objName);
-        InventorySetting(true);
+        Debug.Log(invenFilled + objName);
+        InventorySetting();
     }
 
-    public static void InventorySetting(bool add)
+    public static void InventorySetting()
     {
-        if(add)
-        {
-            GameObject newInven = Instantiate(GameManager.invenArray[invenFilled].Item1, transArray[invenFilled].position, transArray[invenFilled].rotation);
-            newInven.transform.SetParent(transArray[invenFilled]);
-            invenFilled++;
-        }
+        GameObject newInven = Instantiate(GameManager.invenArray[invenFilled].Item1, transArray[invenFilled].position, transArray[invenFilled].rotation);
+        newInven.transform.SetParent(transArray[invenFilled]);
+        invenFilled++;
+        Debug.Log(invenFilled);
+
     }
 
 }
