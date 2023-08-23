@@ -9,6 +9,7 @@ public class FireCount : MonoBehaviour
     public static bool fireAdd = false;
     public GameObject[] EmptyFires;
     public AudioSource fireSound;
+    public Transform player;
 
     void Update()
     {
@@ -17,6 +18,11 @@ public class FireCount : MonoBehaviour
             fireSound.Play();
             EmptyFires[fire - 1].SetActive(false);
             fireAdd = false;
+        }
+        if (player.position.y > 95)
+        {
+            this.gameObject.SetActive(false);
+            fire = 0;
         }
     }
 }
