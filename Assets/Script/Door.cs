@@ -11,6 +11,7 @@ public class Door : MonoBehaviour
     public AudioSource DoorOpen;
 
     public Tilemap tilemap;
+    public Tilemap tilemap2;
     public float fadeSpeed = 7f;
 
     private bool PlayerIn;
@@ -30,10 +31,12 @@ public class Door : MonoBehaviour
         if (isShowing)
         {
             tilemap.color = new Color(1f, 1f, 1f, Mathf.MoveTowards(tilemap.color.a, 0f, fadeSpeed * Time.deltaTime));
-            if (tilemap.color.a == 0f)
+            tilemap2.color = new Color(1f, 1f, 1f, Mathf.MoveTowards(tilemap.color.a, 0f, fadeSpeed * Time.deltaTime));
+            if (tilemap.color.a == 0f&& tilemap2.color.a == 0f)
             {
                 Destroy(gameObject);
             }
+
         }
     }
 
