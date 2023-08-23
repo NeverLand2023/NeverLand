@@ -964,14 +964,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284a8f37cb0bfe84fb6e2ac77c1f83da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenObjects:
-  - {fileID: 1900886118521608990, guid: b4fc4ad5a071e52409801a6b87593714, type: 3}
-  - {fileID: 1900886118521608990, guid: f6b4be9165ec0db448474aa6e1e6d8c8, type: 3}
-  clickObjects:
-  - {fileID: 2422567299769193588, guid: 12d4e43a71a2e6e44858ba8137d07d83, type: 3}
-  - {fileID: 2422567299769193588, guid: 9220062ac4369394e85a92dfccb9cad4, type: 3}
-  - {fileID: 2422567299769193588, guid: 4b7ea6c581d8ebb4aa18e7a1f3f465eb, type: 3}
-  - {fileID: 2422567299769193588, guid: c5d83418935c2a64ca4176a8804e29f2, type: 3}
 --- !u!1 &1724942224
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,14 +1111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284a8f37cb0bfe84fb6e2ac77c1f83da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenObjects:
-  - {fileID: 1900886118521608990, guid: b4fc4ad5a071e52409801a6b87593714, type: 3}
-  - {fileID: 1900886118521608990, guid: f6b4be9165ec0db448474aa6e1e6d8c8, type: 3}
-  clickObjects:
-  - {fileID: 2422567299769193588, guid: 12d4e43a71a2e6e44858ba8137d07d83, type: 3}
-  - {fileID: 2422567299769193588, guid: 9220062ac4369394e85a92dfccb9cad4, type: 3}
-  - {fileID: 2422567299769193588, guid: 4b7ea6c581d8ebb4aa18e7a1f3f465eb, type: 3}
-  - {fileID: 2422567299769193588, guid: c5d83418935c2a64ca4176a8804e29f2, type: 3}
 --- !u!1 &1796699508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,7 +1149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -44.6}
+  m_AnchoredPosition: {x: 0, y: -44}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1796699510
@@ -1274,11 +1258,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284a8f37cb0bfe84fb6e2ac77c1f83da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invenObjects:
-  - {fileID: 1900886118521608990, guid: b4fc4ad5a071e52409801a6b87593714, type: 3}
-  - {fileID: 1900886118521608990, guid: f6b4be9165ec0db448474aa6e1e6d8c8, type: 3}
-  clickObjects:
-  - {fileID: 2422567299769193588, guid: 12d4e43a71a2e6e44858ba8137d07d83, type: 3}
-  - {fileID: 2422567299769193588, guid: 9220062ac4369394e85a92dfccb9cad4, type: 3}
-  - {fileID: 2422567299769193588, guid: 4b7ea6c581d8ebb4aa18e7a1f3f465eb, type: 3}
-  - {fileID: 2422567299769193588, guid: c5d83418935c2a64ca4176a8804e29f2, type: 3}

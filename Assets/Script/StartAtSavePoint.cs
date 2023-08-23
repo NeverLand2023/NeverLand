@@ -22,15 +22,15 @@ public class StartAtSavePoint : MonoBehaviour
     public void onClickRestart()
     {
         GameManager.RestartKey = true;
-        GameManager.EatHealItem();
+        GameManager.ResetHP();
 
-        SceneManager.LoadScene("Mission1");
+        SceneManager.LoadScene("news");
     }
 
     public void onClickContinue()
     {
         GameManager.ContinueKey = true;
-        GameManager.EatHealItem();
+        GameManager.ResetHP();
 
         int missionNumber = PlayerPrefs.GetInt("MissionNunber", 1);
         //미션 넘어갈때마다 PlayerPrefs.SetInt("MissionNunber", <미션번호>);   <-추가해주세요

@@ -77,6 +77,11 @@ public class GameManager : MonoBehaviour
         currentHP = maxHP;
     }
 
+    public static void ResetHP()
+    {
+        currentHP = maxHP;
+    }
+
     // 플레이어의 HP를 감소시키는 메서드
     public static void DecreaseHP(float amount)
     {
