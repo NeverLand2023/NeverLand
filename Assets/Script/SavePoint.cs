@@ -8,9 +8,15 @@ public class SavePoint : MonoBehaviour
     public int SavePointNum;
     private bool triggerEnter = false;
 
+    private SpriteRenderer spriteRenderer;
+    private Color originalColor;
+    private bool isChangingColor = false;
+
     void Start()
     {
         PlayerPrefs.SetInt("SavePointKey", 0);
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        originalColor = spriteRenderer.color;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -29,24 +35,34 @@ public class SavePoint : MonoBehaviour
         }
     }
 
+    IEnumerator ChangeColorAndRestore()
+    {
+        if (spriteRenderer != null)
+        {
+            isChangingColor = true;
+            spriteRenderer.color = targetColor;
+
+            yield return new WaitForSeconds(2f);
+
+            spriteRenderer.color = originalColor;
+            isChangingColor = false;
+        }
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && triggerEnter)
+        if (Input.GetKeyDown(KeyCode.Space) && triggerEnter && !isChangingColor)
         {
             PlayerPrefs.SetFloat("SavePoint_x", transform.position.x);
             PlayerPrefs.SetFloat("SavePoint_y", transform.position.y);
 
-            for(int i=0; i<Inventory.invenFilled; i++)
+            for (int i = 0; i < Inventory.invenFilled; i++)
             {
                 PlayerPrefs.SetString("Inventory_" + (i).ToString(), GameManager.invenArray[i].Item3);
             }
             PlayerPrefs.SetInt("InvenFilled", Inventory.invenFilled);
 
-            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-            if (spriteRenderer != null)
-            {
-                spriteRenderer.color = targetColor;
-            }
+            StartCoroutine(ChangeColorAndRestore());
         }
     }
 }

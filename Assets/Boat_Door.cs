@@ -45,7 +45,7 @@ public class Boat_Door : MonoBehaviour
             onDoor = false;
             if (showKeypad)
             {
-                Main_Hook.attackAvailable = false;
+                Main_Hook.attackAvailable = true;
                 keypad.SetActive(false);
                 showKeypad = false;
             }
