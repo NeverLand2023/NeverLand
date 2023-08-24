@@ -9,7 +9,8 @@ public class Bullet : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameManager.DecreaseHP(50f);
-
+            GameObject mainHookObject = GameObject.Find("Main_Hook");
+            mainHookObject.GetComponent<Animator>().SetTrigger("Hurt");
             Destroy(gameObject);
         }
     }

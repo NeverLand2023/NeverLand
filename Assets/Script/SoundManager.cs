@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
@@ -45,6 +46,14 @@ public class SoundManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         Init();
+    }
+
+    private void Update()
+    {
+        if(SceneManager.GetActiveScene().name != "Mission1")
+        {
+            bgmPlayer.clip = null;
+        }
     }
 
     //사운드 초기화 함수
