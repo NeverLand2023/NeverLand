@@ -28,18 +28,30 @@ public class Camerashake : MonoBehaviour
         if (playerPosition.x >= -10f && playerPosition.x <= -7f &&
             playerPosition.y >= 160f && playerPosition.y <= 162f&& earthquake==false)
         {
-            StartCoroutine(ShakeCoroutine());
-            shakeStartTime = Time.time;
-            Debug.Log("家府 犁积");
+            AudioSource bgmAudioSource = Camera.main.GetComponent<AudioSource>();
+            if (bgmAudioSource != null)
+            {
+                bgmAudioSource.Pause(); // BGM阑 肛眠霸 窃
+            }
             SoundManager.instance.earthquakesound.Play();
             earthquake = true;
+            StartCoroutine(ShakeCoroutine());
+            shakeStartTime = Time.time;
+            
+            
+            Debug.Log("家府 犁积");
+           
 
         }
         else if (earthquake ==true && Time.time - shakeStartTime >= 2f)
         {
+
+            
+            Debug.Log("唱公 家府 犁积");
             StopAllCoroutines();
             StartCoroutine(Reset());
             
+
         }
     }
 
@@ -69,7 +81,9 @@ public class Camerashake : MonoBehaviour
 
     IEnumerator Reset()
     {
-        while(Quaternion.Angle(transform.rotation, m_originRot)>0f)
+       
+
+        while (Quaternion.Angle(transform.rotation, m_originRot)>0f)
         {
             SoundManager.instance.earthquakesound.Stop();
             transform.rotation = Quaternion.RotateTowards(transform.rotation, m_originRot, m_force * Time.deltaTime);

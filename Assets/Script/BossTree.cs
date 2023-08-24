@@ -42,6 +42,9 @@ public class BossTree : MonoBehaviour
     {
         state = State.None;
         nextState = State.Idle;
+       
+        
+
     }
 
     // Update is called once per frame
@@ -156,11 +159,15 @@ public class BossTree : MonoBehaviour
     private void Dead()
     {
         animator.SetBool("Dead", true);
+        
     }
 
     public void DeadAnimationEnd()
     {
         deadDone = true;
+        AudioSource bgmAudioSource = Camera.main.GetComponent<AudioSource>();
+        SoundManager.instance.bossTreeBGM.Pause();
+        bgmAudioSource.UnPause(); // BGM을 다시 재생시킴
     }
     private Vector3 GenerateRandomPosition()
     {

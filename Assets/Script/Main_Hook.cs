@@ -159,6 +159,10 @@ public class Main_Hook : MonoBehaviour
         if (collision.gameObject.tag == ("BossArea"))
         {
             bossTree.SetActive(true);
+            SoundManager.instance.bossTreeBGM.Play();
+            SoundManager.instance.bossTreeBGM.loop=true;
+
+
         }
         else if (collision.gameObject.tag == ("BossSlimeArea"))
         {
