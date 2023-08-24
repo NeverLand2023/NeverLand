@@ -24,6 +24,8 @@ public class Main_Hook : MonoBehaviour
 
     public AudioClip Thud;
 
+    public AudioSource walkSound;
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -45,14 +47,23 @@ public class Main_Hook : MonoBehaviour
         {
             spriter.flipX = inputVec.x < 0;
             anim.SetBool("isRun", true);
+            if (!walkSound.isPlaying)
+            {
+                walkSound.Play();
+            }
         }
         else if (inputVec.y != 0)
         {
             anim.SetBool("isRun", true);
+            if (!walkSound.isPlaying)
+            {
+                walkSound.Play();
+            }
         }
         else
         {
             anim.SetBool("isRun", false);
+            walkSound.Stop();
         }
 
         //공격
@@ -165,11 +176,11 @@ public class Main_Hook : MonoBehaviour
         SceneManager.LoadScene("GameOver");
     }
 
-    public void MainHookRunStart()
+    /*public void MainHookRunStart()
     {
         SoundManager.instance.playSFX(SoundManager.SFX.걷는소리, false);
 
-    }
+    }*/
 
     void thud()
     {
