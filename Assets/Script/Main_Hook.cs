@@ -15,6 +15,7 @@ public class Main_Hook : MonoBehaviour
     Animator anim;
 
     public GameObject bossTree;
+    public GameObject bossSlime;
 
     public TilemapCollider2D thorn;
 
@@ -158,6 +159,10 @@ public class Main_Hook : MonoBehaviour
         if (collision.gameObject.tag == ("BossArea"))
         {
             bossTree.SetActive(true);
+        }
+        else if (collision.gameObject.tag == ("BossSlimeArea"))
+        {
+            bossSlime.SetActive(true);
         }
     }
 
