@@ -56,3 +56,6 @@ TagManager:
   - name: Player
     uniqueID: 1301850365
     locked: 0
+  - name: boatOpen
+    uniqueID: 2242046775
+    locked: 0

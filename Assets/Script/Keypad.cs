@@ -20,6 +20,8 @@ public class Keypad : MonoBehaviour
     public AudioSource successSound;
     public AudioSource failSound;
 
+    public GameObject boatOpen;
+
     void Start()
     {
         ani = GetComponent<Animator>();
@@ -103,9 +105,11 @@ public class Keypad : MonoBehaviour
             //성공
             successSound.Play();
             Debug.Log("성공");
+
+            boatOpen.SetActive(true);
+            StartCoroutine(ChangeSceneAfterDelay(3f));
             //PlayerPrefs.SetInt("MissionNunber", 2);
             //savepoint 위치 초기화 코드 추가
-            StartCoroutine(LoadScene(2f));
         }
         else
         {
@@ -144,10 +148,12 @@ public class Keypad : MonoBehaviour
         return true;
     }
 
-    IEnumerator LoadScene(float delayInSeconds)
+    IEnumerator ChangeSceneAfterDelay(float delayInSeconds)
     {
         yield return new WaitForSeconds(delayInSeconds);
 
+        
         SceneManager.LoadScene("Mission2");
     }
+
 }
