@@ -21,6 +21,9 @@ public class Keypad : MonoBehaviour
     public AudioSource failSound;
 
     public GameObject boatOpen;
+    public GameObject canvas;
+    public GameObject minicam;
+
 
     void Start()
     {
@@ -106,6 +109,8 @@ public class Keypad : MonoBehaviour
             successSound.Play();
             Debug.Log("¼º°ø");
 
+            canvas.SetActive(false);
+            minicam.SetActive(false);
             boatOpen.SetActive(true);
             StartCoroutine(ChangeSceneAfterDelay(3f));
             //PlayerPrefs.SetInt("MissionNunber", 2);
