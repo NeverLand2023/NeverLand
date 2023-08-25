@@ -33,7 +33,7 @@ public class BossTree : MonoBehaviour
     public float followTime = 2f;
     private float curTime = 0;
 
-    private int bossHp = 100;
+    private int bossHp = 500;
     private bool playerEnter = false;
 
 

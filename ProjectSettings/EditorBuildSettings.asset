@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/news.unity
     guid: df41c451c200a614dbb457424f6120c3
+  - enabled: 1
+    path: Assets/Scenes/Mission2.unity
+    guid: e9d7aa73a13ab0742a12e1b0f246b86c
   m_configObjects: {}

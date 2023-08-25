@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Keypad : MonoBehaviour
 {
@@ -102,6 +103,9 @@ public class Keypad : MonoBehaviour
             //성공
             successSound.Play();
             Debug.Log("성공");
+            //PlayerPrefs.SetInt("MissionNunber", 2);
+            //savepoint 위치 초기화 코드 추가
+            StartCoroutine(LoadScene(2f));
         }
         else
         {
@@ -138,5 +142,12 @@ public class Keypad : MonoBehaviour
         }
 
         return true;
+    }
+
+    IEnumerator LoadScene(float delayInSeconds)
+    {
+        yield return new WaitForSeconds(delayInSeconds);
+
+        SceneManager.LoadScene("Mission2");
     }
 }
