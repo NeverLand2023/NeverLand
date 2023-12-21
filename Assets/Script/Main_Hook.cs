@@ -27,6 +27,8 @@ public class Main_Hook : MonoBehaviour
 
     public AudioSource walkSound;
 
+    public GameObject attack_effect;
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -74,6 +76,7 @@ public class Main_Hook : MonoBehaviour
             anim.SetTrigger("Attack");
             ChangeAttackTag();
             SoundManager.instance.playSFX(SoundManager.SFX.후크공격, false);
+            attack_effect.SetActive(true);
         }
 
 
