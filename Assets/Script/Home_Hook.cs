@@ -6,8 +6,9 @@ public class Home_Hook : MonoBehaviour
 {
     public Vector2 inputVec;
     public float speed;
-
     public GameObject error_light;
+    public GameObject[] emoji;
+    private bool emojiFlag = false;
 
     Rigidbody2D rigid;
     SpriteRenderer spriter;
@@ -38,10 +39,21 @@ public class Home_Hook : MonoBehaviour
         }
 
         //컴퓨터 상호작용
-        if(rigid.position.x > -4.5 && rigid.position.x < -3 && Input.GetKeyDown(KeyCode.Space))
+        if(rigid.position.x > -4.5 && rigid.position.x < -3)
         {
-            error_light.SetActive(true);
+            if (!emojiFlag)
+            {
+                emojiFlag = true;
+                StartCoroutine(EmojiSequentially(emoji, 0.5f));
+            }  
+            
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                error_light.SetActive(true);
+            }   
         }
+
+
     }
 
     void FixedUpdate()
@@ -60,5 +72,22 @@ public class Home_Hook : MonoBehaviour
         Vector2 nextVec = inputVec.normalized * speed * Time.fixedDeltaTime;
         rigid.MovePosition(rigid.position + nextVec);
 
+    }
+
+    IEnumerator EmojiSequentially(GameObject[] objects, float delayTime)
+    {
+        foreach (var obj in objects)
+        {
+            // 현재 오브젝트 활성화
+            obj.SetActive(true);
+
+            // 일정 시간 대기
+            yield return new WaitForSeconds(delayTime);
+
+            // 현재 오브젝트 삭제
+            Destroy(obj);
+
+            yield return new WaitForSeconds(1f);
+        }
     }
 }
