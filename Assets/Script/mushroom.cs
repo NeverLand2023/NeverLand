@@ -13,7 +13,7 @@ public class mushroom : MonoBehaviour
     private float timeElapsed = 0f; // �̹��� ���� ���� �ð� ��� �ð�
 
     private UnityEngine.Rendering.Universal.Light2D mushroomLight;
-
+    private bool turnOnFlag = false;
 
     private void Start()
     {
@@ -48,7 +48,7 @@ public class mushroom : MonoBehaviour
         }
 
         // �̹����� ����� ��, ���� �ð��� ������ ���� �̹����� ����
-        if (spriteRenderer.sprite == desiredSprite)
+        if (spriteRenderer.sprite == desiredSprite && !turnOnFlag)
         {
             timeElapsed += Time.deltaTime;
             if (timeElapsed >= changeDuration)
@@ -72,5 +72,12 @@ public class mushroom : MonoBehaviour
             spriteRenderer.sprite = desiredSprite;
             timeElapsed = 0f; // �̹��� ���� �� Ÿ�̸� �ʱ�ȭ
         }
+    }
+
+    public void TurnOn()
+    {
+        turnOnFlag = true;
+        ChangeImage();
+        mushroomLight.enabled = true;
     }
 }
