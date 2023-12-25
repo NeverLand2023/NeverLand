@@ -13,6 +13,7 @@ public class Door : MonoBehaviour
     public Tilemap tilemap;
     public Tilemap tilemap2;
     public float fadeSpeed = 7f;
+    public GameObject fireEmoji;
 
     private bool PlayerIn;
     private bool isShowing;
@@ -45,6 +46,11 @@ public class Door : MonoBehaviour
         if (collision.gameObject.tag == ("Player"))
         {
             PlayerIn = true;
+
+            if (FireCount.fire != 5)
+            {
+                StartCoroutine(ShowEmoji(fireEmoji, 0.8f));
+            }
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
@@ -55,4 +61,12 @@ public class Door : MonoBehaviour
         }
     }
 
+    IEnumerator ShowEmoji(GameObject obj, float delayTime)
+    {
+        obj.SetActive(true);
+
+        yield return new WaitForSeconds(delayTime);
+
+        obj.SetActive(false);        
+    }
 }

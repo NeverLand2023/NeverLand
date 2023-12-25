@@ -5,6 +5,7 @@ using UnityEngine;
 public class Boat_Door : MonoBehaviour
 {
     public GameObject keypad; 
+    public GameObject lockEmoji;
 
     private bool onDoor = false;
     private bool showKeypad = false;
@@ -36,6 +37,9 @@ public class Boat_Door : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             onDoor = true;
+
+            StartCoroutine(ShowEmoji(lockEmoji, 0.8f));
+
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -50,6 +54,15 @@ public class Boat_Door : MonoBehaviour
                 showKeypad = false;
             }
         }
+    }
+
+    IEnumerator ShowEmoji(GameObject obj, float delayTime)
+    {
+        obj.SetActive(true);
+
+        yield return new WaitForSeconds(delayTime);
+
+        obj.SetActive(false);
     }
 
 
