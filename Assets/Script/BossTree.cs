@@ -33,7 +33,7 @@ public class BossTree : MonoBehaviour
     public float followTime = 2f;
     private float curTime = 0;
 
-    private int bossHp = 500;
+    private static int bossHp = 500;
     private bool playerEnter = false;
 
 
@@ -129,7 +129,7 @@ public class BossTree : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("20 ±ðÀÓ");
-                bossHp -= 20;
+                bossHp -= 30;
             }
         }
     }
@@ -200,4 +200,8 @@ public class BossTree : MonoBehaviour
         }
     }
 
+    public static float GetCurrentHP()
+    {
+        return bossHp;
+    }
 }

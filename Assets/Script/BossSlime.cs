@@ -14,7 +14,7 @@ public class BossSlime : MonoBehaviour
     float time = 0f;
     float time2 = 0f;
 
-    public int bossHp = 500;
+    public static int bossHp = 500;
     private bool playerEnter = false;
 
     private void Awake()
@@ -114,6 +114,11 @@ public class BossSlime : MonoBehaviour
     private void AttackAnimationStart()
     {
         SoundManager.instance.bossSlimeAttackSound.Play();
+    }
+
+    public static float GetCurrentHP()
+    {
+        return bossHp;
     }
 }
 

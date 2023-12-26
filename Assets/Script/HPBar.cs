@@ -5,13 +5,34 @@ public class HPBar : MonoBehaviour
 {
     public Slider slider;
 
-    // HP 바의 최대 값 (플레이어의 최대 HP와 동일)
+    // HP 바의 최대 값
     public float maxHP;
 
+    public enum Character
+    {
+        Hook,
+        BossSlime,
+        BossTree
+    }
+
+    public Character characterSelect;
     public void Update()
     {
-        slider.value = GameManager.GetCurrentHP()/ maxHP;
-        //Debug.Log("hp "+GameManager.GetCurrentHP());
+        switch (characterSelect)
+        {
+            case Character.Hook:
+                slider.value = GameManager.GetCurrentHP() / maxHP;
+                break;
+            case Character.BossSlime:
+                slider.value = BossSlime.GetCurrentHP()/ maxHP;
+                break;
+            case Character.BossTree:
+                slider.value = BossTree.GetCurrentHP() / maxHP;
+                break;
+            default:
+                Debug.LogError("Character not selected");
+                break;
+        }
     }
 
 }
