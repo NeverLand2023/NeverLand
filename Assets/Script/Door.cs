@@ -18,9 +18,15 @@ public class Door : MonoBehaviour
     private bool PlayerIn;
     private bool isShowing;
 
+    private bool end = false;
+    //private Animator anim;
     // Update is called once per frame
+
+
     void Update()
     {
+
+
 
         if (PlayerIn && Input.GetKeyDown(KeyCode.Space) && FireCount.fire == 5)
         {
@@ -39,6 +45,11 @@ public class Door : MonoBehaviour
             }
 
         }
+    }
+
+    private void Destroy_obj()
+    {
+        animator.SetBool("end", true);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
