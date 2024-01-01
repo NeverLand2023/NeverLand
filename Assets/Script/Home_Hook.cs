@@ -7,7 +7,7 @@ public class Home_Hook : MonoBehaviour
     public Vector2 inputVec;
     public float speed;
     public GameObject error_light;
-    public GameObject[] emoji;
+    public GameObject emoji;
     private bool emojiFlag = false;
 
     Rigidbody2D rigid;
@@ -44,7 +44,7 @@ public class Home_Hook : MonoBehaviour
             if (!emojiFlag)
             {
                 emojiFlag = true;
-                StartCoroutine(EmojiSequentially(emoji, 0.5f));
+                StartCoroutine(ShowEmoji(emoji, 0.8f));
             }  
             
             if (Input.GetKeyDown(KeyCode.Space))
@@ -74,20 +74,15 @@ public class Home_Hook : MonoBehaviour
 
     }
 
-    IEnumerator EmojiSequentially(GameObject[] objects, float delayTime)
+    IEnumerator ShowEmoji(GameObject obj, float delayTime)
     {
-        foreach (var obj in objects)
-        {
-            // 현재 오브젝트 활성화
-            obj.SetActive(true);
+        // 현재 오브젝트 활성화
+        obj.SetActive(true);
 
-            // 일정 시간 대기
-            yield return new WaitForSeconds(delayTime);
+        // 일정 시간 대기
+        yield return new WaitForSeconds(delayTime);
 
-            // 현재 오브젝트 삭제
-            Destroy(obj);
-
-            yield return new WaitForSeconds(1f);
-        }
+        // 현재 오브젝트 삭제
+        obj.SetActive(false);
     }
 }
