@@ -72,6 +72,7 @@ public class Main_Hook : MonoBehaviour
         //АјАн
         if (Input.GetMouseButtonDown(0) && attackAvailable)
         {
+            rigid.constraints = RigidbodyConstraints2D.FreezeAll;
             inputVec.x = 0;
             anim.SetTrigger("Attack");
             ChangeAttackTag();

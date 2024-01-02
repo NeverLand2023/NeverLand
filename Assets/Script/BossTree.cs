@@ -124,13 +124,18 @@ public class BossTree : MonoBehaviour
             curTime = 0;
         }
 
-        if (playerEnter)
+/*        if (playerEnter)
         {
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("20 ±ðÀÓ");
                 bossHp -= 30;
             }
+        }*/
+        if (playerEnter)
+        {
+            Debug.Log("20 ±ðÀÓ");
+            bossHp -= 30;
         }
     }
     private void Idle()
@@ -185,18 +190,26 @@ public class BossTree : MonoBehaviour
         return randomPosition;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == ("Player"))
+    /*    private void OnCollisionEnter2D(Collision2D collision)
         {
-            playerEnter = true;
+            if (collision.gameObject.tag == ("Player"))
+            {
+                playerEnter = true;
+            }
         }
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == ("Player"))
+        private void OnCollisionExit2D(Collision2D collision)
         {
-            playerEnter = false;
+            if (collision.gameObject.tag == ("Player"))
+            {
+                playerEnter = false;
+            }
+        }*/
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == ("PlayerAttack"))
+        {
+            Debug.Log("20 ±ðÀÓ");
+            bossHp -= 30;
         }
     }
 

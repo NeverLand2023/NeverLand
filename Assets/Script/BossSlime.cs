@@ -47,19 +47,20 @@ public class BossSlime : MonoBehaviour
         }
 
         //슬라임 피격
-        if (playerEnter)
+/*        if (playerEnter)
         {
             if (Input.GetMouseButtonDown(0))
             {
                 bossHp -= 50;
                 anim.SetTrigger("hurt");
             }
-        }
+        }*/
 
         //슬라임 죽음
-        if(bossHp <= 0)
+        if (bossHp <= 0)
         {
             anim.SetBool("isDeath", true);
+            GetComponent<Collider2D>().isTrigger = true;
             SoundManager.instance.bossSlimeDeadSound.Play();
             time2 += Time.deltaTime;
             if(time2 > 2)
@@ -94,22 +95,32 @@ public class BossSlime : MonoBehaviour
             transform.position = new Vector2(transform.position.x - 0.01f, transform.position.y - 0.01f);
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == ("Player"))
+        if(collision.tag == "PlayerAttack")
         {
-            playerEnter = true;
+            bossHp -= 50;
+            anim.SetTrigger("hurt");
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == ("Player"))
+
+    /*    private void OnCollisionEnter2D(Collision2D collision)
         {
-            playerEnter = false;
+            if (collision.gameObject.tag == ("Player"))
+            {
+                playerEnter = true;
+            }
         }
-    }
+
+        private void OnCollisionExit2D(Collision2D collision)
+        {
+            if (collision.gameObject.tag == ("Player"))
+            {
+                playerEnter = false;
+            }
+        }*/
+
 
     private void AttackAnimationStart()
     {

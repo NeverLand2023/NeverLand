@@ -55,9 +55,17 @@ public class SlimeSlime : MonoBehaviour
             switch (state)
             {
                 case State.Idle:
-                    if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3) && (Input.GetMouseButtonDown(0))) {
+/*                    if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3) && (Input.GetMouseButtonDown(0))) {
                         animator.SetBool("idle", false);
                         nextState = State.Hurt;
+                    }*/
+                    if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3))
+                    {
+                        if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3).tag == "PlayerAttack")
+                        {
+                            animator.SetBool("idle", false);
+                            nextState = State.Hurt;
+                        }
                     }
                     else if (Physics2D.OverlapCircle(transform.position, followRange, 1 << 3))
                     {
@@ -71,9 +79,17 @@ public class SlimeSlime : MonoBehaviour
                     }
                     break;
                 case State.Run:
-                    if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3) && (Input.GetMouseButtonDown(0))) {
+/*                    if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3) && (Input.GetMouseButtonDown(0))) {
                         animator.SetBool("run", false);
                         nextState = State.Hurt;
+                    }*/
+                    if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3))
+                    {
+                        if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3).tag == "PlayerAttack")
+                        {
+                            animator.SetBool("idle", false);
+                            nextState = State.Hurt;
+                        }
                     }
                     else if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3))
                     {
