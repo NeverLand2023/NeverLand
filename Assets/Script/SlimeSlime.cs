@@ -234,10 +234,12 @@ public class SlimeSlime : MonoBehaviour
     private void Dead()
     {
         animator.SetBool("death", true);
+        
     }
     private void DeadAnimationDone()
     {
         deadDone = true;
+        Destroy(gameObject);
     }
     private void OnDrawGizmosSelected()
     {
