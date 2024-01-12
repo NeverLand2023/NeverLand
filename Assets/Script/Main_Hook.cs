@@ -160,23 +160,29 @@ public class Main_Hook : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == ("BossArea"))
+/*        if (collision.gameObject.tag == ("BossArea"))
         {
             bossTree.SetActive(true);
             SoundManager.instance.bossTreeBGM.Play();
             SoundManager.instance.bossTreeBGM.loop=true;
-
-
-        }
-        else if (collision.gameObject.tag == ("BossSlimeArea"))
+        }*/
+        if (collision.gameObject.tag == ("BossSlimeArea"))
         {
             bossSlime.SetActive(true);
         }
     }
+/*    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == ("BossArea"))
+        {
+            SoundManager.instance.bossTreeBGM.Stop();
+        }
+    }*/
 
     public void PlayerDeath()
     {
         anim.SetBool("isDeath", true);
+        SoundManager.instance.bossTreeBGM.Stop();
     }
 
     public void GameOverSceneLoad()

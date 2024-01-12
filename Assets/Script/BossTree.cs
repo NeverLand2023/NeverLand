@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using Random = UnityEngine.Random;
 
 public class BossTree : MonoBehaviour
 {
@@ -35,6 +37,8 @@ public class BossTree : MonoBehaviour
 
     private static int bossHp = 500;
     private bool playerEnter = false;
+
+    Collider2D[] hit;
 
 
     // Start is called before the first frame update
@@ -116,27 +120,41 @@ public class BossTree : MonoBehaviour
                     
             }
         }
-
-        curTime += Time.deltaTime;
-        if(curTime >= followTime)
+        hit = Physics2D.OverlapBoxAll(transform.position, new Vector2(30, 20), 0);
+        for(int i= 0; i < hit.Length; i++)
         {
-            Instantiate(bossThorn, playerHook.transform.position, Quaternion.identity);
-            curTime = 0;
+            Debug.Log(hit[i]);
+        }
+        curTime += Time.deltaTime;
+        if (Array.Exists(hit, x => x.Equals("Main_Hook")))
+        {
+            if (curTime >= followTime)
+            {
+                Debug.Log("°ø°ÝÇÏ¶ó");
+                Instantiate(bossThorn, playerHook.transform.position, Quaternion.identity);
+                curTime = 0;
+            }
         }
 
-/*        if (playerEnter)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Debug.Log("20 ±ðÀÓ");
-                bossHp -= 30;
-            }
-        }*/
+
+        /*        if (playerEnter)
+                {
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        Debug.Log("20 ±ðÀÓ");
+                        bossHp -= 30;
+                    }
+                }*/
         if (playerEnter)
         {
             Debug.Log("20 ±ðÀÓ");
             bossHp -= 30;
         }
+    }
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position, new Vector2(30, 20));
     }
     private void Idle()
     {
@@ -147,11 +165,14 @@ public class BossTree : MonoBehaviour
 
     private void Attack()
     {
-        animator.SetBool("Attack", true);
-        for (int i = 0; i < numberOfThorns; i++)
+        if (Array.Exists(hit, x => x.Equals("Main_Hook")))
         {
-            Vector3 randomPosition = GenerateRandomPosition();
-            Instantiate(bossThorn, randomPosition, Quaternion.identity);
+            animator.SetBool("Attack", true);
+            for (int i = 0; i < numberOfThorns; i++)
+            {
+                Vector3 randomPosition = GenerateRandomPosition();
+                Instantiate(bossThorn, randomPosition, Quaternion.identity);
+            }
         }
     }
 
