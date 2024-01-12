@@ -1,0 +1,7665 @@
+fileFormatVersion: 2
+guid: f201a27f0d8c9f8408fd99489e55bb9b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RA_Harbor 4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed952ded982634246b4ba353b9a5be49
+      internalID: 1461518890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a01e42fa31ed54da18c47e60e30938
+      internalID: 1175215092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f0d9d48f9a30e40857e2d8bc11c9e5
+      internalID: 1394586702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6473c31faf244594fb2f8fce9b15f602
+      internalID: 305773222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd48479e07ef72242ac92c536e30f6b6
+      internalID: -201321621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace6ccf3f37b3124ebe4c5d673626067
+      internalID: -1520243572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b5f9b4f17d23740875be9bce64ecf9
+      internalID: -126133435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae8b139e439983429265e8b72a2f7d7
+      internalID: 1286096668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb60f35c399c93144a488319e010961c
+      internalID: 1601252086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb79b33f4d5545419c57e9d5883aada
+      internalID: -514621944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734064fd5688b16418001cc2c8a47e67
+      internalID: -1444127769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c45f193253b87498a1060dd046dda4
+      internalID: 1375136414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c425c06e4e7974cb297a95e55410ad
+      internalID: -564342967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa54c2e32e578540a4a7b275069526c
+      internalID: 523450755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62843043a074c12438543ba55e45db63
+      internalID: -1647859122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e115e282e13ddc46a68aa7f93dfa959
+      internalID: -102637377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef5a9b15667eec47bb6fff1e6cb75ad
+      internalID: 362969614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640d84494d0fb5141bb5f061a034cbdb
+      internalID: -168836787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdb973c2d4955a45bf9769d4eb1ee52
+      internalID: 115918345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fc3192ba728854d850ac2110e5c269
+      internalID: -1213170044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa1104cc3a4773489afae47b0a3a99c
+      internalID: 70525527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_21
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad280b3f800df7042adc91dc8d859899
+      internalID: -2087206424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3636d0562bd85a43862f343bf1436bf
+      internalID: -342921205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f53e592e2756743a38f5dd5949e44d
+      internalID: -1414391816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_24
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d7310476ad4ae4a98c14f31769d7f8
+      internalID: 1209404412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_25
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d923a7cdd7bad42b2a997d3da56367
+      internalID: -1055627327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_26
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cc5ac464e873c4aa6de17d2607b0d3
+      internalID: 2001693780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_27
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540930524989819449d1e68ad37dfe12
+      internalID: 283718268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_28
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bf9a8acfb73484e86252f933dd1761
+      internalID: 1296822234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_29
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fadf4ff068f782b45a3b7b27dd50111c
+      internalID: -359407511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_30
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 480
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d205e4581fe86c49b53b6528aee9acb
+      internalID: 1330305456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2508551a7ddcd6043b793a500fef7dd4
+      internalID: -1109502702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef816ee9ce33d9b458b5389e11430948
+      internalID: -1032449846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165f9eeb9f2e8734a8588a13a338cb06
+      internalID: 619331468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4375761468e48479df9c11dcb3788a
+      internalID: -1305529803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d7430dced041644a202a967dccd21a
+      internalID: 547211352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_36
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f32b58813083a40b05eb57dc63970c
+      internalID: -1766005940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_37
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de7a7eb2f263d34cb46cc082d362a3c
+      internalID: -202248551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_38
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c511f1bd4ab31746a6478f2357d94c1
+      internalID: 506969661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41340d4e55664e24595053d3bbb1422e
+      internalID: 403218387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_40
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac58bf94a2a41649bfea44516cdceeb
+      internalID: -95954616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_41
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02db046737738a49a1281381ddbb86b
+      internalID: -392422420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_42
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce03af115094dd840844a5064c628e1a
+      internalID: -926384347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_43
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b321bd43b882c944a89edd029cfc24d4
+      internalID: -1468064545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_44
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18ed97e1670bf647865959ff2ab4ec0
+      internalID: 731275164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_45
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f585cad63536b040b9214aa5edf1107
+      internalID: 884031306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_46
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd869b07c3c34414e8c89b42633bf35e
+      internalID: -85965259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_47
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4f06ef46557a84f865fede1041e541
+      internalID: 1815956549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_48
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589e3ceb57cd5ed40905cdbb1fc320a9
+      internalID: 1824095061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_49
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e497d0a85965ad847aef5300d6385d84
+      internalID: 1826213069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_50
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9bc3844a7ca63469a0f0e12464a53e
+      internalID: -95478086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_51
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c42f478fee89694c9382d7223e6bda0
+      internalID: 131766249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_52
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f44d4c6ca21eb84d8dfb9a6f155842f
+      internalID: -2065019333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_53
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a414d0cd2f51944abded0cc397ee76
+      internalID: -1991453361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_54
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc9d57c50d709648baa0a80a0df89ee
+      internalID: -1409132769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_55
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d9a475dd0a00342ab18095bfab93bd
+      internalID: 2121464797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_56
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee88d7fd3f9e2a04b8c27995f996a426
+      internalID: -2780355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_57
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6ee6e571da2ff4ea750b6da8b933d2
+      internalID: 1521273305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_58
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd79c198ef6cb8a40b14782d77d4caab
+      internalID: 1361769678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e438ba5006563744bd6db7c42c0f9a2
+      internalID: 677054408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_60
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374e6bfe3f9aef64f9b9c87e1daa1bf3
+      internalID: 1253934622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_61
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352d996ab446da34197b3e76f8be7714
+      internalID: 750630070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf40fb76dcbd9e040b4bdb73123b9978
+      internalID: -1818508360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45d3ddec982e1d4581c4d58940502fd
+      internalID: -1260833065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_64
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5b4ce8684821e419d7f5863cbd913b
+      internalID: -9296980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_65
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e2c5833140c2e42aae8e54a9f70061
+      internalID: 1068612712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_66
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae0a0aeeeedb1245b3a6d2dfddb6245
+      internalID: -475735732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_67
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2348376db3f59c439609bd28fdac0f7
+      internalID: 1510694964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_68
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2dc88712eaa82f4da9ee401baefc751
+      internalID: -991559484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_69
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf993c1d77d2f747b5e4fb938ca5767
+      internalID: -2023852961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_70
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c2300c7f8b66749ab1ce70a04e3d91
+      internalID: -1706857707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_71
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90aa18efa938c3e408b1c5fd5d2222e9
+      internalID: -529796846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_72
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596f9e2b6047edf4f8c265855dff7d48
+      internalID: 1951140865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_73
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2a4e692551f6f409fd9ab646f84a49
+      internalID: -857796780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_74
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: feee11812b83bbe43920aca52cb3cb00
+      internalID: 1820105908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_75
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a9272590121e64e997182c11bec911
+      internalID: -350414591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_76
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f09864b86f6e4e4193b773b515a8ce7
+      internalID: 1600389387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_77
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c86190d23d0dd641a28d81c57fd222d
+      internalID: -826323396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_78
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97139e38eb272c144aeee39a29799190
+      internalID: 430794797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_79
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99b99a78201f20498cde170095c5367
+      internalID: 1831797140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_80
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154b6074f4611a046b9dbb5eef8903e3
+      internalID: 1844017298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_81
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7192faafe09c54291ebf6bb3641840
+      internalID: 523053029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_82
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cc39b4185db924eb9a06346a8c3a67
+      internalID: 1989789703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_83
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cf14228cb1dcb4eb45744a259a04f0
+      internalID: 3901036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_84
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b312901a5d609f1408452fecef66f827
+      internalID: -1752928444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_85
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8371fb82eb3bb114db1f7e6cc5dca588
+      internalID: 493823403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_86
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f89ea3f7ed8d9a4f87fdbe9c887e80c
+      internalID: 1121844061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_87
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956d8d2fc9127884583eed0eda5c96e6
+      internalID: -1972456595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_88
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e568f7f4b50a641a739ffabb1782d0
+      internalID: -1124133863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_89
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88aa17a3874b1644a009b8501da5748
+      internalID: -2000423036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410a0dccf7c69b44bbe3862128ec18f3
+      internalID: 2014550966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_91
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ab29c9faa1a3a4991389b9224555a7
+      internalID: 244854926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83649bee7f5b3c24daa64ae6c3c4f742
+      internalID: 733640650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_93
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f470e159d3090439d567b977038cb7
+      internalID: -1886704926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_94
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934b809d45660b548b5cec4b27de157f
+      internalID: 1828195955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_95
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f10e7ec8fb057640b42bd042a00f706
+      internalID: -1334723677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_96
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f621441c594f85c4fa52c47c87617372
+      internalID: -1698509915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_97
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273d9d962e192be4c83d8968ab7505c6
+      internalID: -1109116914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_98
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90e5b7cd19720b4483c5ca544fb07be
+      internalID: -1948124652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0397a672a4b90641bbfe24654b110a7
+      internalID: -2010501132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_100
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6561c95406f02b4a90dc3d45a281330
+      internalID: -988605100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_101
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6084a64b978399478e382e3057e59b2
+      internalID: 1364423558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_102
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663109e60e88bdc4ab9bcc70e1dd6db2
+      internalID: 1812010050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_103
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9672a8fa76301740b7db851fd6f27c3
+      internalID: 1487097737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_104
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d470f833ae26b4398293cdb841b345
+      internalID: 1668593552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_105
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e3def0c001d8746ac633adf8fa2b24
+      internalID: 213739885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_106
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bd7cb311a5bd04aaa8904f5e127226
+      internalID: 868422397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_107
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff61fa5e1b2d25e44b58bf4d596fcf92
+      internalID: 1346352643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_108
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82c8797fe0da164a94fd75cac79cb2e
+      internalID: -1310912093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_109
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5828dad01484fa4408abf0794215c214
+      internalID: 119490980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_110
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c27acfe643005b41a44c3554bed33da
+      internalID: 1463241128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_111
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4149be925ae324682818fb647dd6d4
+      internalID: -1017041776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_112
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd2673d4b3846740a7539c1f5b61756
+      internalID: 80647164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_113
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12421d94e82f99a46a3fef5c02e5d9ef
+      internalID: -427802035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_114
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060678e4c5b32a643b51c2b8b04b22f8
+      internalID: 1067994296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_115
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0154464755d924697f6889a4e83ee8
+      internalID: -277907224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_116
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efc23af7fc0be5429a431b90f87d35d
+      internalID: 667357830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_117
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249522d9ac6af184cbe30f3e3d8fd417
+      internalID: -1853222097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_118
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5255a51fed6c5964ab4785a5a03d241f
+      internalID: -557590657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_119
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32f983016b83674392940a36d19bd01
+      internalID: -1249683906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_120
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 288
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14d7e81af95b7b4aa459e7ecbe7a374
+      internalID: -2122750952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_121
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a007d98e458d8c449aad1f5be6173f7f
+      internalID: 235967973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_122
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36ab89134a818f47a6763b0a908a8c8
+      internalID: 104805931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_123
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a181130a5587fb4bb1b3a8ef5f66f38
+      internalID: -1549943419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_124
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4f58d00c722824ba90977dcc0ef68e
+      internalID: -247702701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_125
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a1e968aa9ce114495a2cf784738a77
+      internalID: -1515462098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_126
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6ee2cd973ed9149994282e8b6aaab5
+      internalID: -224726932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_127
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bff26a0c262c049b7dc774b4def6e4
+      internalID: 2109553277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_128
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7a65dafe859ae43ac7d155a68b88e3
+      internalID: 1712495832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_129
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfd83161d0261e4d970665e5ea1b8d7
+      internalID: 1054470185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_130
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a6bd095a9163c4eb43400c406cc751
+      internalID: -1708447707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_131
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57308bf2e674def458f79fca10203a22
+      internalID: 437688991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_132
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73803f8ee8979ce4f884dcd8d0767172
+      internalID: 1102608827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_133
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f7d16c86156eb4d8e9fd00e75f123e
+      internalID: -827546486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_134
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811e6b9ee3a24d74896046e27af19746
+      internalID: -235300487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_135
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ca55b62064c3443a9bd913df4aeffe
+      internalID: -2067901988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_136
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78670c1b81663974f98acc473ef6e6a3
+      internalID: -20377093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_137
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fb9587dfb50f74c9c946826bef8c16
+      internalID: -979722737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_138
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b13916edeb136c44912776a2847cad0
+      internalID: 1933838768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_139
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2b69b706c0fa641a1957e071f283eb
+      internalID: -1618080311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_140
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78c4a3cee501d941ada1d06cc4281cb
+      internalID: -686958912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_141
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380c5efc592aed543b5b3987a6f82e87
+      internalID: -891026033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_142
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a848e79b56af44ab9826b7cfcefaf3
+      internalID: -193227603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_143
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bfd54291afa4c4688ffc3ff01257dd
+      internalID: 392338783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_144
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779e632b378886a4c987e05d62c53c4d
+      internalID: 1986574098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_145
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09fc404669749e94584fa286f0cfe777
+      internalID: 1854524288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_146
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbce73fe6376817419fc0df34b35c3ae
+      internalID: 1598880420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_147
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e519eb182351b0c469762e907eccfa6b
+      internalID: 1310126509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_148
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a41bbd2d348cb04eba3f91c7ed5c81f
+      internalID: 386551257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_149
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91f4d33643b3da4ba927ed7855117f4
+      internalID: -76996630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_150
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d04c4d1112a3564e978dc69f8973eac
+      internalID: 1135790476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_151
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7332747b3d141541b4035c0d11b0d0b
+      internalID: -711276951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_152
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227302c4e5154ce40a6f028a20ae40ba
+      internalID: 1459812262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_153
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: debc0412e6bb2f64aa38bcc69aea0642
+      internalID: 936254068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_154
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c682d2330f2754d9673c155a60a50b
+      internalID: -686509052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_155
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ca653eb1291b545a3627648126ac96
+      internalID: 66985986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_156
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b77952996718854cba0a3d07868769f
+      internalID: 1674643443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_157
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c4c31c0c479a84491d553c138fc059
+      internalID: 65394735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_158
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c6758313321974d8fa7fe8652a8678
+      internalID: -231174956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_159
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e014cccdb9f294d97ec49330ddb3ad
+      internalID: -479759947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_160
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7942a3c600584704cbc964145c2b6a45
+      internalID: -1980898126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_161
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8080e90f400e211418a567c0d64c4e66
+      internalID: 2128871732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_162
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810909fdecef2a045b55ae248ad26efd
+      internalID: 238359143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_163
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c982cbd148ffce44a9cb8d9cfb428cfc
+      internalID: -944973803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_164
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: de82e8c97d0dd524f96698fbea2480b7
+      internalID: -905105749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_165
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce4d57615913794d8827fe28d581e10
+      internalID: -537628535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_166
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4639d771808284ba5dcbbaeb8931b0
+      internalID: -1573117050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_167
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e29c0e0c96a3974e8cf68816c38d1a3
+      internalID: -1935910670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_168
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724457f39f75e1b47aeab7d63f6d2dec
+      internalID: 226154090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_169
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc75500b5d1b3d5429ae386e2fc99b0e
+      internalID: -2019022030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_170
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd32ed2ec3b88184786c1e9c36b1fdd6
+      internalID: 1109610093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_171
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09d089e3a9fe2f4295b831e1cdf4b9f
+      internalID: -988520206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_172
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c3bd38b22d36f4fbb480163efd8346
+      internalID: 577057911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_173
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccd176760d7ea74e9e935f55351facc
+      internalID: 550099904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_174
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e468fac02c8ae094caffd4b14967ef09
+      internalID: -772397060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_175
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ad5d5360a466a4fb49999ff7c1fa18
+      internalID: 337463154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_176
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0babd09070fe6a41b616f878f69ce30
+      internalID: -1422765369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_177
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a61e196a0216b4da464f3840d87139
+      internalID: 247734520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_178
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cb1e8bad3e3604fb1cf855c1f6593a
+      internalID: 493433413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_179
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92b25d1907f9144d8e53e9a71b4b0da
+      internalID: -2077047484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_180
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d9f815a6b2f4146b4da740e88f4d3b
+      internalID: 1800573862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_181
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf33155996f9a1b47ad9096eadaaf5c4
+      internalID: -381711788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_182
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89333a889b776bb439459dfe5ba70363
+      internalID: -485857741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_183
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19ada708e644d64eb5e6be020c6fdd4
+      internalID: -869114875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_184
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e644ea56004e440a2fac17d500f151
+      internalID: -399170210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_185
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532b877721ec90043889dd1a3c173a59
+      internalID: 536704567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_186
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9e3c5c6458d624b9d1c978ef4b4219
+      internalID: 496031302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_187
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6204628457c14914e9ddbcbb4ddcb5fd
+      internalID: 130375577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_188
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f461edf4d5e7f44aa446ca813985c2
+      internalID: 1376409535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_189
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0d1e6f143fc7945a83244d1261dcd3
+      internalID: 2090963865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_190
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d40d25581664c479b186f8f34906bd
+      internalID: 502108225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_191
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91921f2362efb9748a9163392b0f9539
+      internalID: -1723738159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_192
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea25d26d79173141867b186c8728f5f
+      internalID: 584007853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_193
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4a349b8a1e7ac43ad5e53c80f40255
+      internalID: 1244643649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_194
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d718d4efd6064498c6f33ab8bad0a2
+      internalID: 1954621284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_195
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b46e39434c69d4fa3457e4dc0c5ba0
+      internalID: 1939819605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_196
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e7b5cd3c966b1458d4bf065994334f
+      internalID: 1068198653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_197
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddafc10b398bc6340aa53b80d5cbe020
+      internalID: -570096441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_198
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4eed7faf29a0849838f743208c52ce
+      internalID: 799555162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_199
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078add9a424d2e44f8a6dda9718314b2
+      internalID: 1218466072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_200
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68949a8603806746b95482656c52d82
+      internalID: 825174475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_201
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b9b1089ca42764d89032a0a8998ed0
+      internalID: -942133039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_202
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78d2a8fcba6f3f4c92e8d7f49dbea24
+      internalID: -1154750963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_203
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42560a61c7afd7742b9dec704e113dea
+      internalID: -676395754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_204
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c4ea0467fec564cb2b87e3fc16a261
+      internalID: -1410800894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_205
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b830d4ad8a55c0942a88e90cc10261cc
+      internalID: 2143483801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_206
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bff410f23ce0ad4b89ef39d458323f3
+      internalID: -114363323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_207
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5a0f4e754e8874cb455d8152faf81b
+      internalID: 378386798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_208
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf9cd61b8531bf469fc6f0732afab08
+      internalID: -1803954332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_209
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f355a1c0742501d4d962cc933de6de8d
+      internalID: -1478188810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_210
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f853aaf3c8ee3d24aa163f941924932b
+      internalID: 682458116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_211
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec150de46dc098c4d8b255c5e667166c
+      internalID: -2001885913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_212
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec9982e50b793b46a38ed55df9453bc
+      internalID: 579114028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_213
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c8098a70fec5348b4b2d261838e934
+      internalID: 301850834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_214
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7241c654faf5fc42b86201c7788b7f2
+      internalID: 66050248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_215
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b823a26fe67644fac3b213488e90be
+      internalID: 1251971586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_216
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14dde08820cced4f9d650b0d26ff8bb
+      internalID: 349483177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_217
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d8db9d512a780419682dab640ce55a
+      internalID: -1393758503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_218
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de94c0cce969f7428e4d4f802c32c07
+      internalID: -166803640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_219
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5624ce871db061744828d850fee7149a
+      internalID: -1637057973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_220
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d34be18c60f654899742048e6724c1
+      internalID: -1672990817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_221
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: abad94201b04c9147b2e8a7a2568edc0
+      internalID: -1661201726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_222
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a17ca9407c35c40a03005115fc30b0
+      internalID: -897419853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_223
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37db5fff115433347818d6f2c937eb1a
+      internalID: -1007147159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_224
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38948de39ab3cd4c88cbbf91696d44e
+      internalID: -511026696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_225
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d7c01cb46bae04d8a2d31ea4fe1d9d
+      internalID: -726133196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_226
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51245a1678a2f1e4891b12a5eaeba7bd
+      internalID: -2023339936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_227
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e8cdd7a459c7b4b8b630bd08c331b8
+      internalID: 1042571075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_228
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5522ce4f0503c4d4c998f7aab43e5e4a
+      internalID: 1841372054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_229
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf80c24d8fa67524ca3e57b18f80e38e
+      internalID: -160804976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_230
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276bf90a8612b8340bc869b4c599fb31
+      internalID: -47629986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_231
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3c15940b487f94a9277a2f289842a5
+      internalID: -1396443624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_232
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42d51a8616b1a04eb8f0fefb593201e
+      internalID: 731422313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_233
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2c1af5844c4a440ad9237cdb8e7237
+      internalID: 175514714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_234
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8534d3ca9febf1e4c9e5a17d5db49382
+      internalID: -2037672952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_235
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e0d56d9fea103478e443fd6bf324a1
+      internalID: 487255552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_236
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41086b4169da92846867920b0c9f0d30
+      internalID: 1855931964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_237
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d087c13aff55d2a45a105ef0ef9bdf75
+      internalID: 976339521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_238
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506361b9b8669804aa4cd865d912c9cf
+      internalID: 576510933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_239
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7668f20c24d3a7498464c61b66beb01
+      internalID: -1048794434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_240
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d7e3a08612c904da623b55bfdb7a7c
+      internalID: 329119620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_241
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2702f1c4f2ba4b4d9c357695bc26d4a
+      internalID: -716070578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_242
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0d72fde510401458f0b3a7469b26b8
+      internalID: 1624942160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_243
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d597140df9f795478224b2b2c26fabd
+      internalID: 770413240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_244
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ba00a04cfe63d428c1931f354ec83a
+      internalID: -1224754070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_245
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad8eaa537a7e6043a78a0b659fdfa9f
+      internalID: 692851124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_246
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2624ae46789127b45bf6554b6b7ca5fc
+      internalID: -1460497718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_247
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e91d5979fae4a478d87d422e305a2c
+      internalID: 127314960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_248
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa2be3e20ef1f148b46d78c6ddbb8be
+      internalID: -1646387577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_249
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea41d8d5f75a51742b8fd5e158d7e590
+      internalID: -715796098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Harbor 4_250
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      physicsShape:
+      - - {x: 0, y: -32}
+        - {x: 16, y: 0}
+        - {x: 0, y: 32}
+        - {x: -16, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a8a0f70641a58429790aca05a29745
+      internalID: 1745339533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RA_Harbor 4_0: 1461518890
+      RA_Harbor 4_1: 1175215092
+      RA_Harbor 4_10: -1444127769
+      RA_Harbor 4_100: -988605100
+      RA_Harbor 4_101: 1364423558
+      RA_Harbor 4_102: 1812010050
+      RA_Harbor 4_103: 1487097737
+      RA_Harbor 4_104: 1668593552
+      RA_Harbor 4_105: 213739885
+      RA_Harbor 4_106: 868422397
+      RA_Harbor 4_107: 1346352643
+      RA_Harbor 4_108: -1310912093
+      RA_Harbor 4_109: 119490980
+      RA_Harbor 4_11: 1375136414
+      RA_Harbor 4_110: 1463241128
+      RA_Harbor 4_111: -1017041776
+      RA_Harbor 4_112: 80647164
+      RA_Harbor 4_113: -427802035
+      RA_Harbor 4_114: 1067994296
+      RA_Harbor 4_115: -277907224
+      RA_Harbor 4_116: 667357830
+      RA_Harbor 4_117: -1853222097
+      RA_Harbor 4_118: -557590657
+      RA_Harbor 4_119: -1249683906
+      RA_Harbor 4_12: -564342967
+      RA_Harbor 4_120: -2122750952
+      RA_Harbor 4_121: 235967973
+      RA_Harbor 4_122: 104805931
+      RA_Harbor 4_123: -1549943419
+      RA_Harbor 4_124: -247702701
+      RA_Harbor 4_125: -1515462098
+      RA_Harbor 4_126: -224726932
+      RA_Harbor 4_127: 2109553277
+      RA_Harbor 4_128: 1712495832
+      RA_Harbor 4_129: 1054470185
+      RA_Harbor 4_13: 523450755
+      RA_Harbor 4_130: -1708447707
+      RA_Harbor 4_131: 437688991
+      RA_Harbor 4_132: 1102608827
+      RA_Harbor 4_133: -827546486
+      RA_Harbor 4_134: -235300487
+      RA_Harbor 4_135: -2067901988
+      RA_Harbor 4_136: -20377093
+      RA_Harbor 4_137: -979722737
+      RA_Harbor 4_138: 1933838768
+      RA_Harbor 4_139: -1618080311
+      RA_Harbor 4_14: -1647859122
+      RA_Harbor 4_140: -686958912
+      RA_Harbor 4_141: -891026033
+      RA_Harbor 4_142: -193227603
+      RA_Harbor 4_143: 392338783
+      RA_Harbor 4_144: 1986574098
+      RA_Harbor 4_145: 1854524288
+      RA_Harbor 4_146: 1598880420
+      RA_Harbor 4_147: 1310126509
+      RA_Harbor 4_148: 386551257
+      RA_Harbor 4_149: -76996630
+      RA_Harbor 4_15: -102637377
+      RA_Harbor 4_150: 1135790476
+      RA_Harbor 4_151: -711276951
+      RA_Harbor 4_152: 1459812262
+      RA_Harbor 4_153: 936254068
+      RA_Harbor 4_154: -686509052
+      RA_Harbor 4_155: 66985986
+      RA_Harbor 4_156: 1674643443
+      RA_Harbor 4_157: 65394735
+      RA_Harbor 4_158: -231174956
+      RA_Harbor 4_159: -479759947
+      RA_Harbor 4_16: 362969614
+      RA_Harbor 4_160: -1980898126
+      RA_Harbor 4_161: 2128871732
+      RA_Harbor 4_162: 238359143
+      RA_Harbor 4_163: -944973803
+      RA_Harbor 4_164: -905105749
+      RA_Harbor 4_165: -537628535
+      RA_Harbor 4_166: -1573117050
+      RA_Harbor 4_167: -1935910670
+      RA_Harbor 4_168: 226154090
+      RA_Harbor 4_169: -2019022030
+      RA_Harbor 4_17: -168836787
+      RA_Harbor 4_170: 1109610093
+      RA_Harbor 4_171: -988520206
+      RA_Harbor 4_172: 577057911
+      RA_Harbor 4_173: 550099904
+      RA_Harbor 4_174: -772397060
+      RA_Harbor 4_175: 337463154
+      RA_Harbor 4_176: -1422765369
+      RA_Harbor 4_177: 247734520
+      RA_Harbor 4_178: 493433413
+      RA_Harbor 4_179: -2077047484
+      RA_Harbor 4_18: 115918345
+      RA_Harbor 4_180: 1800573862
+      RA_Harbor 4_181: -381711788
+      RA_Harbor 4_182: -485857741
+      RA_Harbor 4_183: -869114875
+      RA_Harbor 4_184: -399170210
+      RA_Harbor 4_185: 536704567
+      RA_Harbor 4_186: 496031302
+      RA_Harbor 4_187: 130375577
+      RA_Harbor 4_188: 1376409535
+      RA_Harbor 4_189: 2090963865
+      RA_Harbor 4_19: -1213170044
+      RA_Harbor 4_190: 502108225
+      RA_Harbor 4_191: -1723738159
+      RA_Harbor 4_192: 584007853
+      RA_Harbor 4_193: 1244643649
+      RA_Harbor 4_194: 1954621284
+      RA_Harbor 4_195: 1939819605
+      RA_Harbor 4_196: 1068198653
+      RA_Harbor 4_197: -570096441
+      RA_Harbor 4_198: 799555162
+      RA_Harbor 4_199: 1218466072
+      RA_Harbor 4_2: 1394586702
+      RA_Harbor 4_20: 70525527
+      RA_Harbor 4_200: 825174475
+      RA_Harbor 4_201: -942133039
+      RA_Harbor 4_202: -1154750963
+      RA_Harbor 4_203: -676395754
+      RA_Harbor 4_204: -1410800894
+      RA_Harbor 4_205: 2143483801
+      RA_Harbor 4_206: -114363323
+      RA_Harbor 4_207: 378386798
+      RA_Harbor 4_208: -1803954332
+      RA_Harbor 4_209: -1478188810
+      RA_Harbor 4_21: -2087206424
+      RA_Harbor 4_210: 682458116
+      RA_Harbor 4_211: -2001885913
+      RA_Harbor 4_212: 579114028
+      RA_Harbor 4_213: 301850834
+      RA_Harbor 4_214: 66050248
+      RA_Harbor 4_215: 1251971586
+      RA_Harbor 4_216: 349483177
+      RA_Harbor 4_217: -1393758503
+      RA_Harbor 4_218: -166803640
+      RA_Harbor 4_219: -1637057973
+      RA_Harbor 4_22: -342921205
+      RA_Harbor 4_220: -1672990817
+      RA_Harbor 4_221: -1661201726
+      RA_Harbor 4_222: -897419853
+      RA_Harbor 4_223: -1007147159
+      RA_Harbor 4_224: -511026696
+      RA_Harbor 4_225: -726133196
+      RA_Harbor 4_226: -2023339936
+      RA_Harbor 4_227: 1042571075
+      RA_Harbor 4_228: 1841372054
+      RA_Harbor 4_229: -160804976
+      RA_Harbor 4_23: -1414391816
+      RA_Harbor 4_230: -47629986
+      RA_Harbor 4_231: -1396443624
+      RA_Harbor 4_232: 731422313
+      RA_Harbor 4_233: 175514714
+      RA_Harbor 4_234: -2037672952
+      RA_Harbor 4_235: 487255552
+      RA_Harbor 4_236: 1855931964
+      RA_Harbor 4_237: 976339521
+      RA_Harbor 4_238: 576510933
+      RA_Harbor 4_239: -1048794434
+      RA_Harbor 4_24: 1209404412
+      RA_Harbor 4_240: 329119620
+      RA_Harbor 4_241: -716070578
+      RA_Harbor 4_242: 1624942160
+      RA_Harbor 4_243: 770413240
+      RA_Harbor 4_244: -1224754070
+      RA_Harbor 4_245: 692851124
+      RA_Harbor 4_246: -1460497718
+      RA_Harbor 4_247: 127314960
+      RA_Harbor 4_248: -1646387577
+      RA_Harbor 4_249: -715796098
+      RA_Harbor 4_25: -1055627327
+      RA_Harbor 4_250: 1745339533
+      RA_Harbor 4_26: 2001693780
+      RA_Harbor 4_27: 283718268
+      RA_Harbor 4_28: 1296822234
+      RA_Harbor 4_29: -359407511
+      RA_Harbor 4_3: 305773222
+      RA_Harbor 4_30: 1330305456
+      RA_Harbor 4_31: -1109502702
+      RA_Harbor 4_32: -1032449846
+      RA_Harbor 4_33: 619331468
+      RA_Harbor 4_34: -1305529803
+      RA_Harbor 4_35: 547211352
+      RA_Harbor 4_36: -1766005940
+      RA_Harbor 4_37: -202248551
+      RA_Harbor 4_38: 506969661
+      RA_Harbor 4_39: 403218387
+      RA_Harbor 4_4: -201321621
+      RA_Harbor 4_40: -95954616
+      RA_Harbor 4_41: -392422420
+      RA_Harbor 4_42: -926384347
+      RA_Harbor 4_43: -1468064545
+      RA_Harbor 4_44: 731275164
+      RA_Harbor 4_45: 884031306
+      RA_Harbor 4_46: -85965259
+      RA_Harbor 4_47: 1815956549
+      RA_Harbor 4_48: 1824095061
+      RA_Harbor 4_49: 1826213069
+      RA_Harbor 4_5: -1520243572
+      RA_Harbor 4_50: -95478086
+      RA_Harbor 4_51: 131766249
+      RA_Harbor 4_52: -2065019333
+      RA_Harbor 4_53: -1991453361
+      RA_Harbor 4_54: -1409132769
+      RA_Harbor 4_55: 2121464797
+      RA_Harbor 4_56: -2780355
+      RA_Harbor 4_57: 1521273305
+      RA_Harbor 4_58: 1361769678
+      RA_Harbor 4_59: 677054408
+      RA_Harbor 4_6: -126133435
+      RA_Harbor 4_60: 1253934622
+      RA_Harbor 4_61: 750630070
+      RA_Harbor 4_62: -1818508360
+      RA_Harbor 4_63: -1260833065
+      RA_Harbor 4_64: -9296980
+      RA_Harbor 4_65: 1068612712
+      RA_Harbor 4_66: -475735732
+      RA_Harbor 4_67: 1510694964
+      RA_Harbor 4_68: -991559484
+      RA_Harbor 4_69: -2023852961
+      RA_Harbor 4_7: 1286096668
+      RA_Harbor 4_70: -1706857707
+      RA_Harbor 4_71: -529796846
+      RA_Harbor 4_72: 1951140865
+      RA_Harbor 4_73: -857796780
+      RA_Harbor 4_74: 1820105908
+      RA_Harbor 4_75: -350414591
+      RA_Harbor 4_76: 1600389387
+      RA_Harbor 4_77: -826323396
+      RA_Harbor 4_78: 430794797
+      RA_Harbor 4_79: 1831797140
+      RA_Harbor 4_8: 1601252086
+      RA_Harbor 4_80: 1844017298
+      RA_Harbor 4_81: 523053029
+      RA_Harbor 4_82: 1989789703
+      RA_Harbor 4_83: 3901036
+      RA_Harbor 4_84: -1752928444
+      RA_Harbor 4_85: 493823403
+      RA_Harbor 4_86: 1121844061
+      RA_Harbor 4_87: -1972456595
+      RA_Harbor 4_88: -1124133863
+      RA_Harbor 4_89: -2000423036
+      RA_Harbor 4_9: -514621944
+      RA_Harbor 4_90: 2014550966
+      RA_Harbor 4_91: 244854926
+      RA_Harbor 4_92: 733640650
+      RA_Harbor 4_93: -1886704926
+      RA_Harbor 4_94: 1828195955
+      RA_Harbor 4_95: -1334723677
+      RA_Harbor 4_96: -1698509915
+      RA_Harbor 4_97: -1109116914
+      RA_Harbor 4_98: -1948124652
+      RA_Harbor 4_99: -2010501132
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
