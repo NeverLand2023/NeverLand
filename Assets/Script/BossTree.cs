@@ -30,7 +30,7 @@ public class BossTree : MonoBehaviour
     private bool deadDone = false;
 
     public float attackTime = 5f;
-    private float countTime = 0;
+    public float countTime = 0;
 
     public float followTime = 2f;
     private float curTime = 0;
@@ -88,7 +88,8 @@ public class BossTree : MonoBehaviour
                             attackDone = false;
                         }
 
-                    }                                            
+                    }
+                    attackDone = true;
                     break;
                 case State.Dead:
                     if (deadDone)
@@ -120,17 +121,16 @@ public class BossTree : MonoBehaviour
                     
             }
         }
-        hit = Physics2D.OverlapBoxAll(transform.position, new Vector2(30, 20), 0);
-        for(int i= 0; i < hit.Length; i++)
+        hit = Physics2D.OverlapBoxAll(transform.position, new Vector2(40, 20), 0);
+/*        for(int i= 0; i < hit.Length; i++)
         {
             Debug.Log(hit[i]);
-        }
+        }*/
         curTime += Time.deltaTime;
-        if (Array.Exists(hit, x => x.Equals("Main_Hook")))
+        if (Array.Exists(hit, x => x.tag.Equals("Player")))
         {
             if (curTime >= followTime)
             {
-                Debug.Log("공격하라");
                 Instantiate(bossThorn, playerHook.transform.position, Quaternion.identity);
                 curTime = 0;
             }
@@ -154,7 +154,7 @@ public class BossTree : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position, new Vector2(30, 20));
+        Gizmos.DrawWireCube(transform.position, new Vector2(40, 20));
     }
     private void Idle()
     {
@@ -165,7 +165,7 @@ public class BossTree : MonoBehaviour
 
     private void Attack()
     {
-        if (Array.Exists(hit, x => x.Equals("Main_Hook")))
+        if (Array.Exists(hit, x => x.tag.Equals("Player")))
         {
             animator.SetBool("Attack", true);
             for (int i = 0; i < numberOfThorns; i++)
