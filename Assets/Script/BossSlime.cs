@@ -21,6 +21,7 @@ public class BossSlime : MonoBehaviour
     {
         spriter = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        bossHp = 500;
     }
 
     // Update is called once per frame

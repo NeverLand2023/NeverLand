@@ -40,15 +40,17 @@ public class BossTree : MonoBehaviour
 
     Collider2D[] hit;
 
+    private void Awake()
+    {
+        bossHp = 500;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         state = State.None;
         nextState = State.Idle;
-       
         
-
     }
 
     // Update is called once per frame
