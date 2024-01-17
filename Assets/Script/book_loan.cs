@@ -15,26 +15,30 @@ public class book_loan : MonoBehaviour
     void Update()
     {
         // 스페이스바 입력 감지
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.anyKeyDown)
         {
-            if (isBookLoanActive)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-              //충돌 & 스페이스바 감지시 ui 활성화
-                bookLoanUI.SetActive(true);
-                Debug.Log("충돌 감지");
-                isBookLoanActive = false;
+                if (isBookLoanActive)
+                {
+                    //충돌 & 스페이스바 감지시 ui 활성화
+                    bookLoanUI.SetActive(true);
+                    Debug.Log("충돌 감지");
+                    isBookLoanActive = false;
+                }
+                
             }
+
             else
             {
-                // 스페이스바를 눌렀을 때 UI를 활성화
                 bookLoanUI.SetActive(false);
-                //isBookLoanActive = true;
             }
         }
+        
     }
 
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionStay2D(Collision2D collision)
         {
             if (collision.gameObject.tag == ("Player"))
                 
@@ -42,6 +46,7 @@ public class book_loan : MonoBehaviour
             // BookLoan UI를 활성화
             
             isBookLoanActive = true;
+
         }
 
     }
