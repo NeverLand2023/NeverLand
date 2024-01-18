@@ -29,7 +29,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: boat_open2
+  m_Name: boat_open_door
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -42,7 +42,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: feab2ba8ad4cc7d469d4bf83ea900101, type: 2}
+  m_Motion: {fileID: 7400000, guid: e0b40fc601e828244976f20b01e0509a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
