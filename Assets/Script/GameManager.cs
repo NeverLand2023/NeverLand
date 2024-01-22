@@ -128,6 +128,14 @@ public class GameManager : MonoBehaviour
             {
                 Inventory.InventorySend(invenObjects[1], clickObjects[3], "DiaryNote0");
             }
+            else if (itemName == "Lighter")
+            {
+                Inventory.InventorySend(invenObjects[2], null, "Lighter");
+            }
+            else if (itemName == "Key")
+            {
+                Inventory.InventorySend(invenObjects[3], null, "Key");
+            }
         }
     }
 
