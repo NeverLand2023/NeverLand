@@ -46,7 +46,6 @@ public class candleStick : MonoBehaviour
                     RemoveGhosts();
                 }
             }
-
         }
     }
     void OnDrawGizmos()
