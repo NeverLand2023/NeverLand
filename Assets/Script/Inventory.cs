@@ -5,17 +5,35 @@ using System;
 
 public class Inventory : MonoBehaviour
 {
+    public GameObject inventory;
     public static int invenFilled = 0;
     public static RectTransform[] transArray = new RectTransform[6];
 
+    private bool invenOpen;
+
     void Start()
     {
-        InventoryStart();
+        invenOpen = false;
+        //InventoryStart();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if (!invenOpen)
+            {
+                invenOpen=true;
+                inventory.SetActive(true);
+                InventoryStart();
+            }
+            else
+            {
+                invenOpen=false;
+                inventory.SetActive(false);
+            }
+        }
         for (int i = 1; i <= 6; i++)
         {
             if (Input.GetKeyDown(KeyCode.Alpha0 + i))
