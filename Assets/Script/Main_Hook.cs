@@ -131,7 +131,7 @@ public class Main_Hook : MonoBehaviour
 
         if (collision.gameObject.tag == ("Monster"))
         {
-            //GameManager.DecreaseHP(10f);
+            GameManager.DecreaseHP(10f);
             anim.SetTrigger("Hurt");
         }
         if (collision.collider == thorn)
