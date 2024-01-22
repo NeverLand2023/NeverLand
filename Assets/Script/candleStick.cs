@@ -6,12 +6,16 @@ using System;
 public class candleStick : MonoBehaviour
 {
     private UnityEngine.Rendering.Universal.Light2D candleLight;
+    private Animator animator;
     private Collider2D[] hit;
     private Collider2D[] ghostHit;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+        animator.enabled = false;
+
         candleLight = gameObject.GetComponent<UnityEngine.Rendering.Universal.Light2D>();
         candleLight.enabled = false;
     }
@@ -34,6 +38,7 @@ public class candleStick : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 candleLight.enabled = true;
+                animator.enabled = true;
                 RemoveGhosts();
             }
         }
