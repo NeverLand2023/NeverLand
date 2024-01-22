@@ -27,7 +27,7 @@ public class SwitchCheck : MonoBehaviour
     public void SwitchUpdate()
     {
       
-        if (!btn[0].isUpState && btn[1].isUpState && btn[2].isUpState && btn[3].isUpState)
+        if (!btn[0].isUpState && btn[1].isUpState && btn[2].isUpState && !btn[3].isUpState)
         {
             Main_Hook.attackAvailable = true;
             Destroy(PointLight);
