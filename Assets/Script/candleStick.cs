@@ -37,12 +37,16 @@ public class candleStick : MonoBehaviour
         {
             playerEnter = true;
 
-            if (Input.GetKeyUp(KeyCode.Space) && !candleLight.enabled)
+            if(Array.Exists(GameManager.invenArray, x => x.Item3 == "Lighter"))
             {
-                candleLight.enabled = true;
-                animator.enabled = true;
-                RemoveGhosts();
+                if (Input.GetKeyUp(KeyCode.Space) && !candleLight.enabled)
+                {
+                    candleLight.enabled = true;
+                    animator.enabled = true;
+                    RemoveGhosts();
+                }
             }
+
         }
     }
     void OnDrawGizmos()
