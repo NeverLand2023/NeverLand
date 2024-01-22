@@ -5,7 +5,8 @@ using System;
 
 public class Inventory : MonoBehaviour
 {
-    public GameObject inventory;
+    public RectTransform[] inventory;
+
     public static int invenFilled = 0;
     public static RectTransform[] transArray = new RectTransform[6];
 
@@ -13,8 +14,11 @@ public class Inventory : MonoBehaviour
 
     void Start()
     {
+        //inventory = transform.Find("InvenImage").gameObject;
+        //inventory = GameObject.Find("Inventory").GetComponentsInChildren<RectTransform>(true);
         invenOpen = false;
-        //InventoryStart();
+        InventoryStart();
+        GameManager.Instance.LoadInventory();
     }
 
     // Update is called once per frame
@@ -25,13 +29,21 @@ public class Inventory : MonoBehaviour
             if (!invenOpen)
             {
                 invenOpen=true;
-                inventory.SetActive(true);
-                InventoryStart();
+                for (int i = 0; i < inventory.Length; i++)
+                {
+                    inventory[i].gameObject.SetActive(true);
+                }
+                //inventory.SetActive(true);
+                //InventoryStart();
             }
             else
             {
                 invenOpen=false;
-                inventory.SetActive(false);
+                for (int i = 0; i < inventory.Length; i++)
+                {
+                    inventory[i].gameObject.SetActive(false);
+                }
+                //inventory.SetActive(false);
             }
         }
         for (int i = 1; i <= 6; i++)
@@ -53,8 +65,11 @@ public class Inventory : MonoBehaviour
         for (int i = 1; i < 7; i++)
         {
             string invenName = $"Inventory{i}";
-            GameObject inven = GameObject.Find(invenName);
+            //GameObject inven = GameObject.Find(invenName);
+            GameObject inven = GameObject.Find("Inventory").transform.Find(invenName).gameObject;
+            //RectTransform[] inven = inventory.GetComponentsInChildren<RectTransform>();
             transArray[i - 1] = inven.GetComponent<RectTransform>();
+            //transArray[i - 1] = inven[i - 1];
         }
     }
 
