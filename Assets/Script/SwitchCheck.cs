@@ -5,6 +5,7 @@ using UnityEngine;
 public class SwitchCheck : MonoBehaviour
 {
     public GameObject PointLight;
+    public GameObject Light;
     public GameObject[] switchButtons = new GameObject[4];
     private SwitchButton[] btn = new SwitchButton[4];
     
@@ -30,6 +31,7 @@ public class SwitchCheck : MonoBehaviour
         if (!btn[0].isUpState && btn[1].isUpState && btn[2].isUpState && !btn[3].isUpState)
         {
             Main_Hook.attackAvailable = true;
+            Light.SetActive(true);
             Destroy(PointLight);
             Destroy(gameObject);
         }

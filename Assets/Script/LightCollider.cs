@@ -13,7 +13,6 @@ public class LightCollider : MonoBehaviour
             {
                 pointLight.SetActive(true);
             }
-
             Destroy(this.gameObject);
         }
     }
