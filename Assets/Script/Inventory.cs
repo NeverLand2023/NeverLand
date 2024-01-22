@@ -26,9 +26,11 @@ public class Inventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
+            Debug.Log("im in~");
             if (!invenOpen)
             {
-                invenOpen=true;
+                Debug.Log("again in~");
+                invenOpen =true;
                 for (int i = 0; i < inventory.Length; i++)
                 {
                     inventory[i].gameObject.SetActive(true);
@@ -38,7 +40,8 @@ public class Inventory : MonoBehaviour
             }
             else
             {
-                invenOpen=false;
+                Debug.Log("not in~");
+                invenOpen =false;
                 for (int i = 0; i < inventory.Length; i++)
                 {
                     inventory[i].gameObject.SetActive(false);
