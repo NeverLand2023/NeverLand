@@ -10,9 +10,13 @@ public class candleStick : MonoBehaviour
     private Collider2D[] hit;
     private Collider2D[] ghostHit;
 
+    public static bool playerEnter;
+
     // Start is called before the first frame update
     void Start()
     {
+        playerEnter = false;
+
         animator = GetComponent<Animator>();
         animator.enabled = false;
 
@@ -27,15 +31,13 @@ public class candleStick : MonoBehaviour
         hit = Physics2D.OverlapBoxAll(transform.position, new Vector2(2, 2.5f), 0);
 
         //촛대 불빛과 유령 충돌 감지
-        ghostHit = Physics2D.OverlapCircleAll(transform.position, 6);
-        foreach (Collider2D col in ghostHit)
-        {
-            Debug.Log(col.tag);
-        }
+        ghostHit = Physics2D.OverlapCircleAll(transform.position, 4);
 
         if (Array.Exists(hit, x => x.tag.Equals("Player")))
         {
-            if (Input.GetKeyUp(KeyCode.Space))
+            playerEnter = true;
+
+            if (Input.GetKeyUp(KeyCode.Space) && !candleLight.enabled)
             {
                 candleLight.enabled = true;
                 animator.enabled = true;
@@ -46,9 +48,9 @@ public class candleStick : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position, new Vector2(2f, 2.5f));
+        Gizmos.DrawWireCube(transform.position, new Vector2(1.7f, 2.5f));
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position, 6);
+        Gizmos.DrawWireSphere(transform.position, 4);
     }
 
     void RemoveGhosts()

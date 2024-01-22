@@ -23,29 +23,35 @@ public class Ghost : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //플레이어랑 거리 계산
-        distance = Vector2.Distance(transform.position, player.transform.position);
-        anim.SetFloat("Pdistance", distance);
-        if (transform.position.x > player.transform.position.x)
+        if (candleStick.playerEnter)
         {
-            spriter.flipX = true;
-        }
-        else
-        {
-            spriter.flipX = false;
-        }
+            //플레이어랑 거리 계산
+            distance = Vector2.Distance(transform.position, player.transform.position);
+            anim.SetFloat("Pdistance", distance);
+            if (transform.position.x > player.transform.position.x)
+            {
+                spriter.flipX = true;
+            }
+            else
+            {
+                spriter.flipX = false;
+            }
 
-        if(distance < 2)
-        {
-            anim.SetTrigger("attack");
+            if(distance < 2)
+            {
+                anim.SetTrigger("attack");
+            }
         }
     }
     private void FixedUpdate()
     {
-        Vector2 dirVec = player.position - rigid.position;
-        Vector2 nextVec = dirVec.normalized * speed * Time.fixedDeltaTime;
-        rigid.MovePosition(rigid.position + nextVec);
-        rigid.velocity = Vector2.zero;
+        if (candleStick.playerEnter)
+        {
+            Vector2 dirVec = player.position - rigid.position;
+            Vector2 nextVec = dirVec.normalized * speed * Time.fixedDeltaTime;
+            rigid.MovePosition(rigid.position + nextVec);
+            rigid.velocity = Vector2.zero;
+        }
     }
 
 }
