@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Mission1 1.unity.meta
 guid: 89dc9cf74edd0ba4fb3db3fe0dd4c14b
+========
+guid: 929602d98b70c6746868ad6831f3218d
+>>>>>>>> origin/Gaeun:Assets/Scenes/Mission2_ge.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

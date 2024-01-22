@@ -14,8 +14,11 @@ public class StairTeleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Vector3 newPosition = arriveTrans.position;
-        newPosition.z = Hook.transform.position.z; // Hook의 현재 Z 값을 유지하도록 설정
-        Hook.transform.position = newPosition;
+        if (collision.tag == "Player")
+        {
+            Vector3 newPosition = arriveTrans.position;
+            newPosition.z = Hook.transform.position.z; // Hook의 현재 Z 값을 유지하도록 설정
+            Hook.transform.position = newPosition;
+        }
     }
 }
