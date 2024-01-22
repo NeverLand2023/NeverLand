@@ -3,7 +3,7 @@ guid: 966b48f3c010a7d47bfb4ef4195bd156
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -546,26 +547,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RA_Wasteland_Animations02_14: 1581224844
-      RA_Wasteland_Animations02_7: 1760345162
-      RA_Wasteland_Animations02_18: 1359770037
+      RA_Wasteland_Animations02_0: 1051455509
+      RA_Wasteland_Animations02_1: 295029969
+      RA_Wasteland_Animations02_10: -1034084086
+      RA_Wasteland_Animations02_11: -592175509
+      RA_Wasteland_Animations02_12: 1689604790
       RA_Wasteland_Animations02_13: -570919519
-      RA_Wasteland_Animations02_8: 1754136986
+      RA_Wasteland_Animations02_14: 1581224844
+      RA_Wasteland_Animations02_15: -1061353100
+      RA_Wasteland_Animations02_16: 2040208661
       RA_Wasteland_Animations02_17: 2124547442
+      RA_Wasteland_Animations02_18: 1359770037
+      RA_Wasteland_Animations02_19: 1441076941
+      RA_Wasteland_Animations02_2: -535991115
+      RA_Wasteland_Animations02_3: 200549269
       RA_Wasteland_Animations02_4: -282081913
       RA_Wasteland_Animations02_5: 1200721012
-      RA_Wasteland_Animations02_12: 1689604790
-      RA_Wasteland_Animations02_0: 1051455509
       RA_Wasteland_Animations02_6: 1329992139
-      RA_Wasteland_Animations02_19: 1441076941
+      RA_Wasteland_Animations02_7: 1760345162
+      RA_Wasteland_Animations02_8: 1754136986
       RA_Wasteland_Animations02_9: 1612496198
-      RA_Wasteland_Animations02_11: -592175509
-      RA_Wasteland_Animations02_15: -1061353100
-      RA_Wasteland_Animations02_1: 295029969
-      RA_Wasteland_Animations02_3: 200549269
-      RA_Wasteland_Animations02_2: -535991115
-      RA_Wasteland_Animations02_10: -1034084086
-      RA_Wasteland_Animations02_16: 2040208661
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
