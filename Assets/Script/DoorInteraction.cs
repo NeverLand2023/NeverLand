@@ -19,16 +19,25 @@ public class DoorInteraction : MonoBehaviour
         if(hookEnter && Input.GetKeyDown(KeyCode.Space))
         {
             Hook.transform.position = arriveTrans.position;
+            Debug.Log("going from " + this.gameObject.name);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        hookEnter = true;
+        if(collision.tag == "Player")
+        {
+            hookEnter = true;
+
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        hookEnter= false;
+        if (collision.tag == "Player")
+        {
+            hookEnter = false;
+
+        }
     }
 }

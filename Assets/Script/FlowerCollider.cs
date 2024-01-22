@@ -18,12 +18,13 @@ public class FlowerCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        HookEnter = true;
+        if (collision.tag == "Player")
+            HookEnter = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-
-        HookEnter = false;
+        if (collision.tag == "Player")
+            HookEnter = false;
     }
 }
