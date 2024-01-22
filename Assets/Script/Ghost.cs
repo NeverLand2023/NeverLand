@@ -34,6 +34,11 @@ public class Ghost : MonoBehaviour
         {
             spriter.flipX = false;
         }
+
+        if(distance < 2)
+        {
+            anim.SetTrigger("attack");
+        }
     }
     private void FixedUpdate()
     {
@@ -42,4 +47,5 @@ public class Ghost : MonoBehaviour
         rigid.MovePosition(rigid.position + nextVec);
         rigid.velocity = Vector2.zero;
     }
+
 }
