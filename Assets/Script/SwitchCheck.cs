@@ -8,7 +8,8 @@ public class SwitchCheck : MonoBehaviour
     public GameObject Light;
     public GameObject[] switchButtons = new GameObject[4];
     private SwitchButton[] btn = new SwitchButton[4];
-    
+    public GameObject switchObj;
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,13 @@ public class SwitchCheck : MonoBehaviour
         {
             Main_Hook.attackAvailable = true;
             Light.SetActive(true);
+
+            Collider colliderComponent = switchObj.GetComponent<Collider>();
+            if (colliderComponent != null)
+            {
+                colliderComponent.enabled = false;
+            }
+
             Destroy(PointLight);
             Destroy(gameObject);
         }

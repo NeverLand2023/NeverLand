@@ -17,6 +17,7 @@ public class SwitchCollider : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            collisionState = false;
             switchCanvas.SetActive(false);
             Main_Hook.attackAvailable = true;
         }
