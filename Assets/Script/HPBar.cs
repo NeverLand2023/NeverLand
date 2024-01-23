@@ -13,7 +13,8 @@ public class HPBar : MonoBehaviour
         Hook,
         BossSlime,
         BossTree,
-        BossSkeleton
+        BossSkeleton,
+        Skeleton2,
     }
 
     public Character characterSelect;
@@ -32,6 +33,9 @@ public class HPBar : MonoBehaviour
                 break;
             case Character.BossSkeleton:
                 slider.value = BossSkeleton.GetCurrentHP() / maxHP;
+                break;
+            case Character.Skeleton2:
+                slider.value = Skeleton2.GetCurrentHP() / maxHP;
                 break;
             default:
                 Debug.LogError("Character not selected");

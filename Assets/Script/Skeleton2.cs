@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Skeleton2 : MonoBehaviour
 {
-    public float MonsterHP = 100;
+    private static int MonsterHP = 200;
     Animator anim;
     public GameObject skeleton;
 
@@ -26,6 +26,11 @@ public class Skeleton2 : MonoBehaviour
                 Invoke("DeleteSkeleton", 1f);
             }
         }
+    }
+
+    public static float GetCurrentHP()
+    {
+        return MonsterHP;
     }
 
     void DeleteSkeleton()

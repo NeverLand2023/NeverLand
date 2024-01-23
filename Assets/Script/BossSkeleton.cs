@@ -208,7 +208,10 @@ public class BossSkeleton : MonoBehaviour
     private void DeadAnimationDone()
     {
         deadDone = true;
+        skeletone2.SetActive(true);
+
         Destroy(gameObject);
+
     }
 
     void FlipIfNeeded(float horizontalMovement)
@@ -262,17 +265,8 @@ public class BossSkeleton : MonoBehaviour
 
             if (BossHp <= 0)
             {
-                animator.SetBool("death", true);
-
-                // 1초 후에 DeleteSkeleton 함수 호출
-                Invoke("DeleteSkeleton", 1f);
+                animator.SetBool("dead", true);
             }
         }
-    }
-
-    void DeleteSkeleton()
-    {
-        skeletone2.SetActive(true);
-        Destroy(gameObject);
     }
 }
