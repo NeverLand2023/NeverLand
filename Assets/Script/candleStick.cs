@@ -43,6 +43,7 @@ public class candleStick : MonoBehaviour
                 {
                     candleLight.enabled = true;
                     animator.enabled = true;
+                    SoundManager.instance.candleStickSound.Play();
                     RemoveGhosts();
                 }
             }

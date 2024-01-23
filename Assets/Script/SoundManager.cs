@@ -12,6 +12,9 @@ public class SoundManager : MonoBehaviour
     public AudioSource bossSlimeDeadSound;
     public AudioSource earthquakesound;
     public AudioSource bossTreeBGM;
+    public AudioSource doorSound;
+    public AudioSource analogButtonSound;
+    public AudioSource candleStickSound;
 
     [Header("#BGM")]    //bgm
     public AudioClip[] bgmClip;
