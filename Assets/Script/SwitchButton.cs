@@ -29,6 +29,7 @@ public class SwitchButton : MonoBehaviour
 
         // 전환된 상태에 따라 오브젝트 활성화 및 비활성화
         SetObjectsState();
+        SoundManager.instance.analogButtonSound.Play();
     }
 
     void SetObjectsState()

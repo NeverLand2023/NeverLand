@@ -20,6 +20,7 @@ public class DoorInteraction : MonoBehaviour
         {
             Hook.transform.position = arriveTrans.position;
             Debug.Log("going from " + this.gameObject.name);
+            SoundManager.instance.doorSound.Play();
         }
     }
 
