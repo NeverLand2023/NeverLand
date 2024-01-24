@@ -6,6 +6,9 @@ public class steering_gear : MonoBehaviour
 {
     public GameObject steeringgear;
     public GameObject background_black;
+    public GameObject minimapline;
+    public Camera minimapcam;
+    public Camera minimapcam2;
     public bool issteeringActive = false;
 
     private int open = 0;
@@ -27,16 +30,19 @@ public class steering_gear : MonoBehaviour
                     //충돌 & 스페이스바 감지시 ui 활성화
                     background_black.SetActive(true);
                     steeringgear.SetActive(true);
+                    minimapline.SetActive(false);
+                    minimapcam.enabled = false;
+                    minimapcam2.enabled = false;
 
-                  
-                   
-                }
 
-               /* else
+            }
+
+                else
                 {
-                    background_black.SetActive(false);
-                   steeringgear.SetActive(false);
-                }*/
+                    minimapline.SetActive(true);
+                    minimapcam.enabled = true;
+                    minimapcam2.enabled = true;
+            }
             }
 
 
