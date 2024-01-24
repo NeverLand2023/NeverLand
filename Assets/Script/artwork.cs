@@ -6,7 +6,7 @@ public class artwork : MonoBehaviour
 {
     public GameObject art;
     public GameObject key_ui;
-    public static bool hasKey = true;
+    public static bool hasKey = false;
 
     // Start is called before the first frame update
     void Start()
