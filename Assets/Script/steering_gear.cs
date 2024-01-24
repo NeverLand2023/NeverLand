@@ -51,7 +51,7 @@ public class steering_gear : MonoBehaviour
         if (collision.gameObject.tag == ("Player"))
 
         {
-            // BookLoan UI를 활성화
+
 
             issteeringActive = true;
 

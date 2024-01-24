@@ -6,6 +6,7 @@ public class gear_rotation : MonoBehaviour
 {
 
     public GameObject background_black;
+    public GameObject comingsoon;
     public AudioClip rotation_sound;
 
     public float rotation =15f;
@@ -39,6 +40,8 @@ public class gear_rotation : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 background_black.SetActive(false);
+                comingsoon.SetActive(true);
+
             }
             if (left > 10)
             {
