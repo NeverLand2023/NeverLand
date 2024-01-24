@@ -26,6 +26,7 @@ public class artwork : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Inventory.InventorySend(key_ui, null, "Key");
+                SoundManager.instance.ItemSound.Play();
                 hasKey = true;
                 art.SetActive(false);
             }

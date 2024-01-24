@@ -15,6 +15,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource doorSound;
     public AudioSource analogButtonSound;
     public AudioSource candleStickSound;
+    public AudioSource ItemSound;
 
     [Header("#BGM")]    //bgm
     public AudioClip[] bgmClip;
