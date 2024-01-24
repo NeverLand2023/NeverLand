@@ -88,7 +88,7 @@ public class Inventory : MonoBehaviour
         GameObject newInven = Instantiate(GameManager.invenArray[invenFilled].Item1, transArray[invenFilled].position, transArray[invenFilled].rotation);
         newInven.transform.SetParent(transArray[invenFilled]);
         invenFilled++;
-        Debug.Log(invenFilled);
+        Debug.Log("invenFilled: " + invenFilled);
 
     }
 

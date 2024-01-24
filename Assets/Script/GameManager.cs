@@ -62,6 +62,11 @@ public class GameManager : MonoBehaviour
 
         healSound = GetComponent<AudioSource>();
 
+        // 인벤토리 초기화
+        for (int i = 0; i < invenArray.Length; i++)
+        {
+            invenArray[i] = new Tuple<GameObject, GameObject, string>(null, null, null);
+        }
 
     }
 
@@ -112,6 +117,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < invenNumber; i++)
         {
             string itemName = PlayerPrefs.GetString("Inventory_" + (i).ToString());
+            Debug.Log("itemName: " + itemName);
             if (itemName == "NumberNote0")
             {
                 Inventory.InventorySend(invenObjects[0], clickObjects[2], "NumberNote0");

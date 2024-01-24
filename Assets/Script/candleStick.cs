@@ -36,8 +36,7 @@ public class candleStick : MonoBehaviour
         if (Array.Exists(hit, x => x.tag.Equals("Player")))
         {
             playerEnter = true;
-
-            if(Array.Exists(GameManager.invenArray, x => x.Item3 == "Lighter"))
+            if (Array.Exists(GameManager.invenArray, x => x.Item3 == "Lighter"))
             {
                 if (Input.GetKeyUp(KeyCode.Space) && !candleLight.enabled)
                 {
