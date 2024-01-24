@@ -6,6 +6,7 @@ public class Skeleton2 : MonoBehaviour
     private static int MonsterHP = 200;
     Animator anim;
     public GameObject skeleton;
+    public GameObject hands;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class Skeleton2 : MonoBehaviour
             if (MonsterHP <= 0)
             {
                 anim.SetBool("die", true);
+                
 
                 // 1초 후에 DeleteSkeleton 함수 호출
                 Invoke("DeleteSkeleton", 1f);
@@ -35,6 +37,9 @@ public class Skeleton2 : MonoBehaviour
 
     void DeleteSkeleton()
     {
+        Destroy(hands);
         Destroy(skeleton);
+        
+
     }
 }

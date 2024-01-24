@@ -22,6 +22,7 @@ public class BossSkeleton : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public GameObject skeletone2;
 
+
     private bool facingRight = true;
     private bool isWalking = false;
 
@@ -133,7 +134,9 @@ public class BossSkeleton : MonoBehaviour
                 case State.Dead:
                     if (deadDone)
                     {
+                        
                         Destroy(gameObject);
+                        
                     }
                     break;
             }
@@ -203,12 +206,15 @@ public class BossSkeleton : MonoBehaviour
     private void Dead()
     {
         animator.SetBool("death", true);
+        
+
 
     }
     private void DeadAnimationDone()
     {
         deadDone = true;
         skeletone2.SetActive(true);
+       
 
         Destroy(gameObject);
 
