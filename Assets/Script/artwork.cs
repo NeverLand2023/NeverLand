@@ -6,6 +6,7 @@ public class artwork : MonoBehaviour
 {
     public GameObject art;
     public GameObject key_ui;
+    public static bool hasKey = true;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class artwork : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Inventory.InventorySend(key_ui, null, "Key");
+                hasKey = true;
                 art.SetActive(false);
             }
         }
