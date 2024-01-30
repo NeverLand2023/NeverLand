@@ -26,10 +26,8 @@ public class Inventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            Debug.Log("im in~");
             if (!invenOpen)
             {
-                Debug.Log("again in~");
                 invenOpen =true;
                 for (int i = 0; i < inventory.Length; i++)
                 {
