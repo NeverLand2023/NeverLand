@@ -29,18 +29,30 @@ public class Main_Hook : MonoBehaviour
 
     public GameObject attack_effect;
 
+    public GameObject emoji;
+
+    public GameObject emoji_collider;
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriter = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+       
+        
 
+    }
+
+    void active_emoji()
+    {
+        emoji.SetActive(true);
     }
 
 
     // Update is called once per frame
     void Update()
     {
+        
         //캐릭터 움직임
         inputVec.x = Input.GetAxisRaw("Horizontal");
         inputVec.y = Input.GetAxisRaw("Vertical");
@@ -155,6 +167,12 @@ public class Main_Hook : MonoBehaviour
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("main_hook_Attack"))
         {
 
+        }
+
+        if (collision.gameObject.tag == "emoji")
+        {
+            Invoke("active_emoji", 0.5f);
+            emoji_collider.SetActive(false);
         }
     }
 

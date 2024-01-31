@@ -10,6 +10,7 @@ TagManager:
   - PlayerAttack
   - BossSlime
   - BossSlimeArea
+  - emoji
   layers:
   - Default
   - TransparentFX
