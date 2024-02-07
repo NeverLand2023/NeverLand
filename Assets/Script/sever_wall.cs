@@ -9,12 +9,16 @@ public class sever_wall : MonoBehaviour
     public GameObject invisiblewall;
 
     public Rigidbody2D nextwall;
+    public Collider2D bottomcollider;
+    public Collider2D playerCollider;
     // Start is called before the first frame update
     void Start()
     {
         //audioSource = GetComponent<AudioSource>();
         audioSource = gameObject.AddComponent<AudioSource>();  // AudioSource 동적 추가
         audioSource.clip = boom;
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), bottomcollider);
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), playerCollider, false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

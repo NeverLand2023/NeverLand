@@ -7,10 +7,16 @@ public class wall_start : MonoBehaviour
 
    // public GameObject firstwall;
     public Rigidbody2D firstwall;
+  //  public Collider2D bottomcollider;
+  //  public Collider2D playerCollider;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+   
+       // Physics2D.IgnoreCollision(GetComponent<Collider2D>(), bottomcollider);
+      //  Physics2D.IgnoreCollision(GetComponent<Collider2D>(), playerCollider, false);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
