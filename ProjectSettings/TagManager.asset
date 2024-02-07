@@ -11,6 +11,8 @@ TagManager:
   - BossSlime
   - BossSlimeArea
   - emoji
+  - SimulatedOn
+  - boom
   layers:
   - Default
   - TransparentFX
