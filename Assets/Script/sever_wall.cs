@@ -11,6 +11,8 @@ public class sever_wall : MonoBehaviour
     public Rigidbody2D nextwall;
     public Collider2D bottomcollider;
     public Collider2D playerCollider;
+    public Collider2D obstacle1;
+    public Collider2D obstacle2;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,8 @@ public class sever_wall : MonoBehaviour
         audioSource.clip = boom;
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), bottomcollider);
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), playerCollider, false);
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), obstacle1);
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), obstacle2);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
