@@ -13,6 +13,9 @@ public class sever_wall : MonoBehaviour
     public Collider2D playerCollider;
     public Collider2D obstacle1;
     public Collider2D obstacle2;
+    public Collider2D obstacle3;
+    public Collider2D obstacle4;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,8 @@ public class sever_wall : MonoBehaviour
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), playerCollider, false);
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), obstacle1);
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), obstacle2);
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), obstacle3);
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), obstacle4);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
