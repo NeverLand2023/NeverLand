@@ -157,7 +157,7 @@ public class Keypad : MonoBehaviour
     {
         yield return new WaitForSeconds(delayInSeconds);
 
-        
+        //PlayerPrefs.SetInt("MissionNunber", 2);
         SceneManager.LoadScene("Mission2");
     }
 

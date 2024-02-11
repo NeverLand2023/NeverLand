@@ -25,6 +25,7 @@ public class Lighter : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Inventory.InventorySend(lighter_ui, null, "Lighter");
+                SoundManager.instance.ItemSound.Play();
                 lighter.SetActive(false);
             }
         }

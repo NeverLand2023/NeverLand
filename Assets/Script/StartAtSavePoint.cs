@@ -33,10 +33,10 @@ public class StartAtSavePoint : MonoBehaviour
         GameManager.ResetHP();
 
         int missionNumber = PlayerPrefs.GetInt("MissionNunber", 1);
+        //PlayerPrefs.SetInt("MissionNunber", 2);
         //미션 넘어갈때마다 PlayerPrefs.SetInt("MissionNunber", <미션번호>);   <-추가해주세요
 
-        //SceneManager.LoadScene("Mission"+ missionNumber.ToString());
-        SceneManager.LoadScene("WH_mission1");
+        SceneManager.LoadScene("Mission"+ missionNumber.ToString());
     }
 
     public void onClickExit()

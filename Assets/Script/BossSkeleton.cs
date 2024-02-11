@@ -20,6 +20,8 @@ public class BossSkeleton : MonoBehaviour
 
     public Transform target;
     public SpriteRenderer spriteRenderer;
+    public GameObject skeletone2;
+
 
     private bool facingRight = true;
     private bool isWalking = false;
@@ -132,7 +134,9 @@ public class BossSkeleton : MonoBehaviour
                 case State.Dead:
                     if (deadDone)
                     {
+                        
                         Destroy(gameObject);
+                        
                     }
                     break;
             }
@@ -202,12 +206,18 @@ public class BossSkeleton : MonoBehaviour
     private void Dead()
     {
         animator.SetBool("death", true);
+        
+
 
     }
     private void DeadAnimationDone()
     {
         deadDone = true;
+        skeletone2.SetActive(true);
+       
+
         Destroy(gameObject);
+
     }
 
     void FlipIfNeeded(float horizontalMovement)
@@ -252,7 +262,17 @@ public class BossSkeleton : MonoBehaviour
         }
         yield return null;
     }
+    /*
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "PlayerAttack")
+        {
+            BossHp -= 30;
 
-
-
+            if (BossHp <= 0)
+            {
+                animator.SetBool("dead", true);
+            }
+        }
+    }*/
 }

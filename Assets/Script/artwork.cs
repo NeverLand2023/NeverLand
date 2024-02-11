@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class artwork : MonoBehaviour
 {
     public GameObject art;
     public GameObject key_ui;
+    public static bool hasKey = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +26,12 @@ public class artwork : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Inventory.InventorySend(key_ui, null, "Key");
+                if(!Array.Exists(GameManager.invenArray, x => x.Item3 == "Key"))
+                {
+                    Inventory.InventorySend(key_ui, null, "Key");
+                    SoundManager.instance.ItemSound.Play();
+                }
+                hasKey = true;
                 art.SetActive(false);
             }
         }
