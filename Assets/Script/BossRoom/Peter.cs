@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Peter : MonoBehaviour
 {
+    public GameObject wall_2p;
+    public GameObject wall_3p;
     public GameObject black_monster;
     public GameObject breads;
+
     private static int hp = 200;
     bool start_1;
     bool start_2;
@@ -25,7 +28,12 @@ public class Peter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hp < 200 * 0.3)
+        if (hp <= 0)
+        {
+            StopCoroutine(wall.random_fall());
+            animator.SetBool("break", true);
+        }
+        else if (hp < 200 * 0.3)
         {
             if (!start_3)
             {
@@ -49,10 +57,7 @@ public class Peter : MonoBehaviour
                 Page_1();
             }
         }
-        else if(hp <= 0)
-        {
-            animator.SetBool("break", true);
-        }
+
     }
     public static float GetCurrentHP()
     {
@@ -78,6 +83,7 @@ public class Peter : MonoBehaviour
     private void Page_2()
     {
         animator.SetBool("yellow_cut", true);
+        StartCoroutine(wall.make_wall(wall_2p));
 
         // 전기구슬 공격
         breads.SetActive(true);
@@ -87,8 +93,9 @@ public class Peter : MonoBehaviour
     {
         breads.SetActive(false);
         animator.SetBool("green_cut", true);
+        StartCoroutine(wall.make_wall(wall_3p));
 
         // 벽 공격
-        
+        StartCoroutine(wall.random_fall());
     }
 }

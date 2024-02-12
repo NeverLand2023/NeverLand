@@ -4,37 +4,56 @@ using UnityEngine;
 
 public class wall : MonoBehaviour
 {
-    public GameObject wall_1p;
-    public GameObject wall_2p;
-    public GameObject wall_3p;
 
     // Start is called before the first frame update
     void Start()
     {
-        make_wall(wall_1p);
+ 
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        float peter_hp = Peter.GetCurrentHP();
-        if(peter_hp <= (200 * 0.3))
+
+
+    }
+
+    public static IEnumerator make_wall(GameObject wall)
+    {
+        //위에서 떨어지기
+        Rigidbody2D[] new_walls = wall.GetComponentsInChildren<Rigidbody2D>();
+
+        foreach(Rigidbody2D w in new_walls)
         {
-            //3 page
-            make_wall(wall_3p);
+            w.gravityScale = 1;
         }
-        else if(peter_hp <= (200 * 0.7))
+
+        yield return new WaitForSeconds(3);
+
+        foreach (Rigidbody2D w in new_walls)
         {
-            //2 page
-            make_wall(wall_2p);
+            w.gravityScale = 0;
+            w.constraints = RigidbodyConstraints2D.FreezeAll;
         }
 
     }
 
-    void make_wall(GameObject wall)
+    public static IEnumerator random_fall()
     {
-        //위에서 떨어지기
-        wall.SetActive(true);
+        while (true)
+        {
+            Rigidbody2D[] walls = GameObject.Find("wall").GetComponentsInChildren<Rigidbody2D>();
+            int num = Random.Range(0, walls.Length);
+            Vector3 origin = walls[num].GetComponent<Transform>().position;
+
+            walls[num].gravityScale = 1;
+
+            yield return new WaitForSeconds(3);
+
+            walls[num].gravityScale = 0;
+            walls[num].GetComponent<Transform>().position = origin;
+        }
 
     }
 }
