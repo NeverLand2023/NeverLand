@@ -18,6 +18,16 @@ public class wall : MonoBehaviour
     void Update()
     {
         float peter_hp = Peter.GetCurrentHP();
+        if(peter_hp <= (200 * 0.3))
+        {
+            //3 page
+            make_wall(wall_3p);
+        }
+        else if(peter_hp <= (200 * 0.7))
+        {
+            //2 page
+            make_wall(wall_2p);
+        }
 
     }
 
@@ -25,15 +35,6 @@ public class wall : MonoBehaviour
     {
         //위에서 떨어지기
         wall.SetActive(true);
-        Vector3 origin = wall.transform.position;
-        wall.transform.position += new Vector3(0, 15, 0);
-
-        while(wall.transform.position.y > origin.y)
-        {
-            wall.transform.position = new Vector3(0, -0.5f, 0);
-        }
-
-        wall.transform.position = origin;
 
     }
 }

@@ -14,6 +14,7 @@ TagManager:
   - SimulatedOn
   - boom
   - Die
+  - bead
   layers:
   - Default
   - TransparentFX
