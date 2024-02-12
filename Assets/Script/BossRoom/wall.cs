@@ -41,19 +41,25 @@ public class wall : MonoBehaviour
 
     public static IEnumerator random_fall()
     {
-        while (true)
-        {
-            Rigidbody2D[] walls = GameObject.Find("wall").GetComponentsInChildren<Rigidbody2D>();
-            int num = Random.Range(0, walls.Length);
-            Vector3 origin = walls[num].GetComponent<Transform>().position;
+        Rigidbody2D[] walls = GameObject.Find("walls").GetComponentsInChildren<Rigidbody2D>();
+        Debug.Log(walls.Length);
+        int num = Random.Range(0, walls.Length);
+        Vector3 origin = walls[num].GetComponent<Transform>().position;
+        walls[num].GetComponentInChildren<Collider2D>(true).gameObject.SetActive(true);
 
-            walls[num].gravityScale = 1;
+        walls[num].constraints = RigidbodyConstraints2D.None;
+        walls[num].constraints = RigidbodyConstraints2D.FreezeRotation;
+        walls[num].constraints = RigidbodyConstraints2D.FreezePositionX;
+        walls[num].gravityScale = 1;
 
-            yield return new WaitForSeconds(3);
 
-            walls[num].gravityScale = 0;
-            walls[num].GetComponent<Transform>().position = origin;
-        }
+        yield return new WaitForSeconds(3);
+
+
+        walls[num].GetComponent<Transform>().position = origin;
+        walls[num].GetComponentInChildren<Collider2D>(true).gameObject.SetActive(false);
+        walls[num].gravityScale = 0;
+        walls[num].constraints = RigidbodyConstraints2D.FreezeAll;
 
     }
 }

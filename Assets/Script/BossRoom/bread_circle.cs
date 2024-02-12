@@ -25,7 +25,7 @@ public class bread_circle : MonoBehaviour
         {
             timer += Time.deltaTime;
             RectTransform rectTransform = GetComponent<RectTransform>();
-            rectTransform.anchoredPosition += new Vector2(0, -0.02f);
+            rectTransform.anchoredPosition += new Vector2(0, -0.015f);
             if (timer > 2)
             {
                 awake = false;

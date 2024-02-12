@@ -14,6 +14,7 @@ public class breads : MonoBehaviour
     void Start()
     {
         timer = 0;
+        StartCoroutine("attack_1");
     }
 
     // Update is called once per frame
@@ -21,8 +22,8 @@ public class breads : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        // 5초에 한번씩 패턴 1~3 중 하나 선택해서 공격
-        if(timer > 15)
+        // 3초에 한번씩 패턴 1~3 중 하나 선택해서 공격
+        if(timer > 13)
         {
             int pattern_num = Random.Range(1, 4);
             switch (pattern_num)

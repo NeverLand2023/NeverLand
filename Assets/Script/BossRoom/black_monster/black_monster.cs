@@ -75,5 +75,10 @@ public class black_monster : MonoBehaviour
                 anim.SetBool("isDeath", true);
             }
         }
+
+        if(collision.gameObject.tag == "Player")
+        {
+            GameManager.DecreaseHP(10);
+        }
     }
 }
