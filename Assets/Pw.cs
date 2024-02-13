@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pw : MonoBehaviour
 {
+
+    public GameObject PW_ui;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +16,12 @@ public class Pw : MonoBehaviour
 
         if (collision.tag == "Player")
         {
-           
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Inventory.InventorySend(PW_ui, null, "Password_note");
+                SoundManager.instance.ItemSound.Play();
+            }
+ 
         }
 
     }
