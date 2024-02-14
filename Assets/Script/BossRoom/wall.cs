@@ -59,7 +59,7 @@ public class wall : MonoBehaviour
         transform.position = origin;
 
         yield return new WaitForSeconds(0.5f);
-        SoundManager.instance.server_shake.Pause();
+        SoundManager.instance.server_shake.Stop();
 
         //¶³¾îÁü
         SoundManager.instance.server_fall.Play();
