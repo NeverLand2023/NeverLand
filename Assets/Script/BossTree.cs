@@ -40,6 +40,9 @@ public class BossTree : MonoBehaviour
 
     Collider2D[] hit;
 
+    private SpriteRenderer bossSpriteRenderer;
+    private Color originalColor; 
+
     private void Awake()
     {
         bossHp = 500;
@@ -50,6 +53,9 @@ public class BossTree : MonoBehaviour
     {
         state = State.None;
         nextState = State.Idle;
+
+        bossSpriteRenderer = GetComponent<SpriteRenderer>();
+        originalColor = bossSpriteRenderer.color;
         
     }
 
@@ -233,7 +239,15 @@ public class BossTree : MonoBehaviour
         {
             Debug.Log("20 ±ðÀÓ");
             bossHp -= 30;
+            StartCoroutine(FlashRed());
         }
+    }
+
+    IEnumerator FlashRed() 
+    {
+        bossSpriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        bossSpriteRenderer.color = originalColor;
     }
 
     public static float GetCurrentHP()
