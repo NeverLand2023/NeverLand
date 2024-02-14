@@ -8,6 +8,7 @@ public class PcUI_control : MonoBehaviour
 
     public GameObject PC_UI1;
     public GameObject PC_UI2;
+    public GameObject RedLight;
 
     private bool UI1Active = false;
     private bool UI2Active = false;
@@ -17,10 +18,6 @@ public class PcUI_control : MonoBehaviour
     public int UInum = 0;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
 
     void OnCollisionStay2D(Collision2D collision)
@@ -35,6 +32,7 @@ public class PcUI_control : MonoBehaviour
             if (UInum == 1){
                 UI2Active = true;
             }
+            
 
         }
 
@@ -55,6 +53,13 @@ public class PcUI_control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (UInum == 2)
+        {
+            UI1Active = false;
+            UI2Active = false;
+        }
+       
+
         if (Input.anyKeyDown)
         {
 
@@ -75,7 +80,11 @@ public class PcUI_control : MonoBehaviour
                     UI2Active = false;
                 }
 
-
+                if (UInum == 3)
+                {
+                    RedLight.SetActive(true);
+                    //보스전으로 넘어가는 연출
+                }
 
 
 

@@ -10,12 +10,16 @@ public class input : MonoBehaviour
     public PcUI_control PcUIControl;
     public GameObject PCUI_off;
     public GameObject locker;
+    private AudioSource audioSource;
+    public AudioClip bip;
 
     // Start is called before the first frame update
     void Start()
     {
         // 입력 필드의 onValueChanged 이벤트에 함수를 등록
         inputField.onValueChanged.AddListener(OnInputValueChanged);
+        audioSource = gameObject.AddComponent<AudioSource>();  // AudioSource 동적 추가
+        audioSource.clip = bip;
     }
 
     // 입력이 변경될 때 호출되는 함수
@@ -33,11 +37,19 @@ public class input : MonoBehaviour
             {
                 
                 PcUIControl.UInum = 1;
-  
+                
                 PCUI_off.SetActive(false);
                 locker.SetActive(true);
+               // audioSource.Play();
 
             }
+            else
+            {
+                result = 0;
+                audioSource.Play();
+
+            }
+            
         }
     }
 }
