@@ -40,10 +40,11 @@ public class Peter : MonoBehaviour
             {
                 start_3 = true;
                 Page_3();
+                StartCoroutine(wall.random_fall());
             }
 
             timer += Time.deltaTime;
-            if(timer > 3)
+            if(timer > 6)
             {
                 //º® °ø°Ý
                 StartCoroutine(wall.random_fall());
