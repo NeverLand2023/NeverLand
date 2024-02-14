@@ -5,24 +5,34 @@ using UnityEngine;
 public class Pw : MonoBehaviour
 {
 
-    public GameObject PW_ui;
+    public GameObject PW_INVENui;
+    public GameObject PW_GAMEui;
+    public GameObject Canvas;
     // Start is called before the first frame update
     void Start()
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
 
         if (collision.tag == "Player")
         {
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Inventory.InventorySend(PW_ui, null, "Password_note");
+                Debug.Log("들어간다");
+                Canvas.SetActive(true);
+                Inventory.InventorySend(PW_INVENui, null, "Password_note");
+                PW_GAMEui.SetActive(false);
+                
+                
                 SoundManager.instance.ItemSound.Play();
+                
             }
- 
+
         }
+        
 
     }
     // Update is called once per frame

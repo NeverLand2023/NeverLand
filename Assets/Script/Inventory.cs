@@ -26,6 +26,7 @@ public class Inventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
+            Debug.Log("i´­¸²");
             if (!invenOpen)
             {
                 invenOpen =true;
