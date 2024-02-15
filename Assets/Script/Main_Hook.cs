@@ -161,6 +161,12 @@ public class Main_Hook : MonoBehaviour
             GameManager.DecreaseHP(20f);
             anim.SetTrigger("Hurt");
         }
+        else if (collision.gameObject.tag == ("die"))
+        {
+            GameManager.DecreaseHP(100f);
+            anim.SetBool("isDeath", true);
+            SoundManager.instance.bossTreeBGM.Stop();
+        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
