@@ -8,6 +8,8 @@ public class inven_news : MonoBehaviour
     public GameObject inGameLetter;
     public GameObject toinvenNews;
     public GameObject toinvenLetter;
+    private AudioSource audioSource;
+    public AudioClip PCcallSound;
 
     void Start()
     {
@@ -22,13 +24,18 @@ public class inven_news : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                SoundManager.instance.ItemSound.Play();
 
                 Debug.Log("½¹");
                 Inventory.InventorySend(toinvenNews, null, "News");
-                SoundManager.instance.ItemSound.Play();
+                
                 inGameNews.SetActive(false); 
                 Inventory.InventorySend(toinvenLetter, null, "Letter");
                 inGameLetter.SetActive(false);
+                
+               
+
+                Invoke("sound", 1.5f);
             }
 
         }
@@ -36,6 +43,13 @@ public class inven_news : MonoBehaviour
 
     }
 
+
+    void sound()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>();  // AudioSource µ¿Àû Ãß°¡
+        audioSource.clip = PCcallSound;
+        audioSource.Play();
+    }
     // Update is called once per frame
     void Update()
     {

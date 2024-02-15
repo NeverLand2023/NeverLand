@@ -40,6 +40,14 @@ public class PcUI_control : MonoBehaviour
 
             if (UInum == 2)
             {
+                letsgoBoss = false;
+                UI1Active = false;
+                UI2Active = false;
+            }
+
+            if (UInum == 4)
+            {
+
                 letsgoBoss = true;
             }
 
@@ -76,7 +84,10 @@ public class PcUI_control : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-
+                if(UInum == 3)
+                {
+                    UInum = 4;
+                }
                 if (!letsgoBoss && !UI1Active && !UI2Active)
                 {
                     minimapline.SetActive(true);
@@ -102,6 +113,8 @@ public class PcUI_control : MonoBehaviour
                     Debug.Log("2충돌 감지");
                     UI2Active = false;
                 }
+
+                
 
                 if (letsgoBoss)
                 {
