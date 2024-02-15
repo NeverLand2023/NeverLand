@@ -20,6 +20,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource server_fall;
     public AudioSource wire;
     public AudioSource peter_explosion;
+    public AudioSource ghostBGM;
 
 
     [Header("#BGM")]    //bgm
