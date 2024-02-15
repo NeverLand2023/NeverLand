@@ -28,7 +28,7 @@ public class Door : MonoBehaviour
 
 
 
-        if (PlayerIn && Input.GetKeyDown(KeyCode.Space) && FireCount.fire == 5)
+        if (PlayerIn && Input.GetKeyDown(KeyCode.Space) && FireCount.fire == 3)
         {
             DoorOpen.Play();
             animator.SetBool("Open", true);
@@ -58,7 +58,7 @@ public class Door : MonoBehaviour
         {
             PlayerIn = true;
 
-            if (FireCount.fire != 5)
+            if (FireCount.fire != 3)
             {
                 StartCoroutine(ShowEmoji(fireEmoji, 0.8f));
             }
