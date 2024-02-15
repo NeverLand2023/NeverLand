@@ -24,7 +24,6 @@ public class Error : MonoBehaviour
             if (timer > 3.0f)
             {
                 error_screen.SetActive(true);
-                Home_SoundManager.instance.homeBGM.gameObject.SetActive(false);
 
                 if (timer > 5.0f)
                 {
