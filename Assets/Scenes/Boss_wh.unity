@@ -85180,6 +85180,7 @@ MonoBehaviour:
   server_fall: {fileID: 1446374404}
   wire: {fileID: 828966382}
   peter_explosion: {fileID: 1117679841}
+  ghostBGM: {fileID: 0}
   bgmClip:
   - {fileID: 8300000, guid: c16c674bc260fd149a9a250a74af8ee4, type: 3}
   - {fileID: 8300000, guid: e39dbab0446be70428e09461249854b0, type: 3}
@@ -87076,7 +87077,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 767a9efed9f9e90448c4653be2304a7d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0da7360eba7a5624bbb96ada063ac722, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.702
   m_Pitch: 1
