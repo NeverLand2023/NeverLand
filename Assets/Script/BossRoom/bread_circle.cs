@@ -7,14 +7,14 @@ public class bread_circle : MonoBehaviour
     public bool awake;
     public float timer;
 
-    // Start is called before the first frame update
-    void Start()
+    RectTransform rectTransform;
+
+
+    private void OnEnable()
     {
-        awake = true;
+        rectTransform = GetComponent<RectTransform>();
+        rectTransform.anchoredPosition = new Vector2(-1.5f, 5);
         timer = 0;
-    }
-    private void Awake()
-    {
         awake = true;
     }
 
@@ -24,11 +24,11 @@ public class bread_circle : MonoBehaviour
         if (awake)
         {
             timer += Time.deltaTime;
-            RectTransform rectTransform = GetComponent<RectTransform>();
             rectTransform.anchoredPosition += new Vector2(0, -0.015f);
             if (timer > 2)
             {
                 awake = false;
+                timer = 0;
             }
         }
     }

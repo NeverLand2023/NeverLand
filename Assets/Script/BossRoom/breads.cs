@@ -46,29 +46,35 @@ public class breads : MonoBehaviour
     IEnumerator attack_1()
     {
         // 부채꼴
-        GameObject fan = Instantiate(bread_fan, transform);
+        //GameObject fan = Instantiate(bread_fan, transform);
+        bread_fan.SetActive(true);
 
         yield return new WaitForSeconds(10);
 
-        Destroy(fan);
+        //Destroy(fan);
+        bread_fan.SetActive(false);
     }
     IEnumerator attack_2()
     {
         // 직선
-        GameObject linear = Instantiate(bread_linear, transform);
+        //GameObject linear = Instantiate(bread_linear, transform);
+        bread_linear.SetActive(true);
 
         yield return new WaitForSeconds(10);
 
-        Destroy(linear);
+        //Destroy(linear);
+        bread_linear.SetActive(false);
     }
 
     IEnumerator attack_3()
     {
         // 직선 후 원형
-        GameObject circle = Instantiate(bread_circle, transform);
+        //GameObject circle = Instantiate(bread_circle, transform);
+        bread_circle.SetActive(true);
 
         yield return new WaitForSeconds(12);
 
-        Destroy(circle);
+        //Destroy(circle);
+        bread_circle.SetActive(false);
     }
 }

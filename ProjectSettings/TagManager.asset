@@ -15,6 +15,7 @@ TagManager:
   - boom
   - Die
   - bead
+  - machine_bottom
   layers:
   - Default
   - TransparentFX

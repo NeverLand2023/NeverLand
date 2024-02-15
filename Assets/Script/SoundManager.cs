@@ -16,6 +16,11 @@ public class SoundManager : MonoBehaviour
     public AudioSource analogButtonSound;
     public AudioSource candleStickSound;
     public AudioSource ItemSound;
+    public AudioSource server_shake;
+    public AudioSource server_fall;
+    public AudioSource wire;
+    public AudioSource peter_explosion;
+
 
     [Header("#BGM")]    //bgm
     public AudioClip[] bgmClip;

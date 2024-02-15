@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class wall : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Start()
     {
- 
 
     }
 
@@ -16,7 +14,7 @@ public class wall : MonoBehaviour
     void Update()
     {
 
-
+        
     }
 
     public static IEnumerator make_wall(GameObject wall)
@@ -42,24 +40,75 @@ public class wall : MonoBehaviour
     public static IEnumerator random_fall()
     {
         Rigidbody2D[] walls = GameObject.Find("walls").GetComponentsInChildren<Rigidbody2D>();
-        Debug.Log(walls.Length);
         int num = Random.Range(0, walls.Length);
-        Vector3 origin = walls[num].GetComponent<Transform>().position;
-        walls[num].GetComponentInChildren<Collider2D>(true).gameObject.SetActive(true);
+        Transform transform = walls[num].transform;
 
+        //¶³¾îÁö±â Àü Èçµé¸²
+        float t = 5f;
+        float shakePower = 0.05f;
+        Vector3 origin = transform.position;
+
+        SoundManager.instance.server_shake.Play();
+        while (t > 0f)
+        {
+            Debug.Log(1);
+            t -= 0.05f;
+            transform.position = origin + (Vector3)Random.insideUnitCircle * shakePower * t;
+            yield return null;
+        }
+        transform.position = origin;
+
+        yield return new WaitForSeconds(0.5f);
+        SoundManager.instance.server_shake.Stop();
+
+        //¶³¾îÁü
+        SoundManager.instance.server_fall.Play();
+        walls[num].GetComponentInChildren<Collider2D>(true).gameObject.SetActive(true);
+        
         walls[num].constraints = RigidbodyConstraints2D.None;
         walls[num].constraints = RigidbodyConstraints2D.FreezeRotation;
         walls[num].constraints = RigidbodyConstraints2D.FreezePositionX;
         walls[num].gravityScale = 1;
-
+        
 
         yield return new WaitForSeconds(3);
-
+        
 
         walls[num].GetComponent<Transform>().position = origin;
         walls[num].GetComponentInChildren<Collider2D>(true).gameObject.SetActive(false);
         walls[num].gravityScale = 0;
         walls[num].constraints = RigidbodyConstraints2D.FreezeAll;
 
+    }
+
+    public static void shake(Transform transform, Vector3 origin)
+    {
+        float t = 3f;
+        float shakePower = 80f;
+        
+        while(t > 0f)
+        {
+            Debug.Log(1);
+            t -= 0.05f;
+            transform.position = origin + (Vector3)Random.insideUnitCircle * shakePower * t;
+            Debug.Log(transform.position);
+        }
+        transform.position = origin;
+    }
+
+    IEnumerator Shake()
+    {
+        float t = 10f;
+        float shakePower = 0.1f;
+        Vector3 origin = transform.position;
+
+        while (t > 0f)
+        {
+            Debug.Log(1);
+            t -= 0.05f;
+            transform.position = origin + (Vector3)Random.insideUnitCircle * shakePower * t;
+            yield return null;
+        }
+        transform.position = origin;
     }
 }
