@@ -21,6 +21,7 @@ public class BossSkeleton : MonoBehaviour
     public Transform target;
     public SpriteRenderer spriteRenderer;
     public GameObject skeletone2;
+    public GameObject vanishing;
 
 
     private bool facingRight = true;
@@ -134,8 +135,10 @@ public class BossSkeleton : MonoBehaviour
                 case State.Dead:
                     if (deadDone)
                     {
-                        
+
+
                         Destroy(gameObject);
+
                         
                     }
                     break;
@@ -166,6 +169,8 @@ public class BossSkeleton : MonoBehaviour
 
                 case State.Dead:
                     Debug.Log("Dead");
+                    vanishing.SetActive(false);
+                    Debug.Log("ªÁ∂Û¡Æ");
                     Dead();
                     break;
 
