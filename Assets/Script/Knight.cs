@@ -111,6 +111,7 @@ public class Knight : MonoBehaviour
 
     public void Death()
     {
+        monsterControl.deadMonster += 1;
         Destroy(gameObject);
     }
 

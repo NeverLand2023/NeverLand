@@ -155,6 +155,7 @@ public class Main_Hook : MonoBehaviour
         {
             GameManager.DecreaseHP(30f);
             anim.SetTrigger("Hurt");
+            StartCoroutine(Nohurt());
         }
         else if (collision.gameObject.tag == ("BossSlime"))
         {
@@ -167,6 +168,13 @@ public class Main_Hook : MonoBehaviour
             anim.SetBool("isDeath", true);
             SoundManager.instance.bossTreeBGM.Stop();
         }
+    }
+
+   IEnumerator Nohurt()
+    {
+        this.gameObject.layer = 2;
+        yield return new WaitForSeconds(1.0f);
+        this.gameObject.layer = 3;
     }
     private void OnTriggerStay2D(Collider2D collision)
     {

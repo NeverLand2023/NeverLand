@@ -239,6 +239,7 @@ public class Wolf : MonoBehaviour
     }
     private void DeadAnimationDone()
     {
+        monsterControl.deadMonster += 1;
         deadDone = true;
         Destroy(gameObject);
 
