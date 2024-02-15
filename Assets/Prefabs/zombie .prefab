@@ -421,8 +421,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6202153468818019895}
-  attackRange: 1
-  followRange: 3
+  attackRange: 2
+  followRange: 5
   moveSpeed: 2
   hp: 100
   target: {fileID: 0}
