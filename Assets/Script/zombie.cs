@@ -231,6 +231,7 @@ public class zombie : MonoBehaviour
 
     private void Dead()
     {
+        monsterControl.deadMonster += 1;
         ableWalking = false;
         animator.SetTrigger("death");
 
