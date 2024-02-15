@@ -9,6 +9,9 @@ public class click_x : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip clickXbox;
 
+    public GameObject minimapline;
+    public Camera minimapcam;
+    public Camera minimapcam2;
 
     void Start()
     {
@@ -26,6 +29,9 @@ public class click_x : MonoBehaviour
             uiObject.SetActive(false);
             Debug.Log("UI를 비활성화합니다.");
             audioSource.Play();
+            minimapline.SetActive(true);
+            minimapcam.enabled = true;
+            minimapcam2.enabled = true;
 
     }
 

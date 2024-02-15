@@ -12,6 +12,9 @@ public class input : MonoBehaviour
     public GameObject locker;
     private AudioSource audioSource;
     public AudioClip bip;
+    public GameObject minimapline;
+    public Camera minimapcam;
+    public Camera minimapcam2;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +43,10 @@ public class input : MonoBehaviour
                 
                 PCUI_off.SetActive(false);
                 locker.SetActive(true);
-               // audioSource.Play();
+                minimapline.SetActive(true);
+                minimapcam.enabled = true;
+                minimapcam2.enabled = true;
+                // audioSource.Play();
 
             }
             else

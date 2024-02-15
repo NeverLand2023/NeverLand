@@ -15,7 +15,12 @@ public class click_box : MonoBehaviour
     public GameObject inactive_PWui;
     public GameObject active_gameobject;
     public GameObject UInumChange;
-  //  public GameObject active_openSound;
+
+    public GameObject minimapline;
+    public Camera minimapcam;
+    public Camera minimapcam2;
+
+    //  public GameObject active_openSound;
 
 
     private void Start()
@@ -38,10 +43,13 @@ public class click_box : MonoBehaviour
         inactive_PWui.SetActive(false);
         active_gameobject.SetActive(true);
         UInumChange.SetActive(true);
-    //    active_openSound.SetActive(true);
+        minimapline.SetActive(true);
+        minimapcam.enabled = true;
+        minimapcam2.enabled = true;
+        //    active_openSound.SetActive(true);
 
 
-       
+
 
     }
 
