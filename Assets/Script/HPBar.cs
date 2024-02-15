@@ -8,6 +8,7 @@ public class HPBar : MonoBehaviour
     // HP 바의 최대 값
     public float maxHP;
 
+    
     public enum Character
     {
         Hook,
@@ -16,6 +17,7 @@ public class HPBar : MonoBehaviour
         BossSkeleton,
         Skeleton2,
         Peter,
+        BrownWolf
     }
 
     public Character characterSelect;
@@ -40,6 +42,9 @@ public class HPBar : MonoBehaviour
                 break;
             case Character.Peter:
                 slider.value = Peter.GetCurrentHP() / maxHP;
+                break;
+            case Character.BrownWolf:
+                slider.value = BrownWolf.GetCurrentHP() / maxHP;
                 break;
             default:
                 Debug.LogError("Character not selected");

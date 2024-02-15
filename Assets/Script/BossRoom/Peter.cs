@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Peter : MonoBehaviour
 {
@@ -120,5 +121,6 @@ public class Peter : MonoBehaviour
     {
         SoundManager.instance.peter_explosion.Play();
         animator.SetBool("break", true);
+        SceneManager.LoadScene("end_news");
     }
 }

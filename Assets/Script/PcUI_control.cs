@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PcUI_control : MonoBehaviour
 {
@@ -119,7 +120,7 @@ public class PcUI_control : MonoBehaviour
                 if (letsgoBoss)
                 {
                     RedLight.SetActive(true);
-                    //보스전으로 넘어가는 연출
+                    StartCoroutine(LoadNextSceneAfterDelay(2f));
                     minimapline.SetActive(true);
                     minimapcam.enabled = true;
                     minimapcam2.enabled = true;
@@ -137,6 +138,13 @@ public class PcUI_control : MonoBehaviour
         }
 
 
+    }
+
+    private IEnumerator LoadNextSceneAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        SceneManager.LoadScene("Boss_wh"); 
     }
 
 }

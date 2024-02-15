@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class gear_rotation : MonoBehaviour
 {
@@ -58,10 +59,9 @@ public class gear_rotation : MonoBehaviour
             audioSource.Play();
             if (left == 3 && right == 5)
             {
-                gameObject.SetActive(false);
-                background_black.SetActive(false);
-                comingsoon.SetActive(true);
- 
+
+                SceneManager.LoadScene("Mission3");
+
             }
             if (right > 10)
             {
