@@ -22,11 +22,13 @@ public class AttackEffect : MonoBehaviour
         {
             if (hook.GetComponent<SpriteRenderer>().flipX)
             {
-                transform.localPosition = new Vector3(-0.25f, 0, 0);
+                transform.localPosition = new Vector3(-0.25f, -0.04f, 0);
+                gameObject.GetComponent<SpriteRenderer>().flipX = true;
             }
             else
             {
-                transform.localPosition = new Vector3(0.25f, 0, 0);
+                transform.localPosition = new Vector3(0.25f, -0.04f, 0);
+                gameObject.GetComponent<SpriteRenderer>().flipX = false;
             }
         }
         start = false;
