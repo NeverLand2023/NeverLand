@@ -7,6 +7,7 @@ public class PuzzleControl : MonoBehaviour
     public GameObject activationObject;
     public Transform newPlayerPosition;
     private GameObject player; // 플레이어를 저장할 변수
+    public AudioSource wrongAudioSource;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class PuzzleControl : MonoBehaviour
         // 플레이어와 충돌했을 때
         if (other.CompareTag("Player"))
         {
+            wrongAudioSource.Play();
             // 플레이어의 위치를 새로운 위치로 이동
             MovePlayerToNewPosition(player, newPlayerPosition.position);
 
