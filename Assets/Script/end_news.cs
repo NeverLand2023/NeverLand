@@ -10,6 +10,7 @@ public class end_news : MonoBehaviour
     public GameObject news2;
     public GameObject news3;
     public GameObject news4;
+    public GameObject panel;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class end_news : MonoBehaviour
         Invoke("EnableNews2", 4.5f);
         Invoke("EnableNews3", 9f);
         Invoke("EnableNews4", 13.5f);
+        Invoke("DisableCaption4", 18f);
     }
 
     // Update is called once per frame
@@ -42,5 +44,11 @@ public class end_news : MonoBehaviour
     {
         news3.SetActive(false);
         news4.SetActive(true);
+    }
+
+    private void DisableCaption4() 
+    {
+        news4.SetActive(false);
+        panel.SetActive(false);
     }
 }
