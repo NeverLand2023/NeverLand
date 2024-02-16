@@ -22,6 +22,7 @@ public class Main_Hook : MonoBehaviour
     public Transform[] savePoints;
 
     public static bool attackAvailable = true;
+    public static bool MoveUnavailable = false;
 
     public AudioClip Thud;
 
@@ -52,6 +53,16 @@ public class Main_Hook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (MoveUnavailable)
+        {
+            rigid.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+
+        if (!MoveUnavailable)
+        {
+            rigid.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+            rigid.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+        }
         
         //캐릭터 움직임
         inputVec.x = Input.GetAxisRaw("Horizontal");
@@ -150,6 +161,7 @@ public class Main_Hook : MonoBehaviour
         {
             GameManager.DecreaseHP(10f);
             anim.SetTrigger("Hurt");
+            StartCoroutine(Nohurt());
         }
         else if (collision.gameObject.tag == ("BossThorn"))
         {

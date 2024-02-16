@@ -33,6 +33,8 @@ public class steering_gear : MonoBehaviour
                     minimapline.SetActive(false);
                     minimapcam.enabled = false;
                     minimapcam2.enabled = false;
+                    Main_Hook.attackAvailable = false;
+                    Main_Hook.MoveUnavailable = true;
 
 
             }
@@ -52,7 +54,7 @@ public class steering_gear : MonoBehaviour
     
 
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == ("Player"))
 
@@ -62,13 +64,15 @@ public class steering_gear : MonoBehaviour
             issteeringActive = true;
 
         }
-        else
-        {
+       
+
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+
             issteeringActive = false;
-        }
 
     }
 
 
-    
 }

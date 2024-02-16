@@ -5,7 +5,8 @@ using UnityEngine;
 public class book_loan : MonoBehaviour
 {  
     public GameObject bookLoanUI;
-    public bool isBookLoanActive = false;
+    public bool collisionLoan= false;
+    public bool UIopen = true;
 
     private void Awake()
     {
@@ -14,27 +15,45 @@ public class book_loan : MonoBehaviour
 
     void Update()
     {
-        // 스페이스바 입력 감지
-        if (Input.anyKeyDown)
+
+        if (collisionLoan)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (isBookLoanActive)
-                {
-                    //충돌 & 스페이스바 감지시 ui 활성화
+               
                     bookLoanUI.SetActive(true);
                     Debug.Log("충돌 감지");
-                    isBookLoanActive = false;
-                }
+                    //collisionBOOK = false;
+
+
+                    if (UIopen)
+                    {
+                        UIopen = false;
+                        Main_Hook.attackAvailable = false;
+                    }
+                    else
+                    {
+                        bookLoanUI.SetActive(false);
+
+                        Debug.Log("close");
+                        UIopen = true;
+                        Main_Hook.attackAvailable = true;
+                    }
+
+
                 
+
+
             }
 
-            else
-            {
-                bookLoanUI.SetActive(false);
-            }
         }
-        
+
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W))
+        {
+            bookLoanUI.SetActive(false);
+            Main_Hook.attackAvailable = true;
+        }
+
     }
 
 
@@ -44,8 +63,8 @@ public class book_loan : MonoBehaviour
                 
         {
             // BookLoan UI를 활성화
-            
-            isBookLoanActive = true;
+
+            collisionLoan = true;
 
         }
 
@@ -57,7 +76,7 @@ public class book_loan : MonoBehaviour
         {
             // BookLoan UI를 비활성화
             //bookLoanUI.SetActive(false);
-            isBookLoanActive = false;
+            collisionLoan = false;
         }
     }
 }

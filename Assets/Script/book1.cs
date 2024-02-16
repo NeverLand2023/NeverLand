@@ -5,7 +5,8 @@ using UnityEngine;
 public class book1 : MonoBehaviour
 {
     public GameObject book1UI;
-    public bool isBook1Active = false;
+    public bool collisionBOOK = false;
+    public bool UIopen = true;
     private void Awake()
     {
         book1UI.SetActive(false);
@@ -13,29 +14,44 @@ public class book1 : MonoBehaviour
 
     void Update()
     {
-        // 스페이스바 입력 감지
-        if (Input.anyKeyDown)
+        if (collisionBOOK)
         {
-
-
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if(isBook1Active)
-                {
-                    book1UI.SetActive(true);
-                    Debug.Log("충돌 감지");
-                    isBook1Active = false;
-                }
-              
-            }
-            
 
-            else
-            {
-                book1UI.SetActive(false);
-            
+                book1UI.SetActive(true);
+                Debug.Log("충돌 감지");
+                //collisionBOOK = false;
+
+
+                if (UIopen)
+                {
+                    UIopen = false;
+                    Main_Hook.attackAvailable = false;
+                }
+                else
+                {
+                    book1UI.SetActive(false);
+
+                    Debug.Log("close");
+                    UIopen = true;
+                    Main_Hook.attackAvailable = true;
+                }
+
+
+
+
+
             }
+
         }
+
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W))
+        {
+            book1UI.SetActive(false);
+            Main_Hook.attackAvailable = true;
+        }
+
     }
 
 
@@ -46,7 +62,7 @@ public class book1 : MonoBehaviour
         {
             // BookLoan UI를 활성화
 
-            isBook1Active = true;
+            collisionBOOK = true;
 
 
         
@@ -60,7 +76,7 @@ public class book1 : MonoBehaviour
         {
             // BookLoan UI를 비활성화
             //bookLoanUI.SetActive(false);
-            isBook1Active = false;
+            collisionBOOK = false;
         }
     }
 }

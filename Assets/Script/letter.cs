@@ -6,48 +6,76 @@ public class letter : MonoBehaviour
 {
 
     public GameObject letterUI;
-    public bool isletterActive = false;
+    public bool collisionLetter = false;
+    public bool UIopen = true;
 
 
 
-    private void OnCollisionStay2D(Collision2D collision)
+
+
+    void Update()
+    {
+
+        if (collisionLetter)
+        {
+            // 스페이스바 입력 감지
+
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                   // if (collisionLetter)
+                    //{
+                        letterUI.SetActive(true);
+                        Debug.Log("충돌 감지");
+                        
+
+
+                        if (UIopen)
+                        {
+                            UIopen = false;
+                            Main_Hook.attackAvailable = false;
+                        }
+                        else
+                        {
+                            letterUI.SetActive(false);
+
+                            Debug.Log("close");
+                            UIopen = true;
+                            Main_Hook.attackAvailable = true;
+                        }
+
+
+                    //}
+
+
+                }
+
+
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W))
+            {
+                letterUI.SetActive(false);
+                Main_Hook.attackAvailable = true;
+            }
+        }
+        
+
+    }
+
+    void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == ("Player"))
 
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                if (isletterActive == false)
-                {
-                    letterUI.SetActive(true);
-                    isletterActive = true;
-
-                }
-
-                else
-                {
-                    isletterActive = false;
-                    letterUI.SetActive(false);
-
-
-                }
-            }
-
-
-
+            collisionLetter = true;
         }
+
     }
 
-
-    private void OnCollisionExit2D(Collision2D collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
-        letterUI.SetActive(false);
-    }
+        if (collision.gameObject.tag == ("Player"))  // 플레이어와의 충돌이 끝났을 때
+        {
 
-    void Update()
-    {
- 
-
-        
+            collisionLetter = false;
+        }
     }
 }
