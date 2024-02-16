@@ -267,7 +267,7 @@ public class BossSkeleton : MonoBehaviour
         }
         yield return null;
     }
-    /*
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "PlayerAttack")
@@ -279,5 +279,5 @@ public class BossSkeleton : MonoBehaviour
                 animator.SetBool("dead", true);
             }
         }
-    }*/
+    }
 }
