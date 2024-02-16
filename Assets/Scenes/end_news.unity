@@ -1918,8 +1918,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "[\uC11C\uBC84\uC2E4 bgm]\nRoyalty Free Music: Bensound.com\r\nLicense
-    code: 5QPECQPC7DX1ZWBD\n\n[\uC11C\uBC84\uC2E4 \uBCF4\uC2A4\uB9F5 bgm]\n\u266C
-    HYP - PTSD\r\n\u266C [BGM] HYP - PTSD  "
+    code: 5QPECQPC7DX1ZWBD"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c6edcaee1497f74ab68de98bc329b76, type: 2}
   m_sharedMaterial: {fileID: -2401067980948422433, guid: 5c6edcaee1497f74ab68de98bc329b76, type: 2}
