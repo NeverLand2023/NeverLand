@@ -30,9 +30,11 @@ public class Inventory : MonoBehaviour
             if (!invenOpen)
             {
                 invenOpen =true;
+                Main_Hook.attackAvailable = false;
                 for (int i = 0; i < inventory.Length; i++)
                 {
                     inventory[i].gameObject.SetActive(true);
+
                 }
                 //inventory.SetActive(true);
                 //InventoryStart();
@@ -41,6 +43,7 @@ public class Inventory : MonoBehaviour
             {
                 Debug.Log("not in~");
                 invenOpen =false;
+                Main_Hook.attackAvailable = true;
                 for (int i = 0; i < inventory.Length; i++)
                 {
                     inventory[i].gameObject.SetActive(false);

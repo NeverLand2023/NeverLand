@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class click_box : MonoBehaviour
 {
 
-    private AudioSource audioSource;
+
     public AudioClip clickbox;
 
     public GameObject active_ui;
@@ -25,8 +25,7 @@ public class click_box : MonoBehaviour
 
     private void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>();  // AudioSource 동적 추가
-        audioSource.clip = clickbox;
+      
         
     }
 
@@ -34,8 +33,8 @@ public class click_box : MonoBehaviour
     // Update is called once per frame
     public void OnYesButtonClick()
     {
+        AudioSource.PlayClipAtPoint(clickbox, Camera.main.transform.position);
 
-        audioSource.Play();
 
         active_ui.SetActive(true);
         inactive_ui.SetActive(false);
@@ -51,6 +50,11 @@ public class click_box : MonoBehaviour
 
 
 
+    }
+
+    public void ConfirmClick()
+    {
+        Main_Hook.attackAvailable = true;
     }
 
     public void OnNobuttonClick()

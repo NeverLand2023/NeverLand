@@ -36,7 +36,8 @@ public class PcUI_control : MonoBehaviour
             }
             
             if (UInum == 1){
-                UI2Active = true;
+                UI2Active = true; 
+
             }
 
             if (UInum == 2)
@@ -102,6 +103,7 @@ public class PcUI_control : MonoBehaviour
                     minimapcam.enabled = false;
                     minimapcam2.enabled = false;
                     PC_UI1.SetActive(true);
+                    Main_Hook.attackAvailable = false;
                     Debug.Log("1충돌 감지");
                     UI1Active = false;
                 }
@@ -111,6 +113,8 @@ public class PcUI_control : MonoBehaviour
                     minimapcam.enabled = false;
                     minimapcam2.enabled = false;
                     PC_UI2.SetActive(true);
+                    PC_UI1.SetActive(false);
+                    Main_Hook.attackAvailable = false;
                     Debug.Log("2충돌 감지");
                     UI2Active = false;
                 }
