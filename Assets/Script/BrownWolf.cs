@@ -115,6 +115,8 @@ public class BrownWolf : MonoBehaviour
                     {
                         animator.SetBool("idle", false);
                         nextState = State.Hurt;
+
+                            attackDone = false;
                     }
                     if (attackDone)
                     {
@@ -210,14 +212,8 @@ public class BrownWolf : MonoBehaviour
 
     private void AttackAnimationDone()
     {
-        if (state != State.Attack)
-        {
-            attackDone = false;
-        }
-        else
-        {
-            attackDone = true; ;
-        }
+            attackDone = true;
+       
 
     }
 
