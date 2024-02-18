@@ -16,7 +16,7 @@ public class BrownWolf : MonoBehaviour
     [SerializeField] private float followRange;
     [SerializeField] private float moveSpeed;
 
-    private static int hp = 200;
+    private static int hp = 100;
 
     public Transform target;
     public SpriteRenderer spriteRenderer;
@@ -29,7 +29,7 @@ public class BrownWolf : MonoBehaviour
         Run,
         Hurt,
         Attack,
-        Death
+        Dead
     }
 
     public State state = State.None;
@@ -38,7 +38,7 @@ public class BrownWolf : MonoBehaviour
 
     private bool attackDone = false;
     private bool hurtDone = false;
-    private bool deathDone = false;
+    private bool deadDone = false;
 
     // Start is called before the first frame update
     void Start()
@@ -131,7 +131,7 @@ public class BrownWolf : MonoBehaviour
                         if (hp <= 0)
                         {
                             animator.SetBool("hurt", false);
-                            nextState = State.Death;
+                            nextState = State.Dead;
                         }
                         else
                         {
@@ -141,8 +141,8 @@ public class BrownWolf : MonoBehaviour
                         hurtDone = false;
                     }
                     break;
-                case State.Death:
-                    if (deathDone)
+                case State.Dead:
+                    if (deadDone)
                     {
                         Destroy(gameObject);
                     }
@@ -172,9 +172,8 @@ public class BrownWolf : MonoBehaviour
                     Hurt();
                     break;
 
-                case State.Death:
-                    Death();
-                    Destroy(gameObject);
+                case State.Dead:
+                    Dead();
                     break;
 
             }
@@ -224,15 +223,15 @@ public class BrownWolf : MonoBehaviour
         hp -= 50;
         hurtDone = true;
     }
-    private void Death()
+    private void Dead()
     {
-        animator.SetBool("death", true);
+        animator.SetBool("dead", true);
 
     }
-    private void DeathAnimationDone()
+    private void DeadAnimationDone()
     {
-        deathDone = true;
-        Destroy(gameObject);
+        deadDone = true;
+        Destroy(this.gameObject);
     }
     private void OnDrawGizmosSelected()
     {
@@ -242,9 +241,10 @@ public class BrownWolf : MonoBehaviour
         Gizmos.color = new Color(85f, 211f, 241f, 0.3f);
         Gizmos.DrawSphere(transform.position, followRange);
     }
-
     public static float GetCurrentHP()
-    {
-        return hp;
-    }
+        {
+            return hp;
+        }
+
 }
+
