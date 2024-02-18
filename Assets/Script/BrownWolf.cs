@@ -111,13 +111,6 @@ public class BrownWolf : MonoBehaviour
                     }
                     break;
                 case State.Attack:
-                    if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3).tag == "PlayerAttack")
-                    {
-                        animator.SetBool("idle", false);
-                        nextState = State.Hurt;
-
-                            attackDone = false;
-                    }
                     if (attackDone)
                     {
                         if (Physics2D.OverlapCircle(transform.position, followRange, 1 << 3))
