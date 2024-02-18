@@ -16,7 +16,7 @@ public class BrownWolf : MonoBehaviour
     [SerializeField] private float followRange;
     [SerializeField] private float moveSpeed;
 
-    private static int hp = 100;
+    private static int hp = 200;
 
     public Transform target;
     public SpriteRenderer spriteRenderer;
@@ -52,6 +52,8 @@ public class BrownWolf : MonoBehaviour
     {
         if (nextState == State.None)
         {
+            
+
             switch (state)
             {
                 case State.Idle:
@@ -62,16 +64,13 @@ public class BrownWolf : MonoBehaviour
                             animator.SetBool("idle", false);
                             nextState = State.Hurt;
                         }
+                        animator.SetBool("idle", false);
+                            nextState = State.Attack;
                     }
                     else if (Physics2D.OverlapCircle(transform.position, followRange, 1 << 3))
                     {
                         animator.SetBool("idle", false);
                         nextState = State.Run;
-                    }
-                    else if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3))
-                    {
-                        animator.SetBool("idle", false);
-                        nextState = State.Attack;
                     }
                     break;
                 case State.Run:
@@ -82,23 +81,23 @@ public class BrownWolf : MonoBehaviour
                             animator.SetBool("idle", false);
                             nextState = State.Hurt;
                         }
-                    }
-                    else if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3))
-                    {
-                        bool isTargetOnLeft = target.position.x < transform.position.x;
-
-
-                        animator.SetBool("run", false);
-                        nextState = State.Attack;
-
-
-                        if (isTargetOnLeft)
-                        {
-                            spriteRenderer.flipX = true;
-                        }
                         else
                         {
-                            spriteRenderer.flipX = false;
+                            bool isTargetOnLeft = target.position.x < transform.position.x;
+
+
+                            animator.SetBool("run", false);
+                            nextState = State.Attack;
+
+
+                            if (isTargetOnLeft)
+                            {
+                                spriteRenderer.flipX = true;
+                            }
+                            else
+                            {
+                                spriteRenderer.flipX = false;
+                            }
                         }
                     }
                     else if (!Physics2D.OverlapCircle(transform.position, followRange, 1 << 3))
@@ -112,17 +111,25 @@ public class BrownWolf : MonoBehaviour
                     }
                     break;
                 case State.Attack:
+                    if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3).tag == "PlayerAttack")
+                    {
+                        animator.SetBool("idle", false);
+                        nextState = State.Hurt;
+                    }
                     if (attackDone)
                     {
-                        animator.SetBool("attack", false);
-                        nextState = State.Idle;
+                        if (Physics2D.OverlapCircle(transform.position, followRange, 1 << 3))
+                        {
+                            animator.SetBool("attack", false);
+                            nextState = State.Run;
+                        }
+                        else
+                        {
+                            animator.SetBool("attack", false);
+                            nextState = State.Idle;
+                        }
 
-                        attackDone = false;
-                    }
-                    else if ((Input.GetMouseButtonDown(0)))
-                    {
-                        animator.SetBool("attack", false);
-                        nextState = State.Hurt;
+                            attackDone = false;
                     }
                     break;
                 case State.Hurt:
