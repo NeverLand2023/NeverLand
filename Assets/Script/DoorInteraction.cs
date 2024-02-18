@@ -10,9 +10,11 @@ public class DoorInteraction : MonoBehaviour
 
     private bool hookEnter= false;
     private GameObject Hook;
+    private GameObject ResetButton;
 
     private void Start()
     {
+        ResetButton = GameObject.Find("ResetButton");
         Hook = GameObject.FindWithTag("Player");
     }
 
@@ -25,11 +27,12 @@ public class DoorInteraction : MonoBehaviour
             SoundManager.instance.doorSound.Play();
             if (BoxButtIn)
             {
-                GameObject.Find("ResetButton").SetActive(true);
+                ResetButton.SetActive(true);
             }
             else if (BoxButtOut)
             {
-                GameObject.Find("ResetButton").SetActive(false);
+
+                ResetButton.SetActive(false);
             }
         }
     }

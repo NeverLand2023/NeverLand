@@ -39,6 +39,6 @@ public class ThornActive : MonoBehaviour
     public void BoxReset()
     {
         reset = true;
-        Hook.GetComponent<Transform>().position = new Vector2(1.36f, -8.55f);
+        Hook.GetComponent<Transform>().position = new Vector2(1.25f, -9.14f);
     }
 }
