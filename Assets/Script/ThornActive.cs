@@ -6,6 +6,10 @@ public class ThornActive : MonoBehaviour
 {
     public int actButt = 0;
     public GameObject thornObj;
+    public GameObject Hook;
+
+    public int resetObj = 0;
+    public bool reset = false;
     public bool thorn = false;
 
     private void Update()
@@ -14,6 +18,12 @@ public class ThornActive : MonoBehaviour
         {
             thorn = true;
             StartCoroutine(ThornActivate(0.5f));
+        }
+
+        if(resetObj>=127 && reset)
+        {
+            reset = false;
+            resetObj = 0;
         }
     
     }
@@ -24,5 +34,11 @@ public class ThornActive : MonoBehaviour
         yield return new WaitForSeconds(delay);
         thornObj.SetActive(false);
         thorn = false;
+    }
+
+    public void BoxReset()
+    {
+        reset = true;
+        Hook.GetComponent<Transform>().position = new Vector2(1.36f, -8.55f);
     }
 }

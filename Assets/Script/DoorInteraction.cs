@@ -5,6 +5,8 @@ using UnityEngine;
 public class DoorInteraction : MonoBehaviour
 {
     public Transform arriveTrans;
+    public bool BoxButtIn = false;
+    public bool BoxButtOut = false;
 
     private bool hookEnter= false;
     private GameObject Hook;
@@ -21,6 +23,14 @@ public class DoorInteraction : MonoBehaviour
             Hook.transform.position = arriveTrans.position;
             Debug.Log("going from " + this.gameObject.name);
             SoundManager.instance.doorSound.Play();
+            if (BoxButtIn)
+            {
+                GameObject.Find("ResetButton").SetActive(true);
+            }
+            else if (BoxButtOut)
+            {
+                GameObject.Find("ResetButton").SetActive(false);
+            }
         }
     }
 
