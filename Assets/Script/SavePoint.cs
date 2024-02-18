@@ -6,6 +6,7 @@ public class SavePoint : MonoBehaviour
 {
     public Color targetColor = new Color(1f, 0.216f, 0.216f);
     public int SavePointNum;
+    public int sceneNum;
     private bool triggerEnter = false;
 
     private SpriteRenderer spriteRenderer;
@@ -17,6 +18,8 @@ public class SavePoint : MonoBehaviour
         PlayerPrefs.SetInt("SavePointKey", 0);
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
+
+        PlayerPrefs.SetInt("MissionNunber", sceneNum);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -53,16 +56,22 @@ public class SavePoint : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && triggerEnter && !isChangingColor)
         {
-            PlayerPrefs.SetFloat("SavePoint_x", transform.position.x);
-            PlayerPrefs.SetFloat("SavePoint_y", transform.position.y);
-
-            for (int i = 0; i < Inventory.invenFilled; i++)
-            {
-                PlayerPrefs.SetString("Inventory_" + (i).ToString(), GameManager.invenArray[i].Item3);
-            }
-            PlayerPrefs.SetInt("InvenFilled", Inventory.invenFilled);
+            SetSavePoint();
 
             StartCoroutine(ChangeColorAndRestore());
         }
+    }
+
+    void SetSavePoint()
+    {
+        PlayerPrefs.SetFloat("SavePoint_x", transform.position.x);
+        PlayerPrefs.SetFloat("SavePoint_y", transform.position.y);
+
+        for (int i = 0; i < Inventory.invenFilled; i++)
+        {
+            PlayerPrefs.SetString("Inventory_" + (i).ToString(), GameManager.invenArray[i].Item3);
+        }
+        PlayerPrefs.SetInt("InvenFilled", Inventory.invenFilled);
+        PlayerPrefs.SetInt("MissionNunber", sceneNum);
     }
 }

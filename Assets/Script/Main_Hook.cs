@@ -34,14 +34,15 @@ public class Main_Hook : MonoBehaviour
 
     public GameObject emoji_collider;
 
+    Vector2 origin;
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriter = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-       
-        
 
+        origin = transform.position;
     }
 
     void active_emoji()
@@ -107,9 +108,18 @@ public class Main_Hook : MonoBehaviour
         if (GameManager.ContinueKey)
         {
             GameManager.ContinueKey = false;
-            float savePoint_x = PlayerPrefs.GetFloat("SavePoint_x");
-            float savePoint_y = PlayerPrefs.GetFloat("SavePoint_y");
-            transform.position = new Vector2(savePoint_x, savePoint_y);
+            if(PlayerPrefs.HasKey("SavePoint_x") && PlayerPrefs.HasKey("SavePoint_y"))
+            {                
+                float savePoint_x = PlayerPrefs.GetFloat("SavePoint_x");
+                float savePoint_y = PlayerPrefs.GetFloat("SavePoint_y");
+                transform.position = new Vector2(savePoint_x, savePoint_y);
+
+            }
+            else
+            {
+                Debug.Log("원래 위치");
+                transform.position = origin;
+            }
         }
         if (GameManager.RestartKey)
         {
@@ -190,11 +200,6 @@ public class Main_Hook : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("main_hook_Attack"))
-        {
-
-        }
-
         if (collision.gameObject.tag == "emoji")
         {
             Invoke("active_emoji", 0.5f);

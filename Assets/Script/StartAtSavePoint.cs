@@ -23,6 +23,7 @@ public class StartAtSavePoint : MonoBehaviour
     {
         GameManager.RestartKey = true;
         GameManager.ResetHP();
+        PlayerPrefs.DeleteAll();
 
         SceneManager.LoadScene("news");
     }
