@@ -37,7 +37,7 @@ public class Peter : MonoBehaviour
         {
             if (!dead)
             {
-                peter_dead(); 
+                StartCoroutine("peter_dead");
                 dead = true;
             }
         }
@@ -85,7 +85,7 @@ public class Peter : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerAttack")
         {
-            hp -= 10;
+            hp -= 5;
         }
     }
 
@@ -117,10 +117,13 @@ public class Peter : MonoBehaviour
         StartCoroutine(wall.make_wall(wall_3p));
     }
 
-    private void peter_dead()
+    IEnumerator peter_dead()
     {
         SoundManager.instance.peter_explosion.Play();
         animator.SetBool("break", true);
+
+        yield return new WaitForSeconds(5);
+
         SceneManager.LoadScene("end_news");
     }
 }
