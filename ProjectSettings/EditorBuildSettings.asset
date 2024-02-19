@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/news.unity
     guid: df41c451c200a614dbb457424f6120c3
   - enabled: 1
-    path: Assets/Scenes/Mission2.unity
+    path: Assets/Scenes/Mission2_y_0219.unity
     guid: e9d7aa73a13ab0742a12e1b0f246b86c
   - enabled: 1
     path: Assets/Scenes/Boss_wh.unity
