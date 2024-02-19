@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public static bool RestartKey = false;
 
     //inventory
-    public static Tuple<GameObject, GameObject, string>[] invenArray = new Tuple<GameObject, GameObject, string>[6];
+    public static Tuple<GameObject, GameObject, string>[] invenArray = new Tuple<GameObject, GameObject, string>[30];
     public List<GameObject> invenObjects = new List<GameObject>();
     public List<GameObject> clickObjects = new List<GameObject>();
 

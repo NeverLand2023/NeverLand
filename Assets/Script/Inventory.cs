@@ -8,7 +8,7 @@ public class Inventory : MonoBehaviour
     public RectTransform[] inventory;
 
     public static int invenFilled = 0;
-    public static RectTransform[] transArray = new RectTransform[6];
+    public static RectTransform[] transArray = new RectTransform[30];
 
     private bool invenOpen;
 
@@ -51,7 +51,7 @@ public class Inventory : MonoBehaviour
                 //inventory.SetActive(false);
             }
         }
-        for (int i = 1; i <= 6; i++)
+        for (int i = 1; i <= 30; i++)
         {
             if (Input.GetKeyDown(KeyCode.Alpha0 + i))
             {
@@ -67,7 +67,7 @@ public class Inventory : MonoBehaviour
     }
     public static void InventoryStart()
     {
-        for (int i = 1; i < 7; i++)
+        for (int i = 1; i < 31; i++)
         {
             string invenName = $"Inventory{i}";
             //GameObject inven = GameObject.Find(invenName);

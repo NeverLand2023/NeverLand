@@ -8,10 +8,11 @@ public class Pw : MonoBehaviour
     public GameObject PW_INVENui;
     public GameObject PW_GAMEui;
     public GameObject Canvas;
+    private BoxCollider2D myCollider;
     // Start is called before the first frame update
     void Start()
     {
-        
+        myCollider = GetComponent<BoxCollider2D>();
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -25,8 +26,8 @@ public class Pw : MonoBehaviour
                 Canvas.SetActive(true);
                 Inventory.InventorySend(PW_INVENui, null, "Password_note");
                 PW_GAMEui.SetActive(false);
-                
-                
+                myCollider.enabled = false;
+
                 SoundManager.instance.ItemSound.Play();
                 
             }

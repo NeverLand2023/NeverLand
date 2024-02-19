@@ -10,10 +10,11 @@ public class inven_news : MonoBehaviour
     public GameObject toinvenLetter;
     private AudioSource audioSource;
     public AudioClip PCcallSound;
+    private BoxCollider2D myCollider;
 
-    void Start()
+    private void Start()
     {
-        
+        myCollider = GetComponent<BoxCollider2D>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -32,8 +33,9 @@ public class inven_news : MonoBehaviour
                 inGameNews.SetActive(false); 
                 Inventory.InventorySend(toinvenLetter, null, "Letter");
                 inGameLetter.SetActive(false);
-                
-               
+                myCollider.enabled = false;
+
+
 
                 Invoke("sound", 1.5f);
             }
