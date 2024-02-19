@@ -8,11 +8,14 @@ public class puzzleCol : MonoBehaviour
     public GameObject nextPosition;
 
     private GameObject playerObject;
+    public GameObject hint;
+
 
 
     void Start()
     {
         playerObject = GameObject.Find("Main_Hook");
+        StartCoroutine(ActivateHint(hint, 1f));
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -30,5 +33,15 @@ public class puzzleCol : MonoBehaviour
             playerObject.transform.position = nextPosition.transform.position;
             puzzle.SetActive(false);
         }
+    }
+
+    IEnumerator ActivateHint(GameObject obj, float duration)
+    {
+        obj.SetActive(true);
+
+        yield return new WaitForSeconds(duration);
+
+        obj.SetActive(false);
+
     }
 }
