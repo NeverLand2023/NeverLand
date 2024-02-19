@@ -14,7 +14,7 @@ public class DoorInteraction : MonoBehaviour
 
     private void Start()
     {
-        ResetButton = GameObject.Find("ResetButton");
+        ResetButton = GameObject.Find("resetButton");
         Hook = GameObject.FindWithTag("Player");
     }
 
