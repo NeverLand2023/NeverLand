@@ -5,12 +5,23 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     private Rigidbody2D rb2d;
+    private Vector2 startPos;
+    public ThornActive thornCs;
 
     void Start()
     {
+        startPos = GetComponent<Transform>().position;
         rb2d = GetComponent<Rigidbody2D>();
     }
 
+    private void Update()
+    {
+        if (thornCs.reset)
+        {
+            this.GetComponent<Transform>().position = startPos;
+            thornCs.resetObj++;
+        }
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         // 충돌한 오브젝트가 플레이어인 경우
