@@ -12,6 +12,7 @@ public class LightCollider : MonoBehaviour
             if (pointLight != null)
             {
                 pointLight.SetActive(true);
+                Debug.Log("TooBright");
             }
             
         }

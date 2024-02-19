@@ -15,7 +15,7 @@ public class ThornButton : MonoBehaviour
             thornCs.actButt++;
             pushed = true;
 
-            SetAlpha(0.4f);
+            SetDarkColor();
         }
     }
 
@@ -29,19 +29,30 @@ public class ThornButton : MonoBehaviour
         {
             pushed = false;
 
-            SetAlpha(1);
+            SetNormalColor();
         }
 
 
     }
 
-    void SetAlpha(float alphaValue)
+    void SetDarkColor()
     {
         Color currentColor = spriteRenderer.color;
 
-        currentColor.a = alphaValue;
+        // 여기에서 현재 색상을 어두운 색으로 조절합니다.
+        currentColor.r *= 0.7f; // 빨강 채널을 어둡게
+        currentColor.g *= 0.7f; // 녹색 채널을 어둡게
+        currentColor.b *= 0.7f; // 파랑 채널을 어둡게
 
         spriteRenderer.color = currentColor;
     }
+
+    void SetNormalColor()
+    {
+        
+        spriteRenderer.color = Color.white;
+    }
+
+   
 
 }
