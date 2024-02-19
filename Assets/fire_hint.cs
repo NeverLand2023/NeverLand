@@ -62,7 +62,10 @@ public class fire_hint : MonoBehaviour
     }
 
 
-
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        FireHintUIActive = false;
+    }
 }
 
 
