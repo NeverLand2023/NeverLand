@@ -23,6 +23,7 @@ public class BrownWolf1 : MonoBehaviour
     private bool isWalking = false;
     private bool ableWalking = false;
     private int result = 0;
+    private bool hurtDone = true;
 
 
     public enum State
@@ -128,10 +129,10 @@ public class BrownWolf1 : MonoBehaviour
                     else if (attackDone)
                     {
                         attackDone = false;
-                        if (Physics2D.OverlapCircle(transform.position, followRange, 1 << 3))
+                        if (Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3))
                         {
-                            animator.SetBool("attack", false);
-                            nextState = State.Walk;
+                            //animator.SetBool("attack", false);
+                            nextState = State.Attack; /////
                         }
                         else
                         {
@@ -183,17 +184,18 @@ public class BrownWolf1 : MonoBehaviour
 
         Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, attackRange, 1 << 3);
 
-        if (hitCollider != null && hitCollider.tag == "PlayerAttack")
+        if (hitCollider != null && hitCollider.tag == "PlayerAttack" && hurtDone)
         {
+            ableWalking = false;
+            hurtDone = false;
             animator.SetTrigger("hurt");
-            hp -= 1;
+            hp -= 25;
+            state = State.Idle;
+            animator.SetBool("attack", false);
+            animator.SetBool("walk", false);
+            animator.SetBool("idle", true);
         }
 
-        if (hp <= 0)
-        {
-            //Debug.Log("µðÁü");
-            animator.SetTrigger("death");
-        }
     }
     private void Walk()
     {
@@ -209,6 +211,7 @@ public class BrownWolf1 : MonoBehaviour
 
     private void Attack()
     {
+        ableWalking = false;
         animator.SetBool("attack", true);
         AttackCol.SetActive(true);
     }
@@ -217,26 +220,31 @@ public class BrownWolf1 : MonoBehaviour
     {
         attackDone = true;
         AttackCol.SetActive(false);
+        ableWalking = true;
         animator.SetBool("attack", false);
     }
 
     private void Dead()
     {
         ableWalking = false;
-        animator.SetTrigger("death");
+        animator.SetBool("death", true);
 
     }
     private void DeadAnimationDone()
     {
-        monsterControl.deadMonster += 1;
         deadDone = true;
         Destroy(gameObject);
-
     }
 
     private void AppearAnimationDone()
     {
         ableWalking = true;
+    }
+
+    private void HurtAnimationDone()
+    {
+        ableWalking = true;
+        hurtDone = true;
     }
 
     void FlipIfNeeded(float horizontalMovement)
