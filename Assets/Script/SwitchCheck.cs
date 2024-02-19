@@ -42,6 +42,9 @@ public class SwitchCheck : MonoBehaviour
 
             Destroy(PointLight);
             Destroy(gameObject);
+
+            LightTurnOff.notYet = false;
+            LightCollider.stillDark = false;
         }
     }
 }
