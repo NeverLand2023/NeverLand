@@ -8,6 +8,7 @@ public class PuzzleDestination : MonoBehaviour
     public GameObject NextPuzzle;
     public GameObject NextDest;
 
+    public GameObject hint;
     public GameObject activationObject;
     public Transform newPlayerPosition;
     private GameObject player; // 플레이어를 저장할 변수
@@ -18,6 +19,8 @@ public class PuzzleDestination : MonoBehaviour
     {
         // 플레이어를 할당
         player = GameObject.FindGameObjectWithTag("Player");
+
+        StartCoroutine(ActivateHint(hint, 1f));
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -61,5 +64,15 @@ public class PuzzleDestination : MonoBehaviour
     void MovePlayerToNewPosition(GameObject player, Vector3 newPosition)
     {
         player.transform.position = newPosition;
+    }
+
+    IEnumerator ActivateHint(GameObject obj, float duration)
+    {
+        obj.SetActive(true);
+
+        yield return new WaitForSeconds(duration);
+
+        obj.SetActive(false);
+
     }
 }
