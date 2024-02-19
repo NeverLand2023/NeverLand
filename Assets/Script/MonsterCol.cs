@@ -14,5 +14,11 @@ public class MonsterCol : MonoBehaviour
             monsterObject.SetActive(true);
             active = true;
         }
+        else if (!active && other.CompareTag("PlayerAttack"))
+        {
+            Destroy(readyObject);
+            monsterObject.SetActive(true);
+            active = true;
+        }
     }
 }
