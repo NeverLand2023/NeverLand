@@ -21,7 +21,7 @@ public class Wolf : MonoBehaviour
 
     private bool facingRight = true;
     private bool isWalking = false;
-    private bool ableWalking = false;
+    private bool ableWalking = true;
     private int result = 0;
 
 
@@ -195,12 +195,6 @@ public class Wolf : MonoBehaviour
             hp -= 1;
         }
 
-        if (hp <= 0)
-        {
-            //Debug.Log("µðÁü");
-            animator.SetTrigger("Death");
-        }
-
         B2_Monster monster = GetComponentInParent<B2_Monster>();
         if (monster != null)
         {
@@ -239,8 +233,8 @@ public class Wolf : MonoBehaviour
     }
     private void DeadAnimationDone()
     {
-        monsterControl.deadMonster += 1;
         deadDone = true;
+        monsterControl.deadMonster += 1;
         Destroy(gameObject);
 
     }

@@ -21,7 +21,7 @@ public class zombie : MonoBehaviour
 
     private bool facingRight = true;
     private bool isWalking = false;
-    private bool ableWalking = false;
+    private bool ableWalking = true;
     private int result = 0;
 
     public enum State
@@ -194,10 +194,6 @@ public class zombie : MonoBehaviour
             hp -= 1;
         }
 
-        if (hp <= 0)
-        {
-            animator.SetTrigger("Death");
-        }
 
         B2_Monster monster = GetComponentInParent<B2_Monster>();
         if (monster != null)
@@ -231,7 +227,6 @@ public class zombie : MonoBehaviour
 
     private void Dead()
     {
-        monsterControl.deadMonster += 1;
         ableWalking = false;
         animator.SetTrigger("death");
 
@@ -239,6 +234,7 @@ public class zombie : MonoBehaviour
     private void DeadAnimationDone()
     {
         deadDone = true;
+        monsterControl.deadMonster += 1;
         Destroy(gameObject);
 
     }

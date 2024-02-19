@@ -9,7 +9,7 @@ public class monsterControl : MonoBehaviour
 
     void Start()
     {
-        
+        deadMonster = 0;
     }
 
     void Update()
