@@ -27,7 +27,7 @@ public class news : MonoBehaviour
     }
     void sceneChange() 
     {
-        SceneManager.LoadScene("home");
+        SceneManager.LoadScene("Mission3");
     }
     private void EnableNews2()
     {
